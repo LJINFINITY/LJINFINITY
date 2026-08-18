@@ -1,8 +1,8 @@
 <div align="center">
 
-[![Title SVG](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&weight=700&size=38&height=70&pause=1500&color=38BDF8&center=true&vcenter=true&width=600&lines=LJ+INFINITY;JERIN+RAJAN)](https://github.com/LJINFINITY)
+[![Title SVG](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&weight=700&size=38&height=70&pause=0&color=38BDF8&center=true&vcenter=true&width=600&lines=LJ+INFINITY;JERIN+RAJAN)](https://github.com/LJINFINITY)
 
-[![Sub-headline SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&height=45&pause=1000&color=94A3B8&center=true&vcenter=true&width=650&lines=Full-Stack+AI+%26+Systems+Engineer;Rust%2C+Python+%26+TypeScript+Architect;Autonomous+Agentic+Software+Developer)](https://github.com/LJINFINITY)
+[![Sub-headline SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&height=45&pause=500&color=94A3B8&center=true&vcenter=true&width=650&lines=Full-Stack+AI+%26+Systems+Engineer;Rust%2C+Python+%26+TypeScript+Architect;Autonomous+Agentic+Software+Developer)](https://github.com/LJINFINITY)
 
 <br/>
 
@@ -10,13 +10,23 @@
 
 ---
 
-### `// ABOUT`
+### `// ABOUT ME & PHILOSOPHY`
 
-I craft **high-performance systems**, **autonomous AI agents**, and **sleek full-stack applications**. Deeply focused on low-latency architectures, modern developer tools, and cutting-edge web & desktop interfaces.
+```text
+Software Architect & Systems Engineer specialized in low-latency infrastructure, 
+autonomous AI agents, and custom Linux desktop environments.
+```
 
-- **Focus**: AI Agents, Systems Engineering, Desktop Shells & Microservices
-- **Environment**: Linux (Fedora/Arch) • Neovim • VS Code • Antigravity CLI
-- **Goal**: Pushing boundaries of autonomous agentic software & ultra-fast tools
+#### **Core Architecture Domains**
+- **Systems & Low-Level**: Building high-speed CLI tools, native utilities, and memory-safe infrastructure in Rust & C++.
+- **Autonomous AI & Agents**: Designing multi-agent orchestrators, LLM tool pipelines, and local neural automation routines.
+- **Full-Stack & Desktop Shells**: Crafting reactive web applications and custom desktop shell components with Quickshell, React, and TypeScript.
+- **DevOps & Cloud Orchestration**: Managing containerized deployments, automated CI/CD pipelines, and microservices on Linux environments.
+
+#### **Engineering Principles**
+- **Zero-Overhead Execution**: Code written for minimal footprint, maximum throughput, and predictable execution.
+- **Modularity & Isolation**: Decoupled services communicating through well-defined APIs and asynchronous messaging.
+- **User-Centric Aesthetics**: Pairing robust backends with sleek, modern, high-contrast user interfaces.
 
 ---
 
@@ -78,11 +88,19 @@ I craft **high-performance systems**, **autonomous AI agents**, and **sleek full
 
 <div align="center">
 
-<p><img src="https://github-readme-stats.vercel.app/api?username=LJINFINITY&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" width="48%" /> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=LJINFINITY&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" width="48%" /></p>
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=LJINFINITY&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
 
-<p><img src="https://github-readme-streak-stats.herokuapp.com/?user=LJINFINITY&theme=tokyonight&hide_border=true" alt="GitHub Streak Stats" width="97%" /></p>
+<br/>
 
-<p><img src="https://github-readme-activity-graph.vercel.app/graph?username=LJINFINITY&theme=tokyo-night&hide_border=true" alt="Activity Graph" width="97%" /></p>
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=LJINFINITY&theme=tokyonight&hide_border=true&layout=compact)
+
+<br/>
+
+![GitHub Streak Stats](https://github-readme-streak-stats.herokuapp.com/?user=LJINFINITY&theme=tokyonight&hide_border=true)
+
+<br/>
+
+![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=LJINFINITY&theme=tokyo-night&hide_border=true)
 
 </div>
 
