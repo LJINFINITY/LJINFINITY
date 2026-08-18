@@ -1,10 +1,12 @@
 <div align="center">
 
-[![Title SVG](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&weight=700&size=38&height=70&pause=0&color=38BDF8&center=true&vcenter=true&width=600&lines=LJ+INFINITY;JERIN+RAJAN)](https://github.com/LJINFINITY)
+[![Title SVG](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&weight=700&size=40&height=70&pause=0&color=38BDF8&center=true&vcenter=true&width=600&lines=LJ+INFINITY;JERIN+RAJAN)](https://github.com/LJINFINITY)
 
-[![Sub-headline SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&height=45&pause=500&color=94A3B8&center=true&vcenter=true&width=650&lines=Full-Stack+AI+%26+Systems+Engineer;Rust%2C+Python+%26+TypeScript+Architect;Autonomous+Agentic+Software+Developer)](https://github.com/LJINFINITY)
+[![Sub-headline SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&height=40&pause=500&color=94A3B8&center=true&vcenter=true&width=650&lines=Full-Stack+AI+%26+Systems+Engineer;Rust%2C+Python+%26+TypeScript+Architect;Autonomous+Agentic+Software+Developer)](https://github.com/LJINFINITY)
 
 <br/>
+
+[![Trophies](https://github-profile-trophy.vercel.app/?username=LJINFINITY&theme=tokyonight&no-bg=true&no-frame=true&margin-w=15)](https://github.com/LJINFINITY)
 
 </div>
 
@@ -12,21 +14,24 @@
 
 ### `// ABOUT ME & PHILOSOPHY`
 
-```text
-Software Architect & Systems Engineer specialized in low-latency infrastructure, 
-autonomous AI agents, and custom Linux desktop environments.
+```typescript
+interface Developer {
+  name: "Jerin Rajan",
+  alias: "LJINFINITY",
+  role: "Full-Stack AI & Systems Engineer",
+  architecture: ["Low-Latency Systems", "Autonomous AI Agents", "Reactive Desktop Shells"],
+  stack: ["Rust", "Python", "TypeScript", "C++", "Quickshell", "Linux"],
+  status: "⚡ Building high-throughput systems & next-gen agent workflows"
+}
 ```
 
-#### **Core Architecture Domains**
-- **Systems & Low-Level**: Building high-speed CLI tools, native utilities, and memory-safe infrastructure in Rust & C++.
-- **Autonomous AI & Agents**: Designing multi-agent orchestrators, LLM tool pipelines, and local neural automation routines.
-- **Full-Stack & Desktop Shells**: Crafting reactive web applications and custom desktop shell components with Quickshell, React, and TypeScript.
-- **DevOps & Cloud Orchestration**: Managing containerized deployments, automated CI/CD pipelines, and microservices on Linux environments.
+<div align="center">
 
-#### **Engineering Principles**
-- **Zero-Overhead Execution**: Code written for minimal footprint, maximum throughput, and predictable execution.
-- **Modularity & Isolation**: Decoupled services communicating through well-defined APIs and asynchronous messaging.
-- **User-Centric Aesthetics**: Pairing robust backends with sleek, modern, high-contrast user interfaces.
+| 🔭 **Core Specialization** | ⚡ **Engineering Principles** | 🛠️ **Environment & Tools** |
+| :--- | :--- | :--- |
+| • **Systems Programming** (Rust / C++)<br/>• **AI Agent Orchestration** (Multi-agent loops)<br/>• **Full-Stack Web & Mobile** (React / Next.js)<br/>• **Desktop Customization** (Quickshell / Hyprland) | • **Zero-Overhead** execution<br/>• **Event-Driven** asynchronous queues<br/>• **Modular** decoupled interfaces<br/>• **High-Contrast** ultra-sleek UI | • **OS**: Fedora Rawhide / Arch Linux<br/>• **Shell**: Zsh / Bash / RTK<br/>• **Editor**: Neovim / VS Code<br/>• **Workflow**: Antigravity CLI |
+
+</div>
 
 ---
 
@@ -87,18 +92,6 @@ autonomous AI agents, and custom Linux desktop environments.
 ### `// ANALYTICS & ACTIVITY`
 
 <div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=LJINFINITY&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
-
-<br/>
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=LJINFINITY&theme=tokyonight&hide_border=true&layout=compact)
-
-<br/>
-
-![GitHub Streak Stats](https://github-readme-streak-stats.herokuapp.com/?user=LJINFINITY&theme=tokyonight&hide_border=true)
-
-<br/>
 
 ![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=LJINFINITY&theme=tokyo-night&hide_border=true)
 
