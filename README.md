@@ -1,6 +1,6 @@
 <div align="center">
 
-[![Title SVG](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&weight=700&size=40&height=70&pause=0&color=38BDF8&center=true&vcenter=true&width=600&lines=LJ+INFINITY;JERIN+RAJAN)](https://github.com/LJINFINITY)
+[![Title SVG](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&weight=700&size=38&height=70&pause=0&color=38BDF8&center=true&vcenter=true&width=600&lines=LJ+INFINITY;JERIN+RAJAN)](https://github.com/LJINFINITY)
 
 [![Sub-headline SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&height=40&pause=500&color=94A3B8&center=true&vcenter=true&width=650&lines=Full-Stack+AI+%26+Systems+Engineer;Rust%2C+Python+%26+TypeScript+Architect;Autonomous+Agentic+Software+Developer)](https://github.com/LJINFINITY)
 
@@ -10,32 +10,77 @@
 
 </div>
 
+<br/>
+
 ---
 
-### `// ABOUT ME & PHILOSOPHY`
+<br/>
 
-```typescript
-interface Developer {
-  name: "Jerin Rajan",
-  alias: "LJINFINITY",
-  role: "Full-Stack AI & Systems Engineer",
-  architecture: ["Low-Latency Systems", "Autonomous AI Agents", "Reactive Desktop Shells"],
-  stack: ["Rust", "Python", "TypeScript", "C++", "Quickshell", "Linux"],
-  status: "⚡ Building high-throughput systems & next-gen agent workflows"
-}
+### `// ABOUT ME & SYSTEM STATUS`
+
+```text
+       ./o.         jerin-rajan@ljinfinity
+     ./sssso-       ----------------------
+   `:osssssss+-     OS: Fedora 44 (Rawhide) / Arch Linux x86_64
+  `:sssssssssss:    Kernel: Linux 6.11.0-custom-x86_64
+  -sssssssssssss-   Uptime: 24/7/365
+  ossssssssssssss   Shell: zsh 5.9 + RTK (Rust Token Killer)
+  `osssssssssssso   WM / Shell: Hyprland + Quickshell v0.2.1
+   `+ssssssssss+`   Editor: Neovim / VS Code / Antigravity CLI
+     `-osssssso-    Focus: Autonomous AI Agents & Low-Latency Systems
+       `:+o+:`      Status: ⚡ Building Next-Gen Agent Workflows
 ```
+
+<br/>
 
 <div align="center">
 
 | 🔭 **Core Specialization** | ⚡ **Engineering Principles** | 🛠️ **Environment & Tools** |
 | :--- | :--- | :--- |
-| • **Systems Programming** (Rust / C++)<br/>• **AI Agent Orchestration** (Multi-agent loops)<br/>• **Full-Stack Web & Mobile** (React / Next.js)<br/>• **Desktop Customization** (Quickshell / Hyprland) | • **Zero-Overhead** execution<br/>• **Event-Driven** asynchronous queues<br/>• **Modular** decoupled interfaces<br/>• **High-Contrast** ultra-sleek UI | • **OS**: Fedora Rawhide / Arch Linux<br/>• **Shell**: Zsh / Bash / RTK<br/>• **Editor**: Neovim / VS Code<br/>• **Workflow**: Antigravity CLI |
+| • **Systems Programming** (Rust / C++)<br/>• **AI Agent Orchestration** (Multi-agent loops)<br/>• **Full-Stack Web & Mobile** (React / Next.js)<br/>• **Desktop Shells** (Quickshell / Hyprland) | • **Zero-Overhead** execution<br/>• **Event-Driven** asynchronous queues<br/>• **Modular** decoupled interfaces<br/>• **High-Contrast** ultra-sleek UI | • **OS**: Fedora Rawhide / Arch Linux<br/>• **Shell**: Zsh / Bash / RTK<br/>• **Editor**: Neovim / VS Code<br/>• **Workflow**: Antigravity CLI |
 
 </div>
 
+<br/>
+
 ---
 
-### `// TECH STACK & TOOLING`
+<br/>
+
+### `// FEATURED PROJECTS & REPOS`
+
+<div align="center">
+
+| Project | Description | Tech Stack | Status |
+| :--- | :--- | :--- | :---: |
+| 🤖 **Agent Swarm Core** | Multi-agent autonomous orchestrator with tool execution loops & self-correction. | `Rust` `Python` `AI SDK` | `🚀 Active` |
+| 🖥️ **Quickshell Infinity** | Custom desktop environment shell & status bar for Hyprland & Wayland. | `Quickshell` `C++` `QML` | `⚡ Live` |
+| ⚡ **High-Throughput Services** | Event-driven microservices architecture with low-latency API handlers. | `TypeScript` `Go` `Redis` | `🛠️ Maintained` |
+
+</div>
+
+<br/>
+
+---
+
+<br/>
+
+### `// DEVELOPER QUEST LOG & ROADMAP`
+
+```text
+[x] Milestone 01: Master Rust Async Programming & Low-Level Memory Control
+[x] Milestone 02: Build Custom Linux Desktop Shell with Quickshell & Matugen
+[x] Milestone 03: Architect Autonomous Multi-Agent Swarm Framework
+[ ] Milestone 04: Next-Gen Autonomous AI Coding Assistant & Realtime Viewer
+```
+
+<br/>
+
+---
+
+<br/>
+
+### `// TECH STACK & FOCUS VIBES`
 
 <div align="center">
 
@@ -85,9 +130,17 @@ interface Developer {
 ![Neovim](https://img.shields.io/badge/Neovim-57A143?style=for-the-badge&logo=neovim&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
 
+<br/>
+
+![Focus Mode](https://img.shields.io/badge/🎧_Focus_Audio-Cyberpunk_Synthwave_%2F_Lofi-38BDF8?style=for-the-badge&logoColor=white)
+
 </div>
 
+<br/>
+
 ---
+
+<br/>
 
 ### `// ANALYTICS & ACTIVITY`
 
@@ -97,7 +150,11 @@ interface Developer {
 
 </div>
 
+<br/>
+
 ---
+
+<br/>
 
 ### `// CONNECT`
 
