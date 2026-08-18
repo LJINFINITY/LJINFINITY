@@ -1,42 +1,28 @@
 <div align="center">
 
-# ✨ **LJINFINITY** ✨
+[![LJINFINITY Header](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&weight=800&size=42&pause=1000&color=38BDF8&center=true&vcenter=true&width=600&lines=LJINFINITY)](https://github.com/LJINFINITY)
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=38BDF8&center=true&vcenter=true&width=600&lines=Full-Stack+AI+%26+Systems+Engineer;Rust%2C+Python+%26+TypeScript+Specialist;Autonomous+AI+Agent+Developer;Open-Source+Architect)](https://git.io/typing-svg)
+[![Sub-headline](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1000&color=94A3B8&center=true&vcenter=true&width=600&lines=Full-Stack+AI+%26+Systems+Engineer;Rust%2C+Python+%26+TypeScript+Architect;Autonomous+Agentic+Software+Developer)](https://github.com/LJINFINITY)
 
-```text
- 🟢 Status: Active & Building High-Performance Systems & AI Workflows
-```
-
----
+<br/>
 
 </div>
 
-<div align="center">
-<table>
-<tr>
-<td>
+---
 
-### 🚀 **About Me**
+### `// ABOUT`
 
 I craft **high-performance systems**, **autonomous AI agents**, and **sleek full-stack applications**. Deeply focused on low-latency architectures, modern developer tools, and cutting-edge web & desktop interfaces.
 
-- ⚡ **Focus**: AI Agents, Systems Engineering, Desktop Shells & Microservices
-- 🛠️ **Environment**: Linux (Fedora/Arch) • Neovim • VS Code • Antigravity CLI
-- 🎯 **Goal**: Pushing boundaries of autonomous agentic software & ultra-fast tools
-
-</td>
-</tr>
-</table>
-</div>
+- **Focus**: AI Agents, Systems Engineering, Desktop Shells & Microservices
+- **Environment**: Linux (Fedora/Arch) • Neovim • VS Code • Antigravity CLI
+- **Goal**: Pushing boundaries of autonomous agentic software & ultra-fast tools
 
 ---
 
+### `// TECH STACK & TOOLING`
+
 <div align="center">
-
-### 🛠️ **Tech Stack & Tooling**
-
-<br/>
 
 ![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
 ![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
@@ -88,34 +74,23 @@ I craft **high-performance systems**, **autonomous AI agents**, and **sleek full
 
 ---
 
-## 📈 **Analytics & Activity**
+### `// ANALYTICS & ACTIVITY`
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=LJINFINITY&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="175" alt="GitHub Stats" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=LJINFINITY&layout=compact&theme=tokyonight&hide_border=true" height="175" alt="Top Languages" />
+p><img src="https://github-readme-stats.vercel.app/api?username=LJINFINITY&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" width="48%" /> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=LJINFINITY&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" width="48%" /></p>
 
-<br/>
+<p><img src="https://github-readme-streak-stats.herokuapp.com/?user=LJINFINITY&theme=tokyonight&hide_border=true" alt="GitHub Streak Stats" width="97%" /></p>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=LJINFINITY&theme=tokyonight&hide_border=true" alt="GitHub Streak Stats" />
+<p><img src="https://github-readme-activity-graph.vercel.app/graph?username=LJINFINITY&theme=tokyo-night&hide_border=true" alt="Activity Graph" width="97%" /></p>
 
 </div>
 
 ---
 
-## 🐍 **Contribution Snake**
+### `// CONNECT`
 
 <div align="center">
-
-![Snake animation](https://github.com/LJINFINITY/LJINFINITY/blob/output/github-contribution-grid-snake.svg)
-
-</div>
-
----
-
-<div align="center">
-
-### 🌐 **Connect With Me**
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/LJINFINITY)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ljinfinity)
@@ -125,6 +100,6 @@ I craft **high-performance systems**, **autonomous AI agents**, and **sleek full
 
 <br/>
 
-<sub><i>Designed with precision for LJINFINITY</i></sub>
+<sub><i>Architected by LJINFINITY</i></sub>
 
 </div>
