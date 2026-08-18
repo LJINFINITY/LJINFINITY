@@ -16,20 +16,17 @@
 
 <br/>
 
-### `// ABOUT ME & SYSTEM STATUS`
+### `// ABOUT ME & PHILOSOPHY`
 
-```text
-       ./o.         jerin-rajan@ljinfinity
-     ./sssso-       ----------------------
-   `:osssssss+-     OS: Fedora 44 (Rawhide) / Arch Linux x86_64
-  `:sssssssssss:    Kernel: Linux 6.11.0-custom-x86_64
-  -sssssssssssss-   Uptime: 24/7/365
-  ossssssssssssss   Shell: zsh 5.9 + RTK (Rust Token Killer)
-  `osssssssssssso   WM / Shell: Hyprland + Quickshell v0.2.1
-   `+ssssssssss+`   Editor: Neovim / VS Code / Antigravity CLI
-     `-osssssso-    Focus: Autonomous AI Agents & Low-Latency Systems
-       `:+o+:`      Status: ⚡ Building Next-Gen Agent Workflows
-```
+> 👋 Hi there! I'm **Jerin Rajan**, widely known online as **LJINFINITY**. I am an aspiring software architect, AI developer, and relentless technology enthusiast who truly lives and breathes modern computing.
+> 
+> My path into software development started with a simple belief: work should be an engaging, creative journey. For me, programming isn't just typing lines of code — it's the thrill of starting from a blank editor, enjoying every step of the engineering process, and crafting tools and systems I genuinely desire to see in the world.
+> 
+> Currently, my primary focus centers on **advanced AI agent architectures**, **intelligent system design**, and **custom desktop environments**. Some of my proudest milestones include:
+> - 🤖 **Uriel**: My custom-built autonomous AI assistant, architected and trained independently to handle complex workflows, reasoning, and intelligent task execution.
+> - 🖥️ **Bespoke Linux Rig**: A hand-tailored, custom-tuned Linux operating system environment built to perfection from the ground up, optimized for zero-latency developer productivity.
+> 
+> I am constantly exploring the bleeding edge of software engineering, system performance, and artificial intelligence — continuously sharpening my skills for both personal passion projects and production-grade software development.
 
 <br/>
 
@@ -53,9 +50,9 @@
 
 | Project | Description | Tech Stack | Status |
 | :--- | :--- | :--- | :---: |
-| 🤖 **Agent Swarm Core** | Multi-agent autonomous orchestrator with tool execution loops & self-correction. | `Rust` `Python` `AI SDK` | `🚀 Active` |
-| 🖥️ **Quickshell Infinity** | Custom desktop environment shell & status bar for Hyprland & Wayland. | `Quickshell` `C++` `QML` | `⚡ Live` |
-| ⚡ **High-Throughput Services** | Event-driven microservices architecture with low-latency API handlers. | `TypeScript` `Go` `Redis` | `🛠️ Maintained` |
+| 🤖 **Uriel AI Assistant** | Custom autonomous personal AI assistant & multi-agent orchestrator with self-correction. | `Python` `Rust` `Vercel AI` | `🚀 Active` |
+| 🖥️ **Custom Linux Rig & Shell** | Hand-tailored Linux system environment & custom Wayland desktop shell components. | `Quickshell` `C++` `QML` | `⚡ Live` |
+| ⚡ **High-Throughput Microservices** | Event-driven backend architecture with low-latency API handlers and distributed queues. | `TypeScript` `Go` `Redis` | `🛠️ Maintained` |
 
 </div>
 
@@ -70,7 +67,7 @@
 ```text
 [x] Milestone 01: Master Rust Async Programming & Low-Level Memory Control
 [x] Milestone 02: Build Custom Linux Desktop Shell with Quickshell & Matugen
-[x] Milestone 03: Architect Autonomous Multi-Agent Swarm Framework
+[x] Milestone 03: Architect Autonomous Multi-Agent Swarm Framework & Uriel AI
 [ ] Milestone 04: Next-Gen Autonomous AI Coding Assistant & Realtime Viewer
 ```
 
