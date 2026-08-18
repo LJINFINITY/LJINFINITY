@@ -1,8 +1,8 @@
 <div align="center">
 
-[![LJINFINITY Header](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&weight=800&size=42&pause=1000&color=38BDF8&center=true&vcenter=true&width=600&lines=LJINFINITY)](https://github.com/LJINFINITY)
+[![Title SVG](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&weight=700&size=38&height=70&pause=1500&color=38BDF8&center=true&vcenter=true&width=600&lines=LJ+INFINITY;JERIN+RAJAN)](https://github.com/LJINFINITY)
 
-[![Sub-headline](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1000&color=94A3B8&center=true&vcenter=true&width=600&lines=Full-Stack+AI+%26+Systems+Engineer;Rust%2C+Python+%26+TypeScript+Architect;Autonomous+Agentic+Software+Developer)](https://github.com/LJINFINITY)
+[![Sub-headline SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&height=45&pause=1000&color=94A3B8&center=true&vcenter=true&width=650&lines=Full-Stack+AI+%26+Systems+Engineer;Rust%2C+Python+%26+TypeScript+Architect;Autonomous+Agentic+Software+Developer)](https://github.com/LJINFINITY)
 
 <br/>
 
@@ -78,7 +78,7 @@ I craft **high-performance systems**, **autonomous AI agents**, and **sleek full
 
 <div align="center">
 
-p><img src="https://github-readme-stats.vercel.app/api?username=LJINFINITY&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" width="48%" /> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=LJINFINITY&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" width="48%" /></p>
+<p><img src="https://github-readme-stats.vercel.app/api?username=LJINFINITY&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" width="48%" /> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=LJINFINITY&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" width="48%" /></p>
 
 <p><img src="https://github-readme-streak-stats.herokuapp.com/?user=LJINFINITY&theme=tokyonight&hide_border=true" alt="GitHub Streak Stats" width="97%" /></p>
 
@@ -100,6 +100,6 @@ p><img src="https://github-readme-stats.vercel.app/api?username=LJINFINITY&show_
 
 <br/>
 
-<sub><i>Architected by LJINFINITY</i></sub>
+<sub><i>Architected by Jerin Rajan (LJINFINITY)</i></sub>
 
 </div>
