@@ -1,32 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 60" width="100%" height="60">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 60" width="100%" height="60">
   <defs>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;700&amp;display=swap');
-      
-      .pulsating-text {
-        font-family: 'Fira Code', monospace, sans-serif;
-        font-size: 22px;
+      @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap');
+
+      .headline-text {
+        font-family: 'Share Tech Mono', monospace, sans-serif;
+        font-size: 28px;
         font-weight: 700;
-        fill: #38BDF8;
-        letter-spacing: 2px;
-        animation: pulseGlow 2.5s infinite ease-in-out;
+        letter-spacing: 4px;
+        fill: #FBBF24;
+        text-transform: uppercase;
+        animation: pulseGlowYellow 2.5s infinite ease-in-out;
       }
 
-      @keyframes pulseGlow {
-        0% {
-          opacity: 0.4;
-          filter: drop-shadow(0 0 2px rgba(56, 189, 248, 0.3));
+      @keyframes pulseGlowYellow {
+        0%, 100% {
+          fill: #FBBF24;
+          filter: drop-shadow(0 0 8px rgba(251, 191, 36, 0.9));
         }
         50% {
-          opacity: 1;
-          filter: drop-shadow(0 0 12px rgba(56, 189, 248, 0.9)) drop-shadow(0 0 20px rgba(56, 189, 248, 0.6));
-        }
-        100% {
-          opacity: 0.4;
-          filter: drop-shadow(0 0 2px rgba(56, 189, 248, 0.3));
+          fill: #F59E0B;
+          filter: drop-shadow(0 0 22px rgba(245, 158, 11, 1.0));
         }
       }
     </style>
   </defs>
-  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" class="pulsating-text">AI Full Stack Dev &lt;/&gt;</text>
+
+  <g transform="translate(325, 38)">
+    <text x="0" y="0" text-anchor="middle" class="headline-text">AI Full Stack Dev &lt;/&gt;</text>
+  </g>
 </svg>
