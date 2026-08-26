@@ -10,12 +10,11 @@ def cubic_ease_in_out(t):
 
 def create_live_to_gif():
     width, height = 750, 70
-    bg_rgb = (13, 17, 23) # GitHub exact Dark Mode background (#0D1117)
-    
+    bg_rgb = (13, 17, 23) # #0D1117
+
     font_paths = [
         "/usr/share/fonts/adwaita-mono-fonts/AdwaitaMono-Bold.ttf",
         "/usr/share/fonts/dejavu-sans-fonts/DejaVuSans-Bold.ttf",
-        "/usr/share/fonts/dejavu-sans-mono-fonts/DejaVuSansMono-Bold.ttf",
         "/usr/share/fonts/gnu-free/FreeSansBold.ttf"
     ]
     
@@ -27,7 +26,7 @@ def create_live_to_gif():
             
     print("Using TTF font path:", font_path)
     if font_path:
-        font = ImageFont.truetype(font_path, 34)
+        font = ImageFont.truetype(font_path, 32)
     else:
         font = ImageFont.load_default()
 
@@ -60,28 +59,21 @@ def create_live_to_gif():
         py = center_y - (bbox_prefix[3] - bbox_prefix[1]) // 2 - bbox_prefix[1]
         draw.text((prefix_x, py), prefix_text, font=font, fill=prefix_color)
 
-        # Word canvas with explicit bounding clip
+        # Word canvas
         word_canvas = Image.new("RGB", (max_word_w + 60, height), bg_rgb)
         w_draw = ImageDraw.Draw(word_canvas)
 
-        # Draw Word 1 (moving up out of frame)
         if word1_text:
             bbox1 = font.getbbox(word1_text)
             w1_y = (center_y - (bbox1[3] - bbox1[1]) // 2 - bbox1[1]) + offset_y
-            # 1px outline for crisp neon contrast
-            for ox, oy in [(-1,0), (1,0), (0,-1), (0,1)]:
-                w_draw.text((10 + ox, w1_y + oy), word1_text, font=font, fill=(0, 0, 0))
             w_draw.text((10, w1_y), word1_text, font=font, fill=word1_color)
 
-        # Draw Word 2 (moving up into frame from below)
         if word2_text:
             bbox2 = font.getbbox(word2_text)
             w2_y = (center_y - (bbox2[3] - bbox2[1]) // 2 - bbox2[1]) + offset_y + height
-            for ox, oy in [(-1,0), (1,0), (0,-1), (0,1)]:
-                w_draw.text((10 + ox, w2_y + oy), word2_text, font=font, fill=(0, 0, 0))
             w_draw.text((10, w2_y), word2_text, font=font, fill=word2_color)
 
-        img.paste(word_canvas, (word_x - 5, 0))
+        img.paste(word_canvas, (word_x, 0))
         return img
 
     frames = []
@@ -92,14 +84,14 @@ def create_live_to_gif():
         w1_text, w1_color = words_info[idx]
         w2_text, w2_color = words_info[(idx + 1) % num_words]
 
-        # 1. Steady Hold Phase (1.2 seconds @ 80ms = 15 frames)
+        # 1. Hold phase (1.0 sec @ 80ms)
         hold_img = render_frame(w1_text, w1_color, None, None, 0)
-        for _ in range(15):
+        for _ in range(12):
             frames.append(hold_img)
             durations.append(80)
 
-        # 2. Smooth Cubic Eased Slide-Up Transition (360ms @ 30ms = 12 cubic-eased frames)
-        transition_steps = 12
+        # 2. Slide-up transition phase (300ms @ 30ms)
+        transition_steps = 10
         for s in range(1, transition_steps + 1):
             progress = s / float(transition_steps)
             eased_progress = cubic_ease_in_out(progress)
@@ -108,16 +100,25 @@ def create_live_to_gif():
             frames.append(render_frame(w1_text, w1_color, w2_text, w2_color, offset_y))
             durations.append(30)
 
-    # Save GIF with exact color palette retention
-    frames[0].save(
+    # CRITICAL: Build unified master palette across all frames so zero colors collapse
+    master = Image.new("RGB", (width, height * len(words_info)), bg_rgb)
+    m_draw = ImageDraw.Draw(master)
+    for idx, (w_text, w_col) in enumerate(words_info):
+        m_draw.text((10, idx * height + 20), w_text, font=font, fill=w_col)
+    m_draw.text((10, 0), prefix_text, font=font, fill=prefix_color)
+    palette_img = master.quantize(colors=256)
+
+    # Quantize every frame using exact master palette
+    palette_frames = [f.quantize(palette=palette_img) for f in frames]
+
+    palette_frames[0].save(
         "/home/lj/Work/Me/live_to_header.gif",
         save_all=True,
-        append_images=frames[1:],
+        append_images=palette_frames[1:],
         duration=durations,
-        loop=0,
-        optimize=False
+        loop=0
     )
-    print("Successfully generated ultra-crisp, perfectly animated live_to_header.gif!")
+    print("Successfully generated master-palette quantized live_to_header.gif!")
 
 if __name__ == "__main__":
     create_live_to_gif()

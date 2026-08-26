@@ -28,7 +28,6 @@ def create_animated_gif():
     red_color = (239, 68, 68)   # #EF4444
 
     def draw_text_frame(text, color):
-        # Base image with solid GitHub dark mode background
         img = Image.new("RGB", (width, height), bg_rgb)
         
         bbox = font.getbbox(text) if hasattr(font, "getbbox") else (0, 0, font.getsize(text)[0], font.getsize(text)[1])
@@ -37,14 +36,12 @@ def create_animated_gif():
         x = (width - text_w) // 2
         y = (height - text_h) // 2 - bbox[1]
 
-        # Draw smooth neon glow blended directly on dark background
         glow_layer = Image.new("RGB", (width, height), bg_rgb)
         glow_draw = ImageDraw.Draw(glow_layer)
         glow_draw.text((x, y), text, font=font, fill=color)
-        glow_layer = glow_layer.filter(ImageFilter.GaussianBlur(radius=8))
+        glow_layer = glow_layer.filter(ImageFilter.GaussianBlur(radius=6))
 
-        # Blend glow and draw crisp text
-        img = Image.blend(img, glow_layer, alpha=0.7)
+        img = Image.blend(img, glow_layer, alpha=0.6)
         draw = ImageDraw.Draw(img)
         draw.text((x, y), text, font=font, fill=color)
         
@@ -59,13 +56,11 @@ def create_animated_gif():
         frames.append(draw_text_frame(text1[:i] + "|", blue_color))
         durations.append(80)
     
-    # Hold full text
     full_text1_frame = draw_text_frame(text1, blue_color)
     for _ in range(22):
         frames.append(full_text1_frame)
         durations.append(80)
 
-    # Erase text 1
     for i in range(len(text1) - 1, -1, -1):
         txt = text1[:i] + "|" if i > 0 else ""
         frames.append(draw_text_frame(txt, blue_color))
@@ -77,28 +72,33 @@ def create_animated_gif():
         frames.append(draw_text_frame(text2[:i] + "|", red_color))
         durations.append(80)
         
-    # Hold full text
     full_text2_frame = draw_text_frame(text2, red_color)
     for _ in range(22):
         frames.append(full_text2_frame)
         durations.append(80)
 
-    # Erase text 2
     for i in range(len(text2) - 1, -1, -1):
         txt = text2[:i] + "|" if i > 0 else ""
         frames.append(draw_text_frame(txt, red_color))
         durations.append(50)
 
-    # Save GIF with solid background & optimal palette
-    frames[0].save(
+    # Master palette generation
+    master = Image.new("RGB", (width, height * 2), bg_rgb)
+    m_draw = ImageDraw.Draw(master)
+    m_draw.text((10, 10), text1, font=font, fill=blue_color)
+    m_draw.text((10, height + 10), text2, font=font, fill=red_color)
+    palette_img = master.quantize(colors=256)
+
+    palette_frames = [f.quantize(palette=palette_img) for f in frames]
+
+    palette_frames[0].save(
         "/home/lj/Work/Me/title_animated.gif",
         save_all=True,
-        append_images=frames[1:],
+        append_images=palette_frames[1:],
         duration=durations,
-        loop=0,
-        optimize=True
+        loop=0
     )
-    print("Successfully generated title_animated.gif with solid GitHub dark background!")
+    print("Successfully generated master-palette quantized title_animated.gif!")
 
 if __name__ == "__main__":
     create_animated_gif()
