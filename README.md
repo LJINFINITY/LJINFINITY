@@ -1,4 +1,21 @@
-<br/><br/><br/><br/><br/>
+<br/><br/>
+
+<!-- ========================================== -->
+<!-- TOPMOST WELCOME BANNER                     -->
+<!-- ========================================== -->
+
+<div align="center">
+
+`// SYSTEM NOTIFICATION: VISITOR DETECTED`
+
+### ✦ Hello visitor! Welcome to my GitHub page! ✦
+
+*Explore the systems, tools, and software I craft with passion.*<br/>
+*Feel free to look around and reach out to connect — it will always be my absolute pleasure!*
+
+</div>
+
+<br/><br/><br/><br/><br/><br/><br/>
 
 <!-- ========================================== -->
 <!-- SECTION 1: LIVE TO... ANIMATION            -->
@@ -10,7 +27,7 @@
 
 </div>
 
-<br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/>
 
 ---
 
