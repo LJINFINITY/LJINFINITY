@@ -1,8 +1,6 @@
 import os
 import math
-import shutil
-import subprocess
-from PIL import Image, ImageDraw, ImageFont, ImageFilter
+from PIL import Image, ImageDraw, ImageFont
 
 def cubic_ease_in_out(t):
     if t < 0.5:
@@ -11,13 +9,8 @@ def cubic_ease_in_out(t):
         return 1.0 - math.pow(-2.0 * t + 2.0, 3) / 2.0
 
 def create_live_to_gif():
-    frames_dir = "/tmp/live_to_frames"
-    if os.path.exists(frames_dir):
-        shutil.rmtree(frames_dir)
-    os.makedirs(frames_dir, exist_ok=True)
-
-    width, height = 800, 80
-    bg_rgb = (13, 17, 23) # #0D1117
+    width, height = 750, 70
+    bg_rgb = (13, 17, 23) # Exact GitHub Dark Mode background (#0D1117)
 
     font_paths = [
         "/usr/share/fonts/adwaita-mono-fonts/AdwaitaMono-Bold.ttf",
@@ -33,19 +26,19 @@ def create_live_to_gif():
             
     print("Using TTF font path:", font_path)
     if font_path:
-        font = ImageFont.truetype(font_path, 36)
+        font = ImageFont.truetype(font_path, 34)
     else:
         font = ImageFont.load_default()
 
     prefix_text = "LIVE TO "
-    prefix_color = (148, 163, 184) # #94A3B8
+    prefix_color = (148, 163, 184) # #94A3B8 (Slate Gray)
 
     words_info = [
-        ("THINK", (56, 189, 248)),    # #38BDF8 (Cyan)
-        ("CREATE", (139, 92, 246)),   # #8B5CF6 (Purple)
-        ("EXPLORE", (16, 185, 129)),  # #10B981 (Emerald)
-        ("BUILD", (245, 158, 11)),    # #F59E0B (Amber)
-        ("INNOVATE", (236, 72, 153))  # #EC4899 (Rose)
+        ("THINK", (56, 189, 248)),    # #38BDF8 (Vibrant Cyan)
+        ("CREATE", (168, 85, 247)),   # #A855F7 (Vibrant Purple)
+        ("EXPLORE", (34, 197, 94)),   # #22C55E (Vibrant Green)
+        ("BUILD", (245, 158, 11)),    # #F59E0B (Vibrant Amber)
+        ("INNOVATE", (244, 63, 94))   # #F43F5E (Vibrant Rose)
     ]
 
     max_word_w = max([font.getbbox(w[0])[2] - font.getbbox(w[0])[0] for w in words_info])
@@ -68,73 +61,73 @@ def create_live_to_gif():
 
         # Word canvas
         word_canvas = Image.new("RGB", (max_word_w + 60, height), bg_rgb)
+        w_draw = ImageDraw.Draw(word_canvas)
 
+        # Draw Word 1 (moving up out of frame)
         if word1_text:
             bbox1 = font.getbbox(word1_text)
             w1_y = (center_y - (bbox1[3] - bbox1[1]) // 2 - bbox1[1]) + offset_y
             
-            glow1 = Image.new("RGB", (max_word_w + 60, height), bg_rgb)
-            g1_draw = ImageDraw.Draw(glow1)
-            g1_draw.text((10, w1_y), word1_text, font=font, fill=word1_color)
-            glow1 = glow1.filter(ImageFilter.GaussianBlur(radius=4))
-            
-            word_canvas = Image.blend(word_canvas, glow1, alpha=0.6)
-            w_draw = ImageDraw.Draw(word_canvas)
+            for ox, oy in [(-1,0), (1,0), (0,-1), (0,1)]:
+                w_draw.text((10 + ox, w1_y + oy), word1_text, font=font, fill=(0, 0, 0))
             w_draw.text((10, w1_y), word1_text, font=font, fill=word1_color)
 
+        # Draw Word 2 (moving up into frame from below)
         if word2_text:
             bbox2 = font.getbbox(word2_text)
             w2_y = (center_y - (bbox2[3] - bbox2[1]) // 2 - bbox2[1]) + offset_y + height
             
-            glow2 = Image.new("RGB", (max_word_w + 60, height), bg_rgb)
-            g2_draw = ImageDraw.Draw(glow2)
-            g2_draw.text((10, w2_y), word2_text, font=font, fill=word2_color)
-            glow2 = glow2.filter(ImageFilter.GaussianBlur(radius=4))
-            
-            word_canvas = Image.blend(word_canvas, glow2, alpha=0.6)
-            w_draw = ImageDraw.Draw(word_canvas)
+            for ox, oy in [(-1,0), (1,0), (0,-1), (0,1)]:
+                w_draw.text((10 + ox, w2_y + oy), word2_text, font=font, fill=(0, 0, 0))
             w_draw.text((10, w2_y), word2_text, font=font, fill=word2_color)
 
-        img.paste(word_canvas, (word_x, 0))
+        img.paste(word_canvas, (word_x - 5, 0))
         return img
 
-    frame_count = 0
-    num_words = len(words_info)
+    frames = []
+    durations = []
 
+    num_words = len(words_info)
     for idx in range(num_words):
         w1_text, w1_color = words_info[idx]
         w2_text, w2_color = words_info[(idx + 1) % num_words]
 
-        # 1. Hold steady for 1.2 seconds (72 frames @ 60 FPS)
+        # 1. Hold steady phase: 20 frames @ 40ms (800ms hold)
         hold_img = render_frame(w1_text, w1_color, None, None, 0)
-        for _ in range(72):
-            frame_path = os.path.join(frames_dir, f"frame_{frame_count:04d}.png")
-            hold_img.save(frame_path)
-            frame_count += 1
+        for _ in range(20):
+            frames.append(hold_img)
+            durations.append(40) # 25 FPS non-throttled browser speed
 
-        # 2. 60 FPS Smooth Cubic Eased Slide-Up Transition (0.4 seconds = 24 frames)
-        transition_steps = 24
+        # 2. Smooth Cubic Eased Slide-Up Transition: 10 frames @ 30ms (300ms transition)
+        transition_steps = 10
         for s in range(1, transition_steps + 1):
             progress = s / float(transition_steps)
             eased_progress = cubic_ease_in_out(progress)
             offset_y = int(round(-height * eased_progress))
             
-            frame_img = render_frame(w1_text, w1_color, w2_text, w2_color, offset_y)
-            frame_path = os.path.join(frames_dir, f"frame_{frame_count:04d}.png")
-            frame_img.save(frame_path)
-            frame_count += 1
+            frames.append(render_frame(w1_text, w1_color, w2_text, w2_color, offset_y))
+            durations.append(30) # 33 FPS non-throttled speed
 
-    print(f"Generated {frame_count} PNG frames. Encoding with FFmpeg...")
+    # Master Color Palette: Force inclusion of all vibrant text colors
+    master = Image.new("RGB", (width, height * len(words_info)), bg_rgb)
+    m_draw = ImageDraw.Draw(master)
+    for idx, (w_text, w_col) in enumerate(words_info):
+        m_draw.text((10, idx * height + 15), w_text, font=font, fill=w_col)
+    m_draw.text((10, 0), prefix_text, font=font, fill=prefix_color)
+    
+    palette_img = master.quantize(colors=256, method=Image.Quantize.MEDIANCUT)
 
-    output_gif = "/home/lj/Work/Me/live_to_header_v2.gif"
-    cmd = [
-        "ffmpeg", "-y", "-framerate", "60",
-        "-i", f"{frames_dir}/frame_%04d.png",
-        "-vf", "fps=60,scale=800:-1:flags=lanczos,split[s0][s1];[s0]palettegen=stats_mode=single[p];[s1][p]paletteuse=dither=sierra2_4a",
-        output_gif
-    ]
-    subprocess.run(cmd, check=True)
-    print("Successfully encoded live_to_header_v2.gif!")
+    quantized_frames = [f.quantize(palette=palette_img) for f in frames]
+
+    output_gif = "/home/lj/Work/Me/live_to_header_v3.gif"
+    quantized_frames[0].save(
+        output_gif,
+        save_all=True,
+        append_images=quantized_frames[1:],
+        duration=durations,
+        loop=0
+    )
+    print("Successfully generated live_to_header_v3.gif with 25 FPS non-throttled smooth speed and vibrant colors!")
 
 if __name__ == "__main__":
     create_live_to_gif()

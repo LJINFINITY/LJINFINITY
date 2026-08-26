@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="live_to_header_v2.gif" width="700" alt="Live to..." />
+<img src="live_to_header_v3.gif" width="700" alt="Live to..." />
 
 <br/><br/>
 
