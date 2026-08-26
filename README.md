@@ -8,7 +8,7 @@
 
 <br/><br/>
 
-<img src="title_animated.gif" width="700" alt="Jerin Rajan / LJ INFINITY" />
+<img src="title_animated_v2.gif" width="700" alt="Jerin Rajan / LJ INFINITY" />
 
 <br/>
 
