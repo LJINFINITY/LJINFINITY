@@ -1,8 +1,14 @@
 <div align="center">
 
-[![Title SVG](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&weight=700&size=38&height=70&pause=0&color=38BDF8&center=true&vcenter=true&width=600&lines=LJ+INFINITY;JERIN+RAJAN)](https://github.com/LJINFINITY)
+<img src="221617.gif" width="650" alt="Animated Banner" />
 
-[![Sub-headline SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&height=40&pause=500&color=94A3B8&center=true&vcenter=true&width=650&lines=Full-Stack+AI+%26+Systems+Engineer;Rust%2C+Python+%26+TypeScript+Architect;Autonomous+Agentic+Software+Developer)](https://github.com/LJINFINITY)
+<br/><br/>
+
+[![Title SVG](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&weight=700&size=38&height=70&pause=0&color=38BDF8&center=true&vcenter=true&width=600&lines=Jerin+Rajan;LJ+INFINITY)](https://github.com/LJINFINITY)
+
+<br/>
+
+<img src="headline.svg" width="550" alt="AI Full Stack Dev" />
 
 <br/>
 
