@@ -53,7 +53,7 @@
 <br/><br/>
 
 <!-- ========================================== -->
-<!-- SECTION 3: ABOUT ME & PHILOSOPHY           -->
+<!-- SECTION 3: ABOUT ME & PORTFOLIO            -->
 <!-- ========================================== -->
 
 ### `// ABOUT ME & PHILOSOPHY`
@@ -78,33 +78,6 @@
 
 - **[APP] Arc Tracker** — *Personal life tracking app to monitor life arcs, document milestones, and keep detailed notes.*  
   `React` • `TypeScript` • `SQLite` • `Tailwind`
-
-<br/>
-
-### `// CORE SPECIALIZATIONS & PRINCIPLES`
-
-<div align="center">
-
-| **Core Specialization** | **Engineering Principles** | **Environment & Tools** |
-| :--- | :--- | :--- |
-| • **Systems Programming** (Rust / C++)<br/>• **AI Agent Orchestration** (Multi-agent loops)<br/>• **Full-Stack Web & Mobile** (React / Next.js)<br/>• **Desktop Shells** (Quickshell / Hyprland) | • **Zero-Overhead** execution<br/>• **Event-Driven** asynchronous queues<br/>• **Modular** decoupled interfaces<br/>• **High-Contrast** ultra-sleek UI | • **OS**: Fedora Rawhide / Arch Linux<br/>• **Shell**: Zsh / Bash / RTK<br/>• **Editor**: Neovim / VS Code<br/>• **Workflow**: Antigravity CLI |
-
-</div>
-
-<br/>
-
----
-
-<br/>
-
-### `// DEVELOPER QUEST LOG & ROADMAP`
-
-```text
-[x] Milestone 01: Master Rust Async Programming & Low-Level Memory Control
-[x] Milestone 02: Build Custom Linux Desktop Shell with Quickshell & Matugen
-[x] Milestone 03: Architect Autonomous Multi-Agent Swarm Framework & Uriel AI
-[ ] Milestone 04: Next-Gen Autonomous AI Coding Assistant & Realtime Viewer
-```
 
 <br/>
 
