@@ -1,10 +1,14 @@
 <div align="center">
 
+<img src="legend_title.svg" width="750" alt="Legend Header" />
+
+<br/><br/>
+
 <img src="221617.gif" width="650" alt="Animated Banner" />
 
 <br/><br/>
 
-<img src="title_animated.svg" width="600" alt="Jerin Rajan / LJ INFINITY" />
+<img src="title_animated.gif" width="600" alt="Jerin Rajan / LJ INFINITY" />
 
 <br/>
 
