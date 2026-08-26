@@ -151,11 +151,11 @@
 
 <div align="center">
 
-![GitHub Streak Stats](https://github-readme-streak-stats.herokuapp.com/?user=LJINFINITY&theme=dark&hide_border=true&background=0D1117&ring=38BDF8&fire=38BDF8&currStreakNum=F8FAFC&sideNums=F8FAFC&sideLabels=94A3B8&dates=CBD5E1)
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=LJINFINITY&amp;theme=dark&amp;hide_border=true&amp;background=0D1117&amp;ring=38BDF8&amp;fire=38BDF8&amp;currStreakNum=F8FAFC&amp;sideNums=F8FAFC&amp;sideLabels=94A3B8&amp;dates=CBD5E1&amp;v=3" width="750" alt="GitHub Streak Stats" />
 
-<br/><br/>
+<br/><br/><br/>
 
-![GitHub Contribution Chart](https://ghchart.rshah.org/38BDF8/LJINFINITY)
+<img src="https://ghchart.rshah.org/38BDF8/LJINFINITY?v=3" width="750" alt="GitHub Contribution Heatmap" />
 
 </div>
 
