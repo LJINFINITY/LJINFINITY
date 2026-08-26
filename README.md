@@ -1,24 +1,24 @@
 <br/><br/>
 
 <!-- ========================================== -->
-<!-- TOPMOST WELCOME BANNER (HUGE SVG)          -->
+<!-- TOPMOST WELCOME BANNER                     -->
 <!-- ========================================== -->
 
 <div align="center">
 
-<img src="welcome_banner.svg" width="850" alt="Welcome Visitor" />
+<img src="welcome_banner.svg" width="700" alt="Welcome Visitor" />
 
 </div>
 
 <br/><br/><br/><br/><br/><br/><br/>
 
 <!-- ========================================== -->
-<!-- SECTION 1: LIVE TO... ANIMATION (48PX)     -->
+<!-- SECTION 1: LIVE TO... ANIMATION            -->
 <!-- ========================================== -->
 
 <div align="center">
 
-<img src="live_to_header_v4.gif" width="850" alt="Live to..." />
+<img src="live_to_header_v5.gif" width="700" alt="Live to..." />
 
 </div>
 
@@ -29,20 +29,20 @@
 <br/><br/><br/>
 
 <!-- ========================================== -->
-<!-- SECTION 2: BANNER GIF, NAME (76PX) & TITLE -->
+<!-- SECTION 2: BANNER GIF, NAME & TITLE        -->
 <!-- ========================================== -->
 
 <div align="center">
 
-<img src="221617.gif" width="700" alt="Animated Banner" />
+<img src="221617.gif" width="650" alt="Animated Banner" />
 
 <br/><br/>
 
-<img src="title_animated_v3.gif" width="850" alt="Jerin Rajan / LJ INFINITY" />
+<img src="title_animated_v4.gif" width="700" alt="Jerin Rajan / LJ INFINITY" />
 
 <br/>
 
-<img src="headline.svg" width="650" alt="AI Full Stack Dev" />
+<img src="headline.svg" width="550" alt="AI Full Stack Dev" />
 
 </div>
 

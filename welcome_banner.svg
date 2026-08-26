@@ -1,32 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 140" width="100%" height="140">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 85" width="100%" height="85">
   <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap');
 
       .sub-header {
         font-family: 'Share Tech Mono', monospace, sans-serif;
-        font-size: 16px;
+        font-size: 13px;
         font-weight: 700;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
         fill: #94A3B8;
         text-transform: uppercase;
       }
 
       .main-title {
         font-family: 'Share Tech Mono', monospace, sans-serif;
-        font-size: 34px;
+        font-size: 24px;
         font-weight: 700;
-        letter-spacing: 4px;
+        letter-spacing: 2px;
         fill: #38BDF8;
         text-transform: uppercase;
-        filter: drop-shadow(0 0 10px rgba(56, 189, 248, 0.7));
+        filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.6));
       }
 
       .body-text {
         font-family: 'Share Tech Mono', monospace, sans-serif;
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 400;
-        letter-spacing: 1.5px;
+        letter-spacing: 1px;
         fill: #CBD5E1;
       }
 
@@ -37,15 +37,15 @@
     </style>
   </defs>
 
-  <g transform="translate(425, 0)" text-anchor="middle">
+  <g transform="translate(350, 0)" text-anchor="middle">
     <!-- Sub Header -->
-    <text x="0" y="30" class="sub-header">// SYSTEM NOTIFICATION: VISITOR DETECTED</text>
+    <text x="0" y="20" class="sub-header">// SYSTEM NOTIFICATION: VISITOR DETECTED</text>
 
-    <!-- Main Large Title (No unicode star box error) -->
-    <text x="0" y="72" class="main-title">HELLO VISITOR! WELCOME TO MY GITHUB PAGE!</text>
+    <!-- Main Title -->
+    <text x="0" y="50" class="main-title">HELLO VISITOR! WELCOME TO MY GITHUB PAGE!</text>
 
-    <!-- Body Description -->
-    <text x="0" y="108" class="body-text">
+    <!-- Body Text -->
+    <text x="0" y="74" class="body-text">
       Explore the software I craft with passion • Feel free to connect, <tspan class="highlight-text">always my pleasure!</tspan>
     </text>
   </g>

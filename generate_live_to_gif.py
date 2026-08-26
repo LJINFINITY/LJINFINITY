@@ -9,7 +9,7 @@ def cubic_ease_in_out(t):
         return 1.0 - math.pow(-2.0 * t + 2.0, 3) / 2.0
 
 def create_live_to_gif():
-    width, height = 850, 90
+    width, height = 750, 70
     bg_rgb = (13, 17, 23) # Exact GitHub Dark Mode background (#0D1117)
 
     font_paths = [
@@ -26,7 +26,7 @@ def create_live_to_gif():
             
     print("Using TTF font path:", font_path)
     if font_path:
-        font = ImageFont.truetype(font_path, 48) # HUGE 48px font!
+        font = ImageFont.truetype(font_path, 36) # Perfect balanced 36px font
     else:
         font = ImageFont.load_default()
 
@@ -68,7 +68,7 @@ def create_live_to_gif():
             bbox1 = font.getbbox(word1_text)
             w1_y = (center_y - (bbox1[3] - bbox1[1]) // 2 - bbox1[1]) + offset_y
             
-            for ox, oy in [(-2,0), (2,0), (0,-2), (0,2)]:
+            for ox, oy in [(-1,0), (1,0), (0,-1), (0,1)]:
                 w_draw.text((10 + ox, w1_y + oy), word1_text, font=font, fill=(0, 0, 0))
             w_draw.text((10, w1_y), word1_text, font=font, fill=word1_color)
 
@@ -77,7 +77,7 @@ def create_live_to_gif():
             bbox2 = font.getbbox(word2_text)
             w2_y = (center_y - (bbox2[3] - bbox2[1]) // 2 - bbox2[1]) + offset_y + height
             
-            for ox, oy in [(-2,0), (2,0), (0,-2), (0,2)]:
+            for ox, oy in [(-1,0), (1,0), (0,-1), (0,1)]:
                 w_draw.text((10 + ox, w2_y + oy), word2_text, font=font, fill=(0, 0, 0))
             w_draw.text((10, w2_y), word2_text, font=font, fill=word2_color)
 
@@ -118,7 +118,7 @@ def create_live_to_gif():
     palette_img = master.quantize(colors=256, method=Image.Quantize.MEDIANCUT)
     quantized_frames = [f.quantize(palette=palette_img) for f in frames]
 
-    output_gif = "/home/lj/Work/Me/live_to_header_v4.gif"
+    output_gif = "/home/lj/Work/Me/live_to_header_v5.gif"
     quantized_frames[0].save(
         output_gif,
         save_all=True,
@@ -126,7 +126,7 @@ def create_live_to_gif():
         duration=durations,
         loop=0
     )
-    print("Successfully generated HUGE 48px live_to_header_v4.gif!")
+    print("Successfully generated balanced 36px live_to_header_v5.gif!")
 
 if __name__ == "__main__":
     create_live_to_gif()
