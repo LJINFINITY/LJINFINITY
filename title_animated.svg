@@ -10,42 +10,27 @@
         letter-spacing: 2px;
       }
 
-      .blue-jerin {
+      .blue-text {
         fill: #38BDF8;
         filter: drop-shadow(0 0 10px rgba(56, 189, 248, 0.85));
-        animation: typeJerin 6s infinite linear;
       }
 
-      .red-lj {
+      .red-text {
         fill: #EF4444;
         filter: drop-shadow(0 0 10px rgba(239, 68, 68, 0.85));
-        animation: typeLJ 6s infinite linear;
-      }
-
-      @keyframes typeJerin {
-        0%   { clip-path: inset(0 100% 0 0); opacity: 1; visibility: visible; }
-        22%  { clip-path: inset(0 0% 0 0); opacity: 1; visibility: visible; }
-        42%  { clip-path: inset(0 0% 0 0); opacity: 1; visibility: visible; }
-        48%  { clip-path: inset(0 100% 0 0); opacity: 1; visibility: visible; }
-        49%  { opacity: 0; visibility: hidden; }
-        99%  { opacity: 0; visibility: hidden; }
-        100% { opacity: 0; visibility: hidden; }
-      }
-
-      @keyframes typeLJ {
-        0%   { opacity: 0; visibility: hidden; }
-        49%  { opacity: 0; visibility: hidden; }
-        50%  { clip-path: inset(0 100% 0 0); opacity: 1; visibility: visible; }
-        72%  { clip-path: inset(0 0% 0 0); opacity: 1; visibility: visible; }
-        92%  { clip-path: inset(0 0% 0 0); opacity: 1; visibility: visible; }
-        98%  { clip-path: inset(0 100% 0 0); opacity: 1; visibility: visible; }
-        99%  { opacity: 0; visibility: hidden; }
-        100% { opacity: 0; visibility: hidden; }
       }
     </style>
   </defs>
   <g text-anchor="middle">
-    <text x="50%" y="50%" dominant-baseline="middle" class="title-text blue-jerin">Jerin Rajan</text>
-    <text x="50%" y="50%" dominant-baseline="middle" class="title-text red-lj">LJ INFINITY</text>
+    <text x="50%" y="50%" dominant-baseline="middle" class="title-text blue-text">
+      Jerin Rajan
+      <animate attributeName="display" values="inline;inline;none;none;inline" keyTimes="0;0.49;0.50;0.99;1.0" dur="6s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.49;0.50;0.99;1.0" dur="6s" repeatCount="indefinite" />
+    </text>
+    <text x="50%" y="50%" dominant-baseline="middle" class="title-text red-text">
+      LJ INFINITY
+      <animate attributeName="display" values="none;none;inline;inline;none" keyTimes="0;0.49;0.50;0.99;1.0" dur="6s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.49;0.50;0.99;1.0" dur="6s" repeatCount="indefinite" />
+    </text>
   </g>
 </svg>
