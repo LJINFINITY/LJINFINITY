@@ -58,57 +58,33 @@
 
 ### `// ABOUT ME & PHILOSOPHY`
 
-<h4>
-
-Hi there! I'm **Jerin Rajan**, widely known online as **LJINFINITY**. I am an aspiring software architect, AI developer, and relentless technology enthusiast who truly lives and breathes modern computing.
-
-<br/>
-
-My path into software development started with a simple belief: work should be an engaging, creative journey. For me, programming isn't just typing lines of code — it's the thrill of starting from a blank editor, enjoying every step of the engineering process, and crafting tools and systems I genuinely desire to see in the world.
-
-</h4>
+> Hi there! I'm **Jerin Rajan**, widely known online as **LJINFINITY**. I am an aspiring software architect, AI developer, and relentless technology enthusiast who truly lives and breathes modern computing.
+> 
+> My path into software development started with a simple belief: work should be an engaging, creative journey. For me, programming isn't just typing lines of code — it's the thrill of starting from a blank editor, enjoying every step of the engineering process, and crafting tools and systems I genuinely desire to see in the world.
 
 <br/>
 
-#### `// FLAGSHIP PROJECTS & CORE MILESTONES`
-
-- **Uriel AI Assistant**: My custom-built autonomous personal AI assistant and multi-agent orchestrator, designed independently to handle complex reasoning, self-correction, and tool execution.
-- **Bespoke Linux System**: A hand-crafted, custom-tuned Linux operating system environment built to perfection from scratch, optimized for zero-latency developer productivity.
-- **Multi-Agent Swarms**: Engineering distributed AI agent architectures capable of parallel execution, automated planning, and high-throughput tool dispatching.
-
-<br/>
-
-#### `// ENGINEERING VISION & FOCUS`
-
-- **Systems Architecture**: Deep-diving into low-level performance, memory safety, and high-throughput systems using Rust & C++.
-- **Autonomous Intelligence**: Pioneering adaptive AI swarms, context persistence, and real-time execution engines.
-- **Bespoke Developer Experience**: Crafting zero-friction desktop shells, custom CLI workflows, and sleek user interfaces.
-
-<br/>
-
-<div align="center">
-
-| **Core Specialization** | **Engineering Principles** | **Environment & Tools** |
-| :--- | :--- | :--- |
-| • **Systems Programming** (Rust / C++)<br/>• **AI Agent Orchestration** (Multi-agent loops)<br/>• **Full-Stack Web & Mobile** (React / Next.js)<br/>• **Desktop Shells** (Quickshell / Hyprland) | • **Zero-Overhead** execution<br/>• **Event-Driven** asynchronous queues<br/>• **Modular** decoupled interfaces<br/>• **High-Contrast** ultra-sleek UI | • **OS**: Fedora Rawhide / Arch Linux<br/>• **Shell**: Zsh / Bash / RTK<br/>• **Editor**: Neovim / VS Code<br/>• **Workflow**: Antigravity CLI |
-
-</div>
-
-<br/>
-
----
-
-<br/>
-
-### `// FEATURED PROJECTS & REPOS`
+### `// FLAGSHIP PROJECTS`
 
 <div align="center">
 
 | Project | Description | Tech Stack | Status |
 | :--- | :--- | :--- | :---: |
 | **Uriel AI Assistant** | Custom autonomous personal AI assistant & multi-agent orchestrator with self-correction. | `Python` `Rust` `Vercel AI` | `Active` |
-| **Custom Linux Rig & Shell** | Hand-tailored Linux system environment & custom Wayland desktop shell components. | `Quickshell` `C++` `QML` | `Live` |
-| **High-Throughput Microservices** | Event-driven backend architecture with low-latency API handlers and distributed queues. | `TypeScript` `Go` `Redis` | `Maintained` |
+| **Infinity Shell** | Feature-rich custom desktop shell setup built from scratch with Quickshell to my exact liking. | `Quickshell` `QML` `C++` | `Live` |
+| **Arc Tracker** | Personal life tracking app to monitor life arcs, document milestones, and keep detailed notes. | `React` `TypeScript` `SQLite` | `Maintained` |
+
+</div>
+
+<br/>
+
+### `// CORE SPECIALIZATIONS & PRINCIPLES`
+
+<div align="center">
+
+| **Core Specialization** | **Engineering Principles** | **Environment & Tools** |
+| :--- | :--- | :--- |
+| • **Systems Programming** (Rust / C++)<br/>• **AI Agent Orchestration** (Multi-agent loops)<br/>• **Full-Stack Web & Mobile** (React / Next.js)<br/>• **Desktop Shells** (Quickshell / Hyprland) | • **Zero-Overhead** execution<br/>• **Event-Driven** asynchronous queues<br/>• **Modular** decoupled interfaces<br/>• **High-Contrast** ultra-sleek UI | • **OS**: Fedora Rawhide / Arch Linux<br/>• **Shell**: Zsh / Bash / RTK<br/>• **Editor**: Neovim / VS Code<br/>• **Workflow**: Antigravity CLI |
 
 </div>
 
