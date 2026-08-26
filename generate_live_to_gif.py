@@ -69,7 +69,6 @@ def create_live_to_gif():
         # Word canvas
         word_canvas = Image.new("RGB", (max_word_w + 60, height), bg_rgb)
 
-        # Word 1 (moving up)
         if word1_text:
             bbox1 = font.getbbox(word1_text)
             w1_y = (center_y - (bbox1[3] - bbox1[1]) // 2 - bbox1[1]) + offset_y
@@ -83,7 +82,6 @@ def create_live_to_gif():
             w_draw = ImageDraw.Draw(word_canvas)
             w_draw.text((10, w1_y), word1_text, font=font, fill=word1_color)
 
-        # Word 2 (moving in from below)
         if word2_text:
             bbox2 = font.getbbox(word2_text)
             w2_y = (center_y - (bbox2[3] - bbox2[1]) // 2 - bbox2[1]) + offset_y + height
@@ -128,7 +126,7 @@ def create_live_to_gif():
 
     print(f"Generated {frame_count} PNG frames. Encoding with FFmpeg...")
 
-    output_gif = "/home/lj/Work/Me/live_to_header.gif"
+    output_gif = "/home/lj/Work/Me/live_to_header_v2.gif"
     cmd = [
         "ffmpeg", "-y", "-framerate", "60",
         "-i", f"{frames_dir}/frame_%04d.png",
@@ -136,7 +134,7 @@ def create_live_to_gif():
         output_gif
     ]
     subprocess.run(cmd, check=True)
-    print("Successfully encoded 60 FPS broadcast-quality live_to_header.gif with FFmpeg!")
+    print("Successfully encoded live_to_header_v2.gif!")
 
 if __name__ == "__main__":
     create_live_to_gif()

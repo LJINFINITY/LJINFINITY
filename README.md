@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="live_to_header.svg" width="650" alt="Live to..." />
+<img src="live_to_header_v2.gif" width="700" alt="Live to..." />
 
 <br/><br/>
 
@@ -8,7 +8,7 @@
 
 <br/><br/>
 
-<img src="title_animated.gif" width="750" alt="Jerin Rajan / LJ INFINITY" />
+<img src="title_animated.gif" width="700" alt="Jerin Rajan / LJ INFINITY" />
 
 <br/>
 
