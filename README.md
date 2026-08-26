@@ -86,14 +86,14 @@
 <br/>
 
 <!-- ========================================== -->
-<!-- SECTION 4: MASSIVE ANIMATED TECH WALL      -->
+<!-- SECTION 4: MASSIVE SCATTERED FLOATING WALL -->
 <!-- ========================================== -->
 
 ### `// MASSIVE FLOATING TECH STACK`
 
 <div align="center">
 
-<img src="tech_stack_wall.svg" width="900" alt="Massive Floating Tech Stack Wall" />
+<img src="tech_stack_wall.svg?v=2" width="950" alt="Massive Scattered Floating Tech Stack Wall" />
 
 <br/><br/><br/>
 
