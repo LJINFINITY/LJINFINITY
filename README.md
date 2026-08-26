@@ -93,7 +93,7 @@
 
 <div align="center">
 
-<img src="tech_stack_wall.svg?v=4" width="950" alt="Massive Spacious Non-Overlapping Tech Stack Wall" />
+<img src="tech_stack_wall.svg?v=5" width="950" alt="Massive Tall Smooth Floating Tech Stack Wall" />
 
 <br/><br/><br/>
 

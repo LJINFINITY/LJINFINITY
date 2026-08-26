@@ -35,17 +35,17 @@ skills = [
     ("Infinity Shell", "#3B82F6", "#FFF"), ("Arc Tracker", "#10B981", "#FFF")
 ]
 
-def generate_spacious_scattered_svg():
-    random.seed(2026) # Deterministic non-overlapping seed
+def generate_tall_smooth_scattered_svg():
+    random.seed(999) # High quality tall scatter seed
 
     cols = 8
     badge_w, badge_h = 112, 36
-    gap_x, gap_y = 22, 28
-    padding_x, padding_y = 35, 35
+    gap_x, gap_y = 22, 58 # Expanded vertical gap for tall height!
+    padding_x, padding_y = 35, 45
 
     total_w = cols * badge_w + (cols - 1) * gap_x + padding_x * 2 # 1050px
     rows = (len(skills) + cols - 1) // cols
-    total_h = rows * badge_h + (rows - 1) * gap_y + padding_y * 2 + 60 # 840px
+    total_h = rows * badge_h + (rows - 1) * gap_y + padding_y * 2 + 50 # ~1200px
 
     svg_content = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {total_w} {total_h}" width="100%" height="{total_h}">
   <defs>
@@ -59,27 +59,28 @@ def generate_spacious_scattered_svg():
         letter-spacing: 0.4px;
       }}
 
+      /* Ultra-smooth continuous sine-wave rotation and float curves */
       @keyframes floatA {{
         0% {{ transform: translate(0px, 0px) rotate(var(--rot)); }}
-        50% {{ transform: translate(-6px, -10px) rotate(calc(var(--rot) + 2.5deg)); }}
+        50% {{ transform: translate(-8px, -18px) rotate(calc(var(--rot) + 1.8deg)); }}
         100% {{ transform: translate(0px, 0px) rotate(var(--rot)); }}
       }}
 
       @keyframes floatB {{
         0% {{ transform: translate(0px, 0px) rotate(var(--rot)); }}
-        50% {{ transform: translate(8px, -8px) rotate(calc(var(--rot) - 3deg)); }}
+        50% {{ transform: translate(10px, -15px) rotate(calc(var(--rot) - 2.0deg)); }}
         100% {{ transform: translate(0px, 0px) rotate(var(--rot)); }}
       }}
 
       @keyframes floatC {{
         0% {{ transform: translate(0px, 0px) rotate(var(--rot)); }}
-        50% {{ transform: translate(-5px, 9px) rotate(calc(var(--rot) + 2deg)); }}
+        50% {{ transform: translate(-7px, 16px) rotate(calc(var(--rot) + 1.5deg)); }}
         100% {{ transform: translate(0px, 0px) rotate(var(--rot)); }}
       }}
 
       @keyframes floatD {{
         0% {{ transform: translate(0px, 0px) rotate(var(--rot)); }}
-        50% {{ transform: translate(7px, 7px) rotate(calc(var(--rot) - 2.5deg)); }}
+        50% {{ transform: translate(9px, 14px) rotate(calc(var(--rot) - 1.8deg)); }}
         100% {{ transform: translate(0px, 0px) rotate(var(--rot)); }}
       }}
 
@@ -98,10 +99,10 @@ def generate_spacious_scattered_svg():
         r = i // cols
         c = i % cols
 
-        # Controlled non-overlapping scatter jitter
-        offset_x = random.randint(-12, 12)
-        offset_y = random.randint(-10, 10)
-        rot_deg = round(random.uniform(-7.0, 7.0), 1)
+        # Expanded random vertical & horizontal scatter
+        offset_x = random.randint(-16, 16)
+        offset_y = random.randint(-22, 22)
+        rot_deg = round(random.uniform(-6.0, 6.0), 1)
 
         x = padding_x + c * (badge_w + gap_x) + offset_x
         y = padding_y + r * (badge_h + gap_y) + offset_y
@@ -109,10 +110,10 @@ def generate_spacious_scattered_svg():
         center_x = x + badge_w // 2
         center_y = y + badge_h // 2 + 4
 
-        # Select float animation variant
+        # Select float animation variant with longer, smoother cycle times (5.5s to 8.5s)
         anim_type = ["floatA", "floatB", "floatC", "floatD"][i % 4]
-        dur = round(random.uniform(3.2, 5.5), 2)
-        delay = round(random.uniform(0.1, 3.0), 2)
+        dur = round(random.uniform(5.5, 8.5), 2)
+        delay = round(random.uniform(0.1, 4.0), 2)
 
         transform_origin = f"{x + badge_w // 2}px {y + badge_h // 2}px"
 
@@ -127,7 +128,7 @@ def generate_spacious_scattered_svg():
     output_path = "/home/lj/Work/Me/tech_stack_wall.svg"
     with open(output_path, "w") as f:
         f.write(svg_content)
-    print(f"Successfully generated SPACIOUS NON-OVERLAPPING SCATTERED tech_stack_wall.svg at {output_path}!")
+    print(f"Successfully generated TALL SMOOTH FLOATING SCATTERED tech_stack_wall.svg at {output_path}!")
 
 if __name__ == "__main__":
-    generate_spacious_scattered_svg()
+    generate_tall_smooth_scattered_svg()
