@@ -4,7 +4,7 @@
 
 <br/><br/>
 
-[![Title SVG](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&weight=700&size=38&height=70&pause=0&color=38BDF8&center=true&vcenter=true&width=600&lines=Jerin+Rajan;LJ+INFINITY)](https://github.com/LJINFINITY)
+<img src="title_animated.svg" width="600" alt="Jerin Rajan / LJ INFINITY" />
 
 <br/>
 
