@@ -151,7 +151,11 @@
 
 <div align="center">
 
-![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=LJINFINITY&theme=tokyo-night&hide_border=true)
+![GitHub Streak Stats](https://github-readme-streak-stats.herokuapp.com/?user=LJINFINITY&theme=dark&hide_border=true&background=0D1117&ring=38BDF8&fire=38BDF8&currStreakNum=F8FAFC&sideNums=F8FAFC&sideLabels=94A3B8&dates=CBD5E1)
+
+<br/><br/>
+
+![GitHub Contribution Chart](https://ghchart.rshah.org/38BDF8/LJINFINITY)
 
 </div>
 
