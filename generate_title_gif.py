@@ -2,7 +2,7 @@ import os
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 def create_animated_gif():
-    width, height = 650, 95
+    width, height = 750, 110
     bg_color = (13, 17, 23, 0)
     
     font_paths = [
@@ -20,7 +20,7 @@ def create_animated_gif():
             break
             
     if font_path:
-        font = ImageFont.truetype(font_path, 54)
+        font = ImageFont.truetype(font_path, 72)
     else:
         font = ImageFont.load_default()
 
@@ -39,8 +39,8 @@ def create_animated_gif():
         # Draw intense neon glow
         glow_img = Image.new("RGBA", (width, height), (0, 0, 0, 0))
         glow_draw = ImageDraw.Draw(glow_img)
-        glow_draw.text((x, y), text, font=font, fill=color + (200,))
-        glow_img = glow_img.filter(ImageFilter.GaussianBlur(radius=6))
+        glow_draw.text((x, y), text, font=font, fill=color + (220,))
+        glow_img = glow_img.filter(ImageFilter.GaussianBlur(radius=8))
 
         draw = ImageDraw.Draw(img)
         img.paste(glow_img, (0, 0), glow_img)
@@ -96,7 +96,7 @@ def create_animated_gif():
         loop=0,
         disposal=2
     )
-    print("Successfully generated enlarged title_animated.gif (54px font)!")
+    print("Successfully generated HUGE title_animated.gif (72px font)!")
 
 if __name__ == "__main__":
     create_animated_gif()
