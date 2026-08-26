@@ -42,30 +42,30 @@ skills = [
     ("Postman", "#FF6C37", "#FFF"), ("Figma", "#F24E1E", "#FFF"), ("Uriel AI", "#6366F1", "#FFF")
 ]
 
-def generate_skills_wall_svg():
+def generate_large_skills_wall_svg():
     cols = 7
-    badge_w, badge_h = 115, 34
-    gap_x, gap_y = 10, 10
-    padding_x, padding_y = 15, 15
+    badge_w, badge_h = 145, 46 # MUCH BIGGER BADGE CARDS!
+    gap_x, gap_y = 12, 12
+    padding_x, padding_y = 20, 20
 
-    total_w = cols * badge_w + (cols - 1) * gap_x + padding_x * 2 # 895px
+    total_w = cols * badge_w + (cols - 1) * gap_x + padding_x * 2 # 1127px
     rows = (len(skills) + cols - 1) // cols
-    total_h = rows * badge_h + (rows - 1) * gap_y + padding_y * 2 # ~580px
+    total_h = rows * badge_h + (rows - 1) * gap_y + padding_y * 2 # 794px
 
     svg_content = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {total_w} {total_h}" width="100%" height="{total_h}">
   <defs>
     <style>
       .skill-pill {{
         font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
-        font-size: 12px;
+        font-size: 16px;
         font-weight: 700;
-        letter-spacing: 0.3px;
+        letter-spacing: 0.5px;
       }}
       .badge-bg {{
-        rx: 6px;
-        ry: 6px;
-        stroke: rgba(255, 255, 255, 0.2);
-        stroke-width: 1px;
+        rx: 8px;
+        ry: 8px;
+        stroke: rgba(255, 255, 255, 0.25);
+        stroke-width: 1.2px;
       }}
     </style>
   </defs>
@@ -79,7 +79,7 @@ def generate_skills_wall_svg():
         y = padding_y + r * (badge_h + gap_y)
 
         center_x = x + badge_w // 2
-        center_y = y + badge_h // 2 + 4
+        center_y = y + badge_h // 2 + 5
 
         svg_content += f'''  <g>
     <rect x="{x}" y="{y}" width="{badge_w}" height="{badge_h}" fill="{bg}" class="badge-bg" />
@@ -89,10 +89,10 @@ def generate_skills_wall_svg():
 
     svg_content += "</svg>\n"
 
-    output_path = "/home/lj/Work/Me/skills_wall.svg"
+    output_path = "/home/lj/Work/Me/skills_wall_v2.svg"
     with open(output_path, "w") as f:
         f.write(svg_content)
-    print(f"Successfully generated 95+ skill vector SVG at {output_path}!")
+    print(f"Successfully generated HUGE 16PX FONT skills_wall_v2.svg at {output_path}!")
 
 if __name__ == "__main__":
-    generate_skills_wall_svg()
+    generate_large_skills_wall_svg()

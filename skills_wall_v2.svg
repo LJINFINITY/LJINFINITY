@@ -1,0 +1,439 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1127 898" width="100%" height="898">
+  <defs>
+    <style>
+      .skill-pill {
+        font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+      }
+      .badge-bg {
+        rx: 8px;
+        ry: 8px;
+        stroke: rgba(255, 255, 255, 0.25);
+        stroke-width: 1.2px;
+      }
+    </style>
+  </defs>
+
+  <g>
+    <rect x="20" y="20" width="145" height="46" fill="#000000" class="badge-bg" />
+    <text x="92" y="48" fill="#FFF" text-anchor="middle" class="skill-pill">Rust</text>
+  </g>
+  <g>
+    <rect x="177" y="20" width="145" height="46" fill="#00599C" class="badge-bg" />
+    <text x="249" y="48" fill="#FFF" text-anchor="middle" class="skill-pill">C++</text>
+  </g>
+  <g>
+    <rect x="334" y="20" width="145" height="46" fill="#A8B9CC" class="badge-bg" />
+    <text x="406" y="48" fill="#000" text-anchor="middle" class="skill-pill">C</text>
+  </g>
+  <g>
+    <rect x="491" y="20" width="145" height="46" fill="#3776AB" class="badge-bg" />
+    <text x="563" y="48" fill="#FFF" text-anchor="middle" class="skill-pill">Python</text>
+  </g>
+  <g>
+    <rect x="648" y="20" width="145" height="46" fill="#3178C6" class="badge-bg" />
+    <text x="720" y="48" fill="#FFF" text-anchor="middle" class="skill-pill">TypeScript</text>
+  </g>
+  <g>
+    <rect x="805" y="20" width="145" height="46" fill="#F7DF1E" class="badge-bg" />
+    <text x="877" y="48" fill="#000" text-anchor="middle" class="skill-pill">JavaScript</text>
+  </g>
+  <g>
+    <rect x="962" y="20" width="145" height="46" fill="#00ADD8" class="badge-bg" />
+    <text x="1034" y="48" fill="#FFF" text-anchor="middle" class="skill-pill">Go</text>
+  </g>
+  <g>
+    <rect x="20" y="78" width="145" height="46" fill="#ED8B00" class="badge-bg" />
+    <text x="92" y="106" fill="#FFF" text-anchor="middle" class="skill-pill">Java</text>
+  </g>
+  <g>
+    <rect x="177" y="78" width="145" height="46" fill="#7F52FF" class="badge-bg" />
+    <text x="249" y="106" fill="#FFF" text-anchor="middle" class="skill-pill">Kotlin</text>
+  </g>
+  <g>
+    <rect x="334" y="78" width="145" height="46" fill="#F05138" class="badge-bg" />
+    <text x="406" y="106" fill="#FFF" text-anchor="middle" class="skill-pill">Swift</text>
+  </g>
+  <g>
+    <rect x="491" y="78" width="145" height="46" fill="#2C2D72" class="badge-bg" />
+    <text x="563" y="106" fill="#FFF" text-anchor="middle" class="skill-pill">Lua</text>
+  </g>
+  <g>
+    <rect x="648" y="78" width="145" height="46" fill="#4EAA25" class="badge-bg" />
+    <text x="720" y="106" fill="#FFF" text-anchor="middle" class="skill-pill">Bash</text>
+  </g>
+  <g>
+    <rect x="805" y="78" width="145" height="46" fill="#F1502F" class="badge-bg" />
+    <text x="877" y="106" fill="#FFF" text-anchor="middle" class="skill-pill">Zsh</text>
+  </g>
+  <g>
+    <rect x="962" y="78" width="145" height="46" fill="#E34F26" class="badge-bg" />
+    <text x="1034" y="106" fill="#FFF" text-anchor="middle" class="skill-pill">HTML5</text>
+  </g>
+  <g>
+    <rect x="20" y="136" width="145" height="46" fill="#1572B6" class="badge-bg" />
+    <text x="92" y="164" fill="#FFF" text-anchor="middle" class="skill-pill">CSS3</text>
+  </g>
+  <g>
+    <rect x="177" y="136" width="145" height="46" fill="#4479A1" class="badge-bg" />
+    <text x="249" y="164" fill="#FFF" text-anchor="middle" class="skill-pill">SQL</text>
+  </g>
+  <g>
+    <rect x="334" y="136" width="145" height="46" fill="#6E4C13" class="badge-bg" />
+    <text x="406" y="164" fill="#FFF" text-anchor="middle" class="skill-pill">Assembly</text>
+  </g>
+  <g>
+    <rect x="491" y="136" width="145" height="46" fill="#F7A41D" class="badge-bg" />
+    <text x="563" y="164" fill="#000" text-anchor="middle" class="skill-pill">Zig</text>
+  </g>
+  <g>
+    <rect x="648" y="136" width="145" height="46" fill="#4B275F" class="badge-bg" />
+    <text x="720" y="164" fill="#FFF" text-anchor="middle" class="skill-pill">Elixir</text>
+  </g>
+  <g>
+    <rect x="805" y="136" width="145" height="46" fill="#5D4F85" class="badge-bg" />
+    <text x="877" y="164" fill="#FFF" text-anchor="middle" class="skill-pill">Haskell</text>
+  </g>
+  <g>
+    <rect x="962" y="136" width="145" height="46" fill="#777BB4" class="badge-bg" />
+    <text x="1034" y="164" fill="#FFF" text-anchor="middle" class="skill-pill">PHP</text>
+  </g>
+  <g>
+    <rect x="20" y="194" width="145" height="46" fill="#EE4C2C" class="badge-bg" />
+    <text x="92" y="222" fill="#FFF" text-anchor="middle" class="skill-pill">PyTorch</text>
+  </g>
+  <g>
+    <rect x="177" y="194" width="145" height="46" fill="#FF6F00" class="badge-bg" />
+    <text x="249" y="222" fill="#FFF" text-anchor="middle" class="skill-pill">TensorFlow</text>
+  </g>
+  <g>
+    <rect x="334" y="194" width="145" height="46" fill="#5C3EE8" class="badge-bg" />
+    <text x="406" y="222" fill="#FFF" text-anchor="middle" class="skill-pill">OpenCV</text>
+  </g>
+  <g>
+    <rect x="491" y="194" width="145" height="46" fill="#FFD21E" class="badge-bg" />
+    <text x="563" y="222" fill="#000" text-anchor="middle" class="skill-pill">Hugging Face</text>
+  </g>
+  <g>
+    <rect x="648" y="194" width="145" height="46" fill="#000000" class="badge-bg" />
+    <text x="720" y="222" fill="#FFF" text-anchor="middle" class="skill-pill">Vercel AI</text>
+  </g>
+  <g>
+    <rect x="805" y="194" width="145" height="46" fill="#1C3C3C" class="badge-bg" />
+    <text x="877" y="222" fill="#FFF" text-anchor="middle" class="skill-pill">LangChain</text>
+  </g>
+  <g>
+    <rect x="962" y="194" width="145" height="46" fill="#000000" class="badge-bg" />
+    <text x="1034" y="222" fill="#FFF" text-anchor="middle" class="skill-pill">LlamaIndex</text>
+  </g>
+  <g>
+    <rect x="20" y="252" width="145" height="46" fill="#000000" class="badge-bg" />
+    <text x="92" y="280" fill="#FFF" text-anchor="middle" class="skill-pill">Ollama</text>
+  </g>
+  <g>
+    <rect x="177" y="252" width="145" height="46" fill="#76B900" class="badge-bg" />
+    <text x="249" y="280" fill="#000" text-anchor="middle" class="skill-pill">CUDA</text>
+  </g>
+  <g>
+    <rect x="334" y="252" width="145" height="46" fill="#013243" class="badge-bg" />
+    <text x="406" y="280" fill="#FFF" text-anchor="middle" class="skill-pill">NumPy</text>
+  </g>
+  <g>
+    <rect x="491" y="252" width="145" height="46" fill="#150458" class="badge-bg" />
+    <text x="563" y="280" fill="#FFF" text-anchor="middle" class="skill-pill">Pandas</text>
+  </g>
+  <g>
+    <rect x="648" y="252" width="145" height="46" fill="#F7931E" class="badge-bg" />
+    <text x="720" y="280" fill="#FFF" text-anchor="middle" class="skill-pill">Scikit-Learn</text>
+  </g>
+  <g>
+    <rect x="805" y="252" width="145" height="46" fill="#D00000" class="badge-bg" />
+    <text x="877" y="280" fill="#FFF" text-anchor="middle" class="skill-pill">Keras</text>
+  </g>
+  <g>
+    <rect x="962" y="252" width="145" height="46" fill="#005CED" class="badge-bg" />
+    <text x="1034" y="280" fill="#FFF" text-anchor="middle" class="skill-pill">ONNX</text>
+  </g>
+  <g>
+    <rect x="20" y="310" width="145" height="46" fill="#412991" class="badge-bg" />
+    <text x="92" y="338" fill="#FFF" text-anchor="middle" class="skill-pill">OpenAI API</text>
+  </g>
+  <g>
+    <rect x="177" y="310" width="145" height="46" fill="#D97757" class="badge-bg" />
+    <text x="249" y="338" fill="#FFF" text-anchor="middle" class="skill-pill">Anthropic</text>
+  </g>
+  <g>
+    <rect x="334" y="310" width="145" height="46" fill="#4D6BFE" class="badge-bg" />
+    <text x="406" y="338" fill="#FFF" text-anchor="middle" class="skill-pill">DeepSeek</text>
+  </g>
+  <g>
+    <rect x="491" y="310" width="145" height="46" fill="#00A67E" class="badge-bg" />
+    <text x="563" y="338" fill="#FFF" text-anchor="middle" class="skill-pill">Whisper</text>
+  </g>
+  <g>
+    <rect x="648" y="310" width="145" height="46" fill="#000000" class="badge-bg" />
+    <text x="720" y="338" fill="#FFF" text-anchor="middle" class="skill-pill">Midjourney</text>
+  </g>
+  <g>
+    <rect x="805" y="310" width="145" height="46" fill="#222222" class="badge-bg" />
+    <text x="877" y="338" fill="#FFF" text-anchor="middle" class="skill-pill">ComfyUI</text>
+  </g>
+  <g>
+    <rect x="962" y="310" width="145" height="46" fill="#6366F1" class="badge-bg" />
+    <text x="1034" y="338" fill="#FFF" text-anchor="middle" class="skill-pill">Qwen</text>
+  </g>
+  <g>
+    <rect x="20" y="368" width="145" height="46" fill="#FCC624" class="badge-bg" />
+    <text x="92" y="396" fill="#000" text-anchor="middle" class="skill-pill">Linux</text>
+  </g>
+  <g>
+    <rect x="177" y="368" width="145" height="46" fill="#51A2DA" class="badge-bg" />
+    <text x="249" y="396" fill="#FFF" text-anchor="middle" class="skill-pill">Fedora</text>
+  </g>
+  <g>
+    <rect x="334" y="368" width="145" height="46" fill="#1793D1" class="badge-bg" />
+    <text x="406" y="396" fill="#FFF" text-anchor="middle" class="skill-pill">Arch Linux</text>
+  </g>
+  <g>
+    <rect x="491" y="368" width="145" height="46" fill="#00A6A6" class="badge-bg" />
+    <text x="563" y="396" fill="#FFF" text-anchor="middle" class="skill-pill">Hyprland</text>
+  </g>
+  <g>
+    <rect x="648" y="368" width="145" height="46" fill="#2E3440" class="badge-bg" />
+    <text x="720" y="396" fill="#FFF" text-anchor="middle" class="skill-pill">Quickshell</text>
+  </g>
+  <g>
+    <rect x="805" y="368" width="145" height="46" fill="#41CD52" class="badge-bg" />
+    <text x="877" y="396" fill="#FFF" text-anchor="middle" class="skill-pill">QML</text>
+  </g>
+  <g>
+    <rect x="962" y="368" width="145" height="46" fill="#000000" class="badge-bg" />
+    <text x="1034" y="396" fill="#FFF" text-anchor="middle" class="skill-pill">Wayland</text>
+  </g>
+  <g>
+    <rect x="20" y="426" width="145" height="46" fill="#E5A000" class="badge-bg" />
+    <text x="92" y="454" fill="#000" text-anchor="middle" class="skill-pill">Matugen</text>
+  </g>
+  <g>
+    <rect x="177" y="426" width="145" height="46" fill="#2A52BE" class="badge-bg" />
+    <text x="249" y="454" fill="#FFF" text-anchor="middle" class="skill-pill">Pipewire</text>
+  </g>
+  <g>
+    <rect x="334" y="426" width="145" height="46" fill="#000000" class="badge-bg" />
+    <text x="406" y="454" fill="#FFF" text-anchor="middle" class="skill-pill">Systemd</text>
+  </g>
+  <g>
+    <rect x="491" y="426" width="145" height="46" fill="#57A143" class="badge-bg" />
+    <text x="563" y="454" fill="#FFF" text-anchor="middle" class="skill-pill">Neovim</text>
+  </g>
+  <g>
+    <rect x="648" y="426" width="145" height="46" fill="#007ACC" class="badge-bg" />
+    <text x="720" y="454" fill="#FFF" text-anchor="middle" class="skill-pill">VS Code</text>
+  </g>
+  <g>
+    <rect x="805" y="426" width="145" height="46" fill="#1BB91F" class="badge-bg" />
+    <text x="877" y="454" fill="#FFF" text-anchor="middle" class="skill-pill">Tmux</text>
+  </g>
+  <g>
+    <rect x="962" y="426" width="145" height="46" fill="#000000" class="badge-bg" />
+    <text x="1034" y="454" fill="#FFF" text-anchor="middle" class="skill-pill">Kitty</text>
+  </g>
+  <g>
+    <rect x="20" y="484" width="145" height="46" fill="#F43E31" class="badge-bg" />
+    <text x="92" y="512" fill="#FFF" text-anchor="middle" class="skill-pill">Alacritty</text>
+  </g>
+  <g>
+    <rect x="177" y="484" width="145" height="46" fill="#DD4B39" class="badge-bg" />
+    <text x="249" y="512" fill="#FFF" text-anchor="middle" class="skill-pill">Starship</text>
+  </g>
+  <g>
+    <rect x="334" y="484" width="145" height="46" fill="#CE422B" class="badge-bg" />
+    <text x="406" y="512" fill="#FFF" text-anchor="middle" class="skill-pill">RTK</text>
+  </g>
+  <g>
+    <rect x="491" y="484" width="145" height="46" fill="#3F51B5" class="badge-bg" />
+    <text x="563" y="512" fill="#FFF" text-anchor="middle" class="skill-pill">Rofi</text>
+  </g>
+  <g>
+    <rect x="648" y="484" width="145" height="46" fill="#2C3E50" class="badge-bg" />
+    <text x="720" y="512" fill="#FFF" text-anchor="middle" class="skill-pill">Waybar</text>
+  </g>
+  <g>
+    <rect x="805" y="484" width="145" height="46" fill="#F1502F" class="badge-bg" />
+    <text x="877" y="512" fill="#FFF" text-anchor="middle" class="skill-pill">Zsh Rig</text>
+  </g>
+  <g>
+    <rect x="962" y="484" width="145" height="46" fill="#FCC624" class="badge-bg" />
+    <text x="1034" y="512" fill="#000" text-anchor="middle" class="skill-pill">Linux Rig</text>
+  </g>
+  <g>
+    <rect x="20" y="542" width="145" height="46" fill="#61DAFB" class="badge-bg" />
+    <text x="92" y="570" fill="#000" text-anchor="middle" class="skill-pill">React</text>
+  </g>
+  <g>
+    <rect x="177" y="542" width="145" height="46" fill="#000000" class="badge-bg" />
+    <text x="249" y="570" fill="#FFF" text-anchor="middle" class="skill-pill">Next.js</text>
+  </g>
+  <g>
+    <rect x="334" y="542" width="145" height="46" fill="#646CFF" class="badge-bg" />
+    <text x="406" y="570" fill="#FFF" text-anchor="middle" class="skill-pill">Vite</text>
+  </g>
+  <g>
+    <rect x="491" y="542" width="145" height="46" fill="#4FC08D" class="badge-bg" />
+    <text x="563" y="570" fill="#FFF" text-anchor="middle" class="skill-pill">Vue.js</text>
+  </g>
+  <g>
+    <rect x="648" y="542" width="145" height="46" fill="#FF3E00" class="badge-bg" />
+    <text x="720" y="570" fill="#FFF" text-anchor="middle" class="skill-pill">Svelte</text>
+  </g>
+  <g>
+    <rect x="805" y="542" width="145" height="46" fill="#06B6D4" class="badge-bg" />
+    <text x="877" y="570" fill="#FFF" text-anchor="middle" class="skill-pill">Tailwind</text>
+  </g>
+  <g>
+    <rect x="962" y="542" width="145" height="46" fill="#000000" class="badge-bg" />
+    <text x="1034" y="570" fill="#FFF" text-anchor="middle" class="skill-pill">Expo</text>
+  </g>
+  <g>
+    <rect x="20" y="600" width="145" height="46" fill="#764ABC" class="badge-bg" />
+    <text x="92" y="628" fill="#FFF" text-anchor="middle" class="skill-pill">Redux</text>
+  </g>
+  <g>
+    <rect x="177" y="600" width="145" height="46" fill="#339933" class="badge-bg" />
+    <text x="249" y="628" fill="#FFF" text-anchor="middle" class="skill-pill">Node.js</text>
+  </g>
+  <g>
+    <rect x="334" y="600" width="145" height="46" fill="#000000" class="badge-bg" />
+    <text x="406" y="628" fill="#FFF" text-anchor="middle" class="skill-pill">Express</text>
+  </g>
+  <g>
+    <rect x="491" y="600" width="145" height="46" fill="#009688" class="badge-bg" />
+    <text x="563" y="628" fill="#FFF" text-anchor="middle" class="skill-pill">FastAPI</text>
+  </g>
+  <g>
+    <rect x="648" y="600" width="145" height="46" fill="#092E20" class="badge-bg" />
+    <text x="720" y="628" fill="#FFF" text-anchor="middle" class="skill-pill">Django</text>
+  </g>
+  <g>
+    <rect x="805" y="600" width="145" height="46" fill="#000000" class="badge-bg" />
+    <text x="877" y="628" fill="#FFF" text-anchor="middle" class="skill-pill">Flask</text>
+  </g>
+  <g>
+    <rect x="962" y="600" width="145" height="46" fill="#E10098" class="badge-bg" />
+    <text x="1034" y="628" fill="#FFF" text-anchor="middle" class="skill-pill">GraphQL</text>
+  </g>
+  <g>
+    <rect x="20" y="658" width="145" height="46" fill="#02569B" class="badge-bg" />
+    <text x="92" y="686" fill="#FFF" text-anchor="middle" class="skill-pill">REST API</text>
+  </g>
+  <g>
+    <rect x="177" y="658" width="145" height="46" fill="#010101" class="badge-bg" />
+    <text x="249" y="686" fill="#FFF" text-anchor="middle" class="skill-pill">WebSockets</text>
+  </g>
+  <g>
+    <rect x="334" y="658" width="145" height="46" fill="#244C5A" class="badge-bg" />
+    <text x="406" y="686" fill="#FFF" text-anchor="middle" class="skill-pill">gRPC</text>
+  </g>
+  <g>
+    <rect x="491" y="658" width="145" height="46" fill="#47848F" class="badge-bg" />
+    <text x="563" y="686" fill="#FFF" text-anchor="middle" class="skill-pill">Electron</text>
+  </g>
+  <g>
+    <rect x="648" y="658" width="145" height="46" fill="#FFC131" class="badge-bg" />
+    <text x="720" y="686" fill="#000" text-anchor="middle" class="skill-pill">Tauri</text>
+  </g>
+  <g>
+    <rect x="805" y="658" width="145" height="46" fill="#000000" class="badge-bg" />
+    <text x="877" y="686" fill="#FFF" text-anchor="middle" class="skill-pill">Three.js</text>
+  </g>
+  <g>
+    <rect x="962" y="658" width="145" height="46" fill="#654FF0" class="badge-bg" />
+    <text x="1034" y="686" fill="#FFF" text-anchor="middle" class="skill-pill">WebAssembly</text>
+  </g>
+  <g>
+    <rect x="20" y="716" width="145" height="46" fill="#4169E1" class="badge-bg" />
+    <text x="92" y="744" fill="#FFF" text-anchor="middle" class="skill-pill">PostgreSQL</text>
+  </g>
+  <g>
+    <rect x="177" y="716" width="145" height="46" fill="#DC382D" class="badge-bg" />
+    <text x="249" y="744" fill="#FFF" text-anchor="middle" class="skill-pill">Redis</text>
+  </g>
+  <g>
+    <rect x="334" y="716" width="145" height="46" fill="#003B57" class="badge-bg" />
+    <text x="406" y="744" fill="#FFF" text-anchor="middle" class="skill-pill">SQLite</text>
+  </g>
+  <g>
+    <rect x="491" y="716" width="145" height="46" fill="#3ECF8E" class="badge-bg" />
+    <text x="563" y="744" fill="#FFF" text-anchor="middle" class="skill-pill">Supabase</text>
+  </g>
+  <g>
+    <rect x="648" y="716" width="145" height="46" fill="#FFCA28" class="badge-bg" />
+    <text x="720" y="744" fill="#000" text-anchor="middle" class="skill-pill">Firebase</text>
+  </g>
+  <g>
+    <rect x="805" y="716" width="145" height="46" fill="#47A248" class="badge-bg" />
+    <text x="877" y="744" fill="#FFF" text-anchor="middle" class="skill-pill">MongoDB</text>
+  </g>
+  <g>
+    <rect x="962" y="716" width="145" height="46" fill="#008CC1" class="badge-bg" />
+    <text x="1034" y="744" fill="#FFF" text-anchor="middle" class="skill-pill">Neo4j</text>
+  </g>
+  <g>
+    <rect x="20" y="774" width="145" height="46" fill="#DC2626" class="badge-bg" />
+    <text x="92" y="802" fill="#FFF" text-anchor="middle" class="skill-pill">Qdrant</text>
+  </g>
+  <g>
+    <rect x="177" y="774" width="145" height="46" fill="#E11D48" class="badge-bg" />
+    <text x="249" y="802" fill="#FFF" text-anchor="middle" class="skill-pill">ChromaDB</text>
+  </g>
+  <g>
+    <rect x="334" y="774" width="145" height="46" fill="#2496ED" class="badge-bg" />
+    <text x="406" y="802" fill="#FFF" text-anchor="middle" class="skill-pill">Docker</text>
+  </g>
+  <g>
+    <rect x="491" y="774" width="145" height="46" fill="#326CE5" class="badge-bg" />
+    <text x="563" y="802" fill="#FFF" text-anchor="middle" class="skill-pill">Kubernetes</text>
+  </g>
+  <g>
+    <rect x="648" y="774" width="145" height="46" fill="#F05032" class="badge-bg" />
+    <text x="720" y="802" fill="#FFF" text-anchor="middle" class="skill-pill">Git</text>
+  </g>
+  <g>
+    <rect x="805" y="774" width="145" height="46" fill="#2088FF" class="badge-bg" />
+    <text x="877" y="802" fill="#FFF" text-anchor="middle" class="skill-pill">GitHub Actions</text>
+  </g>
+  <g>
+    <rect x="962" y="774" width="145" height="46" fill="#232F3E" class="badge-bg" />
+    <text x="1034" y="802" fill="#FFF" text-anchor="middle" class="skill-pill">AWS</text>
+  </g>
+  <g>
+    <rect x="20" y="832" width="145" height="46" fill="#000000" class="badge-bg" />
+    <text x="92" y="860" fill="#FFF" text-anchor="middle" class="skill-pill">Vercel</text>
+  </g>
+  <g>
+    <rect x="177" y="832" width="145" height="46" fill="#00C7B7" class="badge-bg" />
+    <text x="249" y="860" fill="#000" text-anchor="middle" class="skill-pill">Netlify</text>
+  </g>
+  <g>
+    <rect x="334" y="832" width="145" height="46" fill="#F38020" class="badge-bg" />
+    <text x="406" y="860" fill="#FFF" text-anchor="middle" class="skill-pill">Cloudflare</text>
+  </g>
+  <g>
+    <rect x="491" y="832" width="145" height="46" fill="#009639" class="badge-bg" />
+    <text x="563" y="860" fill="#FFF" text-anchor="middle" class="skill-pill">NGINX</text>
+  </g>
+  <g>
+    <rect x="648" y="832" width="145" height="46" fill="#FF6C37" class="badge-bg" />
+    <text x="720" y="860" fill="#FFF" text-anchor="middle" class="skill-pill">Postman</text>
+  </g>
+  <g>
+    <rect x="805" y="832" width="145" height="46" fill="#F24E1E" class="badge-bg" />
+    <text x="877" y="860" fill="#FFF" text-anchor="middle" class="skill-pill">Figma</text>
+  </g>
+  <g>
+    <rect x="962" y="832" width="145" height="46" fill="#6366F1" class="badge-bg" />
+    <text x="1034" y="860" fill="#FFF" text-anchor="middle" class="skill-pill">Uriel AI</text>
+  </g>
+</svg>

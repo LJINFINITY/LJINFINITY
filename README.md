@@ -93,7 +93,7 @@
 
 <div align="center">
 
-<img src="skills_wall.svg" width="900" alt="Tech Stack & Tools Wall" />
+<img src="skills_wall_v2.svg" width="950" alt="Huge Tech Stack & Tools Wall" />
 
 <br/><br/><br/>
 
