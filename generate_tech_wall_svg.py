@@ -35,17 +35,17 @@ skills = [
     ("Infinity Shell", "#3B82F6", "#FFF"), ("Arc Tracker", "#10B981", "#FFF")
 ]
 
-def generate_tall_smooth_scattered_svg():
-    random.seed(999) # High quality tall scatter seed
+def generate_huge_scattered_svg():
+    random.seed(777) # High impact massive scatter seed
 
-    cols = 8
-    badge_w, badge_h = 112, 36
-    gap_x, gap_y = 22, 58 # Expanded vertical gap for tall height!
-    padding_x, padding_y = 35, 45
+    cols = 6 # 6 wide columns for bigger badges
+    badge_w, badge_h = 145, 46 # BIGGER CARDS!
+    gap_x, gap_y = 38, 75 # MUCH MORE VERTICAL & HORIZONTAL SPACING!
+    padding_x, padding_y = 45, 50
 
-    total_w = cols * badge_w + (cols - 1) * gap_x + padding_x * 2 # 1050px
+    total_w = cols * badge_w + (cols - 1) * gap_x + padding_x * 2 # 1150px
     rows = (len(skills) + cols - 1) // cols
-    total_h = rows * badge_h + (rows - 1) * gap_y + padding_y * 2 + 50 # ~1200px
+    total_h = rows * badge_h + (rows - 1) * gap_y + padding_y * 2 + 80 # ~1750px MASSIVE HEIGHT!
 
     svg_content = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {total_w} {total_h}" width="100%" height="{total_h}">
   <defs>
@@ -54,41 +54,42 @@ def generate_tall_smooth_scattered_svg():
 
       .skill-pill {{
         font-family: 'Share Tech Mono', monospace, sans-serif;
-        font-size: 12px;
+        font-size: 15px;
         font-weight: 700;
-        letter-spacing: 0.4px;
+        letter-spacing: 0.6px;
       }}
 
-      /* Ultra-smooth continuous sine-wave rotation and float curves */
+      /* Buttery-smooth long-cycle floating & rotating keyframes */
       @keyframes floatA {{
         0% {{ transform: translate(0px, 0px) rotate(var(--rot)); }}
-        50% {{ transform: translate(-8px, -18px) rotate(calc(var(--rot) + 1.8deg)); }}
+        50% {{ transform: translate(-12px, -24px) rotate(calc(var(--rot) + 2.2deg)); }}
         100% {{ transform: translate(0px, 0px) rotate(var(--rot)); }}
       }}
 
       @keyframes floatB {{
         0% {{ transform: translate(0px, 0px) rotate(var(--rot)); }}
-        50% {{ transform: translate(10px, -15px) rotate(calc(var(--rot) - 2.0deg)); }}
+        50% {{ transform: translate(14px, -20px) rotate(calc(var(--rot) - 2.5deg)); }}
         100% {{ transform: translate(0px, 0px) rotate(var(--rot)); }}
       }}
 
       @keyframes floatC {{
         0% {{ transform: translate(0px, 0px) rotate(var(--rot)); }}
-        50% {{ transform: translate(-7px, 16px) rotate(calc(var(--rot) + 1.5deg)); }}
+        50% {{ transform: translate(-10px, 22px) rotate(calc(var(--rot) + 1.8deg)); }}
         100% {{ transform: translate(0px, 0px) rotate(var(--rot)); }}
       }}
 
       @keyframes floatD {{
         0% {{ transform: translate(0px, 0px) rotate(var(--rot)); }}
-        50% {{ transform: translate(9px, 14px) rotate(calc(var(--rot) - 1.8deg)); }}
+        50% {{ transform: translate(12px, 18px) rotate(calc(var(--rot) - 2.0deg)); }}
         100% {{ transform: translate(0px, 0px) rotate(var(--rot)); }}
       }}
 
       .badge-bg {{
-        rx: 10px;
-        ry: 10px;
-        stroke: rgba(255, 255, 255, 0.22);
-        stroke-width: 1px;
+        rx: 12px;
+        ry: 12px;
+        stroke: rgba(255, 255, 255, 0.25);
+        stroke-width: 1.2px;
+        filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.5));
       }}
     </style>
   </defs>
@@ -99,25 +100,25 @@ def generate_tall_smooth_scattered_svg():
         r = i // cols
         c = i % cols
 
-        # Expanded random vertical & horizontal scatter
-        offset_x = random.randint(-16, 16)
-        offset_y = random.randint(-22, 22)
-        rot_deg = round(random.uniform(-6.0, 6.0), 1)
+        # Wild scatter offsets for spacious vertical layout
+        offset_x = random.randint(-25, 25)
+        offset_y = random.randint(-30, 30)
+        rot_deg = round(random.uniform(-9.5, 9.5), 1)
 
         x = padding_x + c * (badge_w + gap_x) + offset_x
         y = padding_y + r * (badge_h + gap_y) + offset_y
 
         center_x = x + badge_w // 2
-        center_y = y + badge_h // 2 + 4
+        center_y = y + badge_h // 2 + 5
 
-        # Select float animation variant with longer, smoother cycle times (5.5s to 8.5s)
+        # Silky smooth long durations (7.5s to 12.0s)
         anim_type = ["floatA", "floatB", "floatC", "floatD"][i % 4]
-        dur = round(random.uniform(5.5, 8.5), 2)
-        delay = round(random.uniform(0.1, 4.0), 2)
+        dur = round(random.uniform(7.5, 12.0), 2)
+        delay = round(random.uniform(0.1, 5.0), 2)
 
         transform_origin = f"{x + badge_w // 2}px {y + badge_h // 2}px"
 
-        svg_content += f'''  <g style="--rot: {rot_deg}deg; animation: {anim_type} {dur}s ease-in-out infinite; animation-delay: {delay}s; transform-origin: {transform_origin};">
+        svg_content += f'''  <g style="--rot: {rot_deg}deg; animation: {anim_type} {dur}s cubic-bezier(0.42, 0, 0.58, 1) infinite; animation-delay: {delay}s; transform-origin: {transform_origin};">
     <rect x="{x}" y="{y}" width="{badge_w}" height="{badge_h}" fill="{bg}" class="badge-bg" />
     <text x="{center_x}" y="{center_y}" fill="{fg}" text-anchor="middle" class="skill-pill">{name}</text>
   </g>
@@ -128,7 +129,7 @@ def generate_tall_smooth_scattered_svg():
     output_path = "/home/lj/Work/Me/tech_stack_wall.svg"
     with open(output_path, "w") as f:
         f.write(svg_content)
-    print(f"Successfully generated TALL SMOOTH FLOATING SCATTERED tech_stack_wall.svg at {output_path}!")
+    print(f"Successfully generated HUGE 1750PX BIGGER CARDS SCATTERED tech_stack_wall.svg at {output_path}!")
 
 if __name__ == "__main__":
-    generate_tall_smooth_scattered_svg()
+    generate_huge_scattered_svg()
