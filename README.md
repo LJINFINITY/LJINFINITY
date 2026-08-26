@@ -137,7 +137,7 @@
 
 <br/>
 
-![Focus Mode](https://img.shields.io/badge/Focus_Audio-Cyberpunk_Synthwave_%2F_Lofi-38BDF8?style=for-the-badge&logoColor=white)
+![Focus Mode](https://img.shields.io/badge/Focus_Audio-J--Pop_%2F_Modern_Jazz-38BDF8?style=for-the-badge&logoColor=white)
 
 </div>
 
