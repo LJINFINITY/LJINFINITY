@@ -2,10 +2,9 @@ import os
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 def create_animated_gif():
-    width, height = 700, 80
-    bg_color = (13, 17, 23, 0) # Transparent background
+    width, height = 650, 95
+    bg_color = (13, 17, 23, 0)
     
-    # Find suitable monospace font
     font_paths = [
         "/usr/share/fonts/dejavu-sans-mono-fonts/DejaVuSansMono-Bold.ttf",
         "/usr/share/fonts/dejavu/DejaVuSansMono-Bold.ttf",
@@ -21,7 +20,7 @@ def create_animated_gif():
             break
             
     if font_path:
-        font = ImageFont.truetype(font_path, 38)
+        font = ImageFont.truetype(font_path, 54)
     else:
         font = ImageFont.load_default()
 
@@ -29,23 +28,20 @@ def create_animated_gif():
     red_color = (239, 68, 68)   # #EF4444
 
     def draw_text_frame(text, color):
-        # High resolution canvas for smooth rendering
         img = Image.new("RGBA", (width, height), (0, 0, 0, 0))
         
-        # Calculate centered text position
         bbox = font.getbbox(text) if hasattr(font, "getbbox") else (0, 0, font.getsize(text)[0], font.getsize(text)[1])
         text_w = bbox[2] - bbox[0]
         text_h = bbox[3] - bbox[1]
         x = (width - text_w) // 2
         y = (height - text_h) // 2 - bbox[1]
 
-        # Draw glow effect
+        # Draw intense neon glow
         glow_img = Image.new("RGBA", (width, height), (0, 0, 0, 0))
         glow_draw = ImageDraw.Draw(glow_img)
-        glow_draw.text((x, y), text, font=font, fill=color + (180,))
-        glow_img = glow_img.filter(ImageFilter.GaussianBlur(radius=4))
+        glow_draw.text((x, y), text, font=font, fill=color + (200,))
+        glow_img = glow_img.filter(ImageFilter.GaussianBlur(radius=6))
 
-        # Base text
         draw = ImageDraw.Draw(img)
         img.paste(glow_img, (0, 0), glow_img)
         draw.text((x, y), text, font=font, fill=color + (255,))
@@ -63,7 +59,7 @@ def create_animated_gif():
     
     # Hold full text
     full_text1_frame = draw_text_frame(text1, blue_color)
-    for _ in range(18):
+    for _ in range(20):
         frames.append(full_text1_frame)
         durations.append(80)
 
@@ -81,7 +77,7 @@ def create_animated_gif():
         
     # Hold full text
     full_text2_frame = draw_text_frame(text2, red_color)
-    for _ in range(18):
+    for _ in range(20):
         frames.append(full_text2_frame)
         durations.append(80)
 
@@ -91,7 +87,7 @@ def create_animated_gif():
         frames.append(draw_text_frame(txt, red_color))
         durations.append(50)
 
-    # Save as animated GIF
+    # Save GIF
     frames[0].save(
         "/home/lj/Work/Me/title_animated.gif",
         save_all=True,
@@ -100,7 +96,7 @@ def create_animated_gif():
         loop=0,
         disposal=2
     )
-    print("Successfully generated title_animated.gif!")
+    print("Successfully generated enlarged title_animated.gif (54px font)!")
 
 if __name__ == "__main__":
     create_animated_gif()

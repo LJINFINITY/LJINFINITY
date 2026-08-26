@@ -5,7 +5,7 @@
 
       .legend-text {
         font-family: 'Share Tech Mono', monospace, sans-serif;
-        font-size: 19px;
+        font-size: 20px;
         font-weight: 700;
         letter-spacing: 4px;
         text-transform: uppercase;
@@ -19,6 +19,12 @@
         fill: none;
         rx: 12;
         animation: borderPulse 3s infinite ease-in-out;
+      }
+
+      .star-icon {
+        fill: #38BDF8;
+        filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.9));
+        animation: starGlow 3s infinite ease-in-out;
       }
 
       @keyframes legendGlow {
@@ -36,6 +42,11 @@
         }
       }
 
+      @keyframes starGlow {
+        0%, 100% { opacity: 0.5; transform: scale(0.9); }
+        50% { opacity: 1; transform: scale(1.2); fill: #F43F5E; }
+      }
+
       @keyframes borderPulse {
         0%, 100% { opacity: 0.5; }
         50% { opacity: 1; }
@@ -47,8 +58,21 @@
       <stop offset="50%" stop-color="#8B5CF6" />
       <stop offset="100%" stop-color="#EC4899" />
     </linearGradient>
+
+    <!-- Vector Star Path -->
+    <g id="star">
+      <path d="M 0,-8 L 2.4,-2.4 L 8,-2.4 L 3.5,1.2 L 5.2,7 L 0,3.3 L -5.2,7 L -3.5,1.2 L -8,-2.4 L -2.4,-2.4 Z" />
+    </g>
   </defs>
 
   <rect x="5" y="5" width="740" height="50" class="legend-border" />
-  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" class="legend-text">// YOU ARE WITNESSING THE STORY OF A LEGEND //</text>
+  
+  <!-- Left Star -->
+  <use href="#star" x="85" y="30" class="star-icon" />
+
+  <!-- Text -->
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" class="legend-text">YOU ARE WITNESSING THE STORY OF A LEGEND</text>
+
+  <!-- Right Star -->
+  <use href="#star" x="665" y="30" class="star-icon" />
 </svg>
