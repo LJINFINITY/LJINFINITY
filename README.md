@@ -66,15 +66,18 @@
 
 ### `// FLAGSHIP PROJECTS`
 
-<div align="center">
+- **[AI] Uriel AI Assistant** — *Custom autonomous personal AI assistant & multi-agent orchestrator with self-correction.*  
+  `Python` • `Rust` • `Vercel AI SDK`
 
-| Project | Description | Tech Stack | Status |
-| :--- | :--- | :--- | :---: |
-| **Uriel AI Assistant** | Custom autonomous personal AI assistant & multi-agent orchestrator with self-correction. | `Python` `Rust` `Vercel AI` | `Active` |
-| **Infinity Shell** | Feature-rich custom desktop shell setup built from scratch with Quickshell to my exact liking. | `Quickshell` `QML` `C++` | `Live` |
-| **Arc Tracker** | Personal life tracking app to monitor life arcs, document milestones, and keep detailed notes. | `React` `TypeScript` `SQLite` | `Maintained` |
+<br/>
 
-</div>
+- **[SYS] Infinity Shell** — *Feature-rich custom desktop shell setup built from scratch with Quickshell to my exact liking.*  
+  `Quickshell` • `QML` • `C++` • `Hyprland`
+
+<br/>
+
+- **[APP] Arc Tracker** — *Personal life tracking app to monitor life arcs, document milestones, and keep detailed notes.*  
+  `React` • `TypeScript` • `SQLite` • `Tailwind`
 
 <br/>
 
