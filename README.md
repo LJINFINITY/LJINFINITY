@@ -1,12 +1,12 @@
 <br/><br/>
 
 <!-- ========================================== -->
-<!-- TOPMOST WELCOME BANNER                     -->
+<!-- TOPMOST WELCOME BANNER (MONOCHROME)        -->
 <!-- ========================================== -->
 
 <div align="center">
 
-<img src="welcome_banner.svg" width="700" alt="Welcome Visitor" />
+<img src="welcome_banner.svg" width="900" alt="Welcome Visitor" />
 
 </div>
 
