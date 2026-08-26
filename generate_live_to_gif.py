@@ -3,7 +3,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 def create_live_to_gif():
     width, height = 750, 70
-    bg_color = (13, 17, 23, 0) # Transparent
+    bg_rgb = (13, 17, 23) # GitHub exact Dark Mode background (#0D1117)
     
     font_paths = [
         "/usr/share/fonts/adwaita-mono-fonts/AdwaitaMono-Bold.ttf",
@@ -35,7 +35,6 @@ def create_live_to_gif():
         ("INNOVATE", (236, 72, 153))  # #EC4899
     ]
 
-    # Calculate widths for centering
     max_word_w = max([font.getbbox(w[0])[2] - font.getbbox(w[0])[0] for w in words_info])
     prefix_w = font.getbbox(prefix_text)[2] - font.getbbox(prefix_text)[0]
     total_w = prefix_w + max_word_w
@@ -46,48 +45,44 @@ def create_live_to_gif():
     center_y = height // 2
 
     def render_frame(word1_text, word1_color, word2_text, word2_color, offset_y):
-        img = Image.new("RGBA", (width, height), (0, 0, 0, 0))
+        img = Image.new("RGB", (width, height), bg_rgb)
         draw = ImageDraw.Draw(img)
 
         # Draw static prefix "LIVE TO "
         bbox_prefix = font.getbbox(prefix_text)
         py = center_y - (bbox_prefix[3] - bbox_prefix[1]) // 2 - bbox_prefix[1]
-        draw.text((prefix_x, py), prefix_text, font=font, fill=prefix_color + (255,))
+        draw.text((prefix_x, py), prefix_text, font=font, fill=prefix_color)
 
-        # Clip box for sliding word
-        word_canvas = Image.new("RGBA", (max_word_w + 50, height), (0, 0, 0, 0))
-        w_draw = ImageDraw.Draw(word_canvas)
+        # Word canvas
+        word_canvas = Image.new("RGB", (max_word_w + 50, height), bg_rgb)
 
-        # Draw Word 1
         if word1_text:
             bbox1 = font.getbbox(word1_text)
             w1_y = (center_y - (bbox1[3] - bbox1[1]) // 2 - bbox1[1]) + offset_y
             
-            # Glow
-            glow1 = Image.new("RGBA", (max_word_w + 50, height), (0, 0, 0, 0))
+            glow1 = Image.new("RGB", (max_word_w + 50, height), bg_rgb)
             g1_draw = ImageDraw.Draw(glow1)
-            g1_draw.text((5, w1_y), word1_text, font=font, fill=word1_color + (200,))
+            g1_draw.text((5, w1_y), word1_text, font=font, fill=word1_color)
             glow1 = glow1.filter(ImageFilter.GaussianBlur(radius=4))
-            word_canvas.paste(glow1, (0, 0), glow1)
             
-            w_draw.text((5, w1_y), word1_text, font=font, fill=word1_color + (255,))
+            word_canvas = Image.blend(word_canvas, glow1, alpha=0.7)
+            w_draw = ImageDraw.Draw(word_canvas)
+            w_draw.text((5, w1_y), word1_text, font=font, fill=word1_color)
 
-        # Draw Word 2 (sliding in from below)
         if word2_text:
             bbox2 = font.getbbox(word2_text)
             w2_y = (center_y - (bbox2[3] - bbox2[1]) // 2 - bbox2[1]) + offset_y + height
             
-            # Glow
-            glow2 = Image.new("RGBA", (max_word_w + 50, height), (0, 0, 0, 0))
+            glow2 = Image.new("RGB", (max_word_w + 50, height), bg_rgb)
             g2_draw = ImageDraw.Draw(glow2)
-            g2_draw.text((5, w2_y), word2_text, font=font, fill=word2_color + (200,))
+            g2_draw.text((5, w2_y), word2_text, font=font, fill=word2_color)
             glow2 = glow2.filter(ImageFilter.GaussianBlur(radius=4))
-            word_canvas.paste(glow2, (0, 0), glow2)
             
-            w_draw.text((5, w2_y), word2_text, font=font, fill=word2_color + (255,))
+            word_canvas = Image.blend(word_canvas, glow2, alpha=0.7)
+            w_draw = ImageDraw.Draw(word_canvas)
+            w_draw.text((5, w2_y), word2_text, font=font, fill=word2_color)
 
-        # Paste word canvas onto main image
-        img.paste(word_canvas, (word_x, 0), word_canvas)
+        img.paste(word_canvas, (word_x, 0))
         return img
 
     frames = []
@@ -98,29 +93,26 @@ def create_live_to_gif():
         w1_text, w1_color = words_info[idx]
         w2_text, w2_color = words_info[(idx + 1) % num_words]
 
-        # Hold frame
         hold_img = render_frame(w1_text, w1_color, None, None, 0)
         for _ in range(25):
             frames.append(hold_img)
             durations.append(80)
 
-        # Transition frames (slide up)
         steps = 8
         for s in range(1, steps + 1):
             offset_y = int(-height * (s / steps))
             frames.append(render_frame(w1_text, w1_color, w2_text, w2_color, offset_y))
             durations.append(40)
 
-    # Save animated GIF
     frames[0].save(
         "/home/lj/Work/Me/live_to_header.gif",
         save_all=True,
         append_images=frames[1:],
         duration=durations,
         loop=0,
-        disposal=2
+        optimize=True
     )
-    print("Successfully generated live_to_header.gif!")
+    print("Successfully generated live_to_header.gif with solid dark background!")
 
 if __name__ == "__main__":
     create_live_to_gif()

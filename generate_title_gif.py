@@ -2,7 +2,8 @@ import os
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 def create_animated_gif():
-    width, height = 900, 140
+    width, height = 800, 120
+    bg_rgb = (13, 17, 23) # GitHub exact Dark Mode background (#0D1117)
     
     font_paths = [
         "/usr/share/fonts/adwaita-mono-fonts/AdwaitaMono-Bold.ttf",
@@ -19,7 +20,7 @@ def create_animated_gif():
             
     print("Using TTF font path:", font_path)
     if font_path:
-        font = ImageFont.truetype(font_path, 72)
+        font = ImageFont.truetype(font_path, 64)
     else:
         font = ImageFont.load_default()
 
@@ -27,7 +28,8 @@ def create_animated_gif():
     red_color = (239, 68, 68)   # #EF4444
 
     def draw_text_frame(text, color):
-        img = Image.new("RGBA", (width, height), (0, 0, 0, 0))
+        # Base image with solid GitHub dark mode background
+        img = Image.new("RGB", (width, height), bg_rgb)
         
         bbox = font.getbbox(text) if hasattr(font, "getbbox") else (0, 0, font.getsize(text)[0], font.getsize(text)[1])
         text_w = bbox[2] - bbox[0]
@@ -35,15 +37,16 @@ def create_animated_gif():
         x = (width - text_w) // 2
         y = (height - text_h) // 2 - bbox[1]
 
-        # Draw intense neon glow
-        glow_img = Image.new("RGBA", (width, height), (0, 0, 0, 0))
-        glow_draw = ImageDraw.Draw(glow_img)
-        glow_draw.text((x, y), text, font=font, fill=color + (220,))
-        glow_img = glow_img.filter(ImageFilter.GaussianBlur(radius=8))
+        # Draw smooth neon glow blended directly on dark background
+        glow_layer = Image.new("RGB", (width, height), bg_rgb)
+        glow_draw = ImageDraw.Draw(glow_layer)
+        glow_draw.text((x, y), text, font=font, fill=color)
+        glow_layer = glow_layer.filter(ImageFilter.GaussianBlur(radius=8))
 
+        # Blend glow and draw crisp text
+        img = Image.blend(img, glow_layer, alpha=0.7)
         draw = ImageDraw.Draw(img)
-        img.paste(glow_img, (0, 0), glow_img)
-        draw.text((x, y), text, font=font, fill=color + (255,))
+        draw.text((x, y), text, font=font, fill=color)
         
         return img
 
@@ -86,16 +89,16 @@ def create_animated_gif():
         frames.append(draw_text_frame(txt, red_color))
         durations.append(50)
 
-    # Save GIF
+    # Save GIF with solid background & optimal palette
     frames[0].save(
         "/home/lj/Work/Me/title_animated.gif",
         save_all=True,
         append_images=frames[1:],
         duration=durations,
         loop=0,
-        disposal=2
+        optimize=True
     )
-    print("Successfully generated HUGE title_animated.gif with 72px AdwaitaMono font!")
+    print("Successfully generated title_animated.gif with solid GitHub dark background!")
 
 if __name__ == "__main__":
     create_animated_gif()
