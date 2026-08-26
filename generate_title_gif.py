@@ -4,12 +4,12 @@ import subprocess
 from PIL import Image, ImageDraw, ImageFont
 
 def create_animated_gif():
-    frames_dir = "/tmp/title_frames_v2"
+    frames_dir = "/tmp/title_frames_v3"
     if os.path.exists(frames_dir):
         shutil.rmtree(frames_dir)
     os.makedirs(frames_dir, exist_ok=True)
 
-    width, height = 800, 110
+    width, height = 900, 130
     bg_rgb = (13, 17, 23) # Exact GitHub Dark Mode background (#0D1117)
     
     font_paths = [
@@ -27,11 +27,10 @@ def create_animated_gif():
             
     print("Using TTF font path:", font_path)
     if font_path:
-        font = ImageFont.truetype(font_path, 60)
+        font = ImageFont.truetype(font_path, 76) # MASSIVE 76px font!
     else:
         font = ImageFont.load_default()
 
-    # Exact Vibrant Colors:
     blue_color = (56, 189, 248) # #38BDF8 (Vibrant Cyan Blue)
     red_color = (255, 40, 40)   # #FF2828 (Vibrant Intense Neon Red)
 
@@ -45,7 +44,7 @@ def create_animated_gif():
         x = (width - text_w) // 2
         y = (height - text_h) // 2 - bbox[1]
 
-        # Draw crisp, sharp text with 1px outline for maximum contrast & zero blurriness
+        # Draw crisp 2px stroke outline for ultra legibility
         for ox, oy in [(-2,0), (2,0), (0,-2), (0,2), (-1,-1), (1,1), (-1,1), (1,-1)]:
             draw.text((x + ox, y + oy), text, font=font, fill=(5, 5, 5))
             
@@ -94,17 +93,16 @@ def create_animated_gif():
             frame_img.save(os.path.join(frames_dir, f"frame_{frame_count:04d}.png"))
             frame_count += 1
 
-    output_gif = "/home/lj/Work/Me/title_animated_v2.gif"
+    output_gif = "/home/lj/Work/Me/title_animated_v3.gif"
     
-    # FFmpeg palettegen with diff stats_mode ensures 100% exact Red & Blue color preservation
     cmd = [
         "ffmpeg", "-y", "-framerate", "30",
         "-i", f"{frames_dir}/frame_%04d.png",
-        "-vf", "fps=30,scale=800:-1:flags=lanczos,split[s0][s1];[s0]palettegen=stats_mode=full[p];[s1][p]paletteuse=dither=bayer:bayer_scale=5",
+        "-vf", "fps=30,scale=900:-1:flags=lanczos,split[s0][s1];[s0]palettegen=stats_mode=full[p];[s1][p]paletteuse=dither=bayer:bayer_scale=5",
         output_gif
     ]
     subprocess.run(cmd, check=True)
-    print("Successfully encoded ultra-sharp title_animated_v2.gif with sharp red/blue colors!")
+    print("Successfully encoded MASSIVE 76px title_animated_v3.gif with FFmpeg!")
 
 if __name__ == "__main__":
     create_animated_gif()

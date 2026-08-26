@@ -9,7 +9,7 @@ def cubic_ease_in_out(t):
         return 1.0 - math.pow(-2.0 * t + 2.0, 3) / 2.0
 
 def create_live_to_gif():
-    width, height = 750, 70
+    width, height = 850, 90
     bg_rgb = (13, 17, 23) # Exact GitHub Dark Mode background (#0D1117)
 
     font_paths = [
@@ -26,7 +26,7 @@ def create_live_to_gif():
             
     print("Using TTF font path:", font_path)
     if font_path:
-        font = ImageFont.truetype(font_path, 34)
+        font = ImageFont.truetype(font_path, 48) # HUGE 48px font!
     else:
         font = ImageFont.load_default()
 
@@ -68,7 +68,7 @@ def create_live_to_gif():
             bbox1 = font.getbbox(word1_text)
             w1_y = (center_y - (bbox1[3] - bbox1[1]) // 2 - bbox1[1]) + offset_y
             
-            for ox, oy in [(-1,0), (1,0), (0,-1), (0,1)]:
+            for ox, oy in [(-2,0), (2,0), (0,-2), (0,2)]:
                 w_draw.text((10 + ox, w1_y + oy), word1_text, font=font, fill=(0, 0, 0))
             w_draw.text((10, w1_y), word1_text, font=font, fill=word1_color)
 
@@ -77,7 +77,7 @@ def create_live_to_gif():
             bbox2 = font.getbbox(word2_text)
             w2_y = (center_y - (bbox2[3] - bbox2[1]) // 2 - bbox2[1]) + offset_y + height
             
-            for ox, oy in [(-1,0), (1,0), (0,-1), (0,1)]:
+            for ox, oy in [(-2,0), (2,0), (0,-2), (0,2)]:
                 w_draw.text((10 + ox, w2_y + oy), word2_text, font=font, fill=(0, 0, 0))
             w_draw.text((10, w2_y), word2_text, font=font, fill=word2_color)
 
@@ -96,7 +96,7 @@ def create_live_to_gif():
         hold_img = render_frame(w1_text, w1_color, None, None, 0)
         for _ in range(20):
             frames.append(hold_img)
-            durations.append(40) # 25 FPS non-throttled browser speed
+            durations.append(40)
 
         # 2. Smooth Cubic Eased Slide-Up Transition: 10 frames @ 30ms (300ms transition)
         transition_steps = 10
@@ -106,9 +106,9 @@ def create_live_to_gif():
             offset_y = int(round(-height * eased_progress))
             
             frames.append(render_frame(w1_text, w1_color, w2_text, w2_color, offset_y))
-            durations.append(30) # 33 FPS non-throttled speed
+            durations.append(30)
 
-    # Master Color Palette: Force inclusion of all vibrant text colors
+    # Master Color Palette
     master = Image.new("RGB", (width, height * len(words_info)), bg_rgb)
     m_draw = ImageDraw.Draw(master)
     for idx, (w_text, w_col) in enumerate(words_info):
@@ -116,10 +116,9 @@ def create_live_to_gif():
     m_draw.text((10, 0), prefix_text, font=font, fill=prefix_color)
     
     palette_img = master.quantize(colors=256, method=Image.Quantize.MEDIANCUT)
-
     quantized_frames = [f.quantize(palette=palette_img) for f in frames]
 
-    output_gif = "/home/lj/Work/Me/live_to_header_v3.gif"
+    output_gif = "/home/lj/Work/Me/live_to_header_v4.gif"
     quantized_frames[0].save(
         output_gif,
         save_all=True,
@@ -127,7 +126,7 @@ def create_live_to_gif():
         duration=durations,
         loop=0
     )
-    print("Successfully generated live_to_header_v3.gif with 25 FPS non-throttled smooth speed and vibrant colors!")
+    print("Successfully generated HUGE 48px live_to_header_v4.gif!")
 
 if __name__ == "__main__":
     create_live_to_gif()
