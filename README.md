@@ -1,12 +1,30 @@
+<br/><br/>
+
+---
+
+<br/><br/>
+
 <!-- ========================================== -->
-<!-- SECTION 1: HERO HEADER                     -->
+<!-- SECTION 1: LIVE TO... ANIMATION            -->
 <!-- ========================================== -->
 
 <div align="center">
 
 <img src="live_to_header_v3.gif" width="700" alt="Live to..." />
 
+</div>
+
 <br/><br/>
+
+---
+
+<br/><br/>
+
+<!-- ========================================== -->
+<!-- SECTION 2: BANNER GIF, NAME & TITLE        -->
+<!-- ========================================== -->
+
+<div align="center">
 
 <img src="221617.gif" width="650" alt="Animated Banner" />
 
@@ -20,12 +38,14 @@
 
 </div>
 
-<br/>
-<hr/>
-<br/>
+<br/><br/>
+
+---
+
+<br/><br/>
 
 <!-- ========================================== -->
-<!-- SECTION 2: MAIN PROFILE & PORTFOLIO        -->
+<!-- SECTION 3: ABOUT ME & PORTFOLIO            -->
 <!-- ========================================== -->
 
 ### `// ABOUT ME & PHILOSOPHY`
