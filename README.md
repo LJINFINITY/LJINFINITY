@@ -93,7 +93,7 @@
 
 <div align="center">
 
-<img src="tech_stack_wall.svg?v=2" width="950" alt="Massive Scattered Floating Tech Stack Wall" />
+<img src="tech_stack_wall.svg?v=3" width="950" alt="Massive Randomly Scattered Floating Tech Stack Wall" />
 
 <br/><br/><br/>
 

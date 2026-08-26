@@ -1,292 +1,390 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 973 610" width="100%" height="610">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1150 610" width="100%" height="610">
   <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap');
 
       .skill-pill {
         font-family: 'Share Tech Mono', monospace, sans-serif;
-        font-size: 13px;
+        font-size: 12px;
         font-weight: 700;
-        letter-spacing: 0.5px;
+        letter-spacing: 0.3px;
       }
 
       @keyframes floatA {
         0% { transform: translate(0px, 0px) rotate(var(--rot)); }
-        50% { transform: translate(-4px, -10px) rotate(calc(var(--rot) + 2deg)); }
+        50% { transform: translate(-8px, -12px) rotate(calc(var(--rot) + 3deg)); }
         100% { transform: translate(0px, 0px) rotate(var(--rot)); }
       }
 
       @keyframes floatB {
         0% { transform: translate(0px, 0px) rotate(var(--rot)); }
-        50% { transform: translate(6px, -8px) rotate(calc(var(--rot) - 3deg)); }
+        50% { transform: translate(10px, -10px) rotate(calc(var(--rot) - 4deg)); }
         100% { transform: translate(0px, 0px) rotate(var(--rot)); }
       }
 
       @keyframes floatC {
         0% { transform: translate(0px, 0px) rotate(var(--rot)); }
-        50% { transform: translate(-5px, 8px) rotate(calc(var(--rot) + 1.5deg)); }
+        50% { transform: translate(-6px, 11px) rotate(calc(var(--rot) + 2.5deg)); }
+        100% { transform: translate(0px, 0px) rotate(var(--rot)); }
+      }
+
+      @keyframes floatD {
+        0% { transform: translate(0px, 0px) rotate(var(--rot)); }
+        50% { transform: translate(9px, 8px) rotate(calc(var(--rot) - 3deg)); }
         100% { transform: translate(0px, 0px) rotate(var(--rot)); }
       }
 
       .badge-bg {
-        rx: 10px;
-        ry: 10px;
-        stroke: rgba(255, 255, 255, 0.2);
+        rx: 9px;
+        ry: 9px;
+        stroke: rgba(255, 255, 255, 0.22);
         stroke-width: 1px;
       }
     </style>
   </defs>
 
-  <g style="--rot: -4.3deg; animation: floatA 3.97s ease-in-out infinite; animation-delay: 0.64s; transform-origin: 93px 39px;">
-    <rect x="36" y="21" width="115" height="36" fill="#000000" class="badge-bg" />
-    <text x="93" y="43" fill="#FFF" text-anchor="middle" class="skill-pill">Rust</text>
+  <g style="--rot: 3.1deg; animation: floatA 4.6s ease-in-out infinite; animation-delay: 2.37s; transform-origin: 96px 58px;">
+    <rect x="42" y="41" width="108" height="34" fill="#000000" class="badge-bg" />
+    <text x="96" y="62" fill="#FFF" text-anchor="middle" class="skill-pill">Rust</text>
   </g>
-  <g style="--rot: 1.6deg; animation: floatB 5.02s ease-in-out infinite; animation-delay: 0.31s; transform-origin: 229px 39px;">
-    <rect x="172" y="21" width="115" height="36" fill="#00599C" class="badge-bg" />
-    <text x="229" y="43" fill="#FFF" text-anchor="middle" class="skill-pill">C++</text>
+  <g style="--rot: 2.0deg; animation: floatB 4.01s ease-in-out infinite; animation-delay: 3.19s; transform-origin: 202px 48px;">
+    <rect x="148" y="31" width="108" height="34" fill="#00599C" class="badge-bg" />
+    <text x="202" y="52" fill="#FFF" text-anchor="middle" class="skill-pill">C++</text>
   </g>
-  <g style="--rot: -4.2deg; animation: floatC 3.87s ease-in-out infinite; animation-delay: 1.31s; transform-origin: 352px 37px;">
-    <rect x="295" y="19" width="115" height="36" fill="#3776AB" class="badge-bg" />
-    <text x="352" y="41" fill="#FFF" text-anchor="middle" class="skill-pill">Python</text>
+  <g style="--rot: 3.9deg; animation: floatC 5.42s ease-in-out infinite; animation-delay: 1.23s; transform-origin: 330px 37px;">
+    <rect x="276" y="20" width="108" height="34" fill="#3776AB" class="badge-bg" />
+    <text x="330" y="41" fill="#FFF" text-anchor="middle" class="skill-pill">Python</text>
   </g>
-  <g style="--rot: -2.7deg; animation: floatA 4.6s ease-in-out infinite; animation-delay: 1.41s; transform-origin: 472px 53px;">
-    <rect x="415" y="35" width="115" height="36" fill="#3178C6" class="badge-bg" />
-    <text x="472" y="57" fill="#FFF" text-anchor="middle" class="skill-pill">TypeScript</text>
+  <g style="--rot: 6.0deg; animation: floatD 4.42s ease-in-out infinite; animation-delay: 2.17s; transform-origin: 456px 49px;">
+    <rect x="402" y="32" width="108" height="34" fill="#3178C6" class="badge-bg" />
+    <text x="456" y="53" fill="#FFF" text-anchor="middle" class="skill-pill">TypeScript</text>
   </g>
-  <g style="--rot: 0.8deg; animation: floatB 4.88s ease-in-out infinite; animation-delay: 0.12s; transform-origin: 612px 50px;">
-    <rect x="555" y="32" width="115" height="36" fill="#F7DF1E" class="badge-bg" />
-    <text x="612" y="54" fill="#000" text-anchor="middle" class="skill-pill">JavaScript</text>
+  <g style="--rot: 4.5deg; animation: floatA 5.24s ease-in-out infinite; animation-delay: 2.16s; transform-origin: 578px 49px;">
+    <rect x="524" y="32" width="108" height="34" fill="#F7DF1E" class="badge-bg" />
+    <text x="578" y="53" fill="#000" text-anchor="middle" class="skill-pill">JavaScript</text>
   </g>
-  <g style="--rot: 1.8deg; animation: floatC 4.08s ease-in-out infinite; animation-delay: 0.47s; transform-origin: 763px 41px;">
-    <rect x="706" y="23" width="115" height="36" fill="#00ADD8" class="badge-bg" />
-    <text x="763" y="45" fill="#FFF" text-anchor="middle" class="skill-pill">Go</text>
+  <g style="--rot: -0.6deg; animation: floatB 5.68s ease-in-out infinite; animation-delay: 2.57s; transform-origin: 699px 31px;">
+    <rect x="645" y="14" width="108" height="34" fill="#00ADD8" class="badge-bg" />
+    <text x="699" y="35" fill="#FFF" text-anchor="middle" class="skill-pill">Go</text>
   </g>
-  <g style="--rot: -3.6deg; animation: floatA 4.15s ease-in-out infinite; animation-delay: 0.96s; transform-origin: 895px 46px;">
-    <rect x="838" y="28" width="115" height="36" fill="#ED8B00" class="badge-bg" />
-    <text x="895" y="50" fill="#FFF" text-anchor="middle" class="skill-pill">Java</text>
+  <g style="--rot: 1.6deg; animation: floatC 5.25s ease-in-out infinite; animation-delay: 1.8s; transform-origin: 821px 53px;">
+    <rect x="767" y="36" width="108" height="34" fill="#ED8B00" class="badge-bg" />
+    <text x="821" y="57" fill="#FFF" text-anchor="middle" class="skill-pill">Java</text>
   </g>
-  <g style="--rot: -2.1deg; animation: floatB 3.57s ease-in-out infinite; animation-delay: 1.2s; transform-origin: 84px 113px;">
-    <rect x="27" y="95" width="115" height="36" fill="#EE4C2C" class="badge-bg" />
-    <text x="84" y="117" fill="#FFF" text-anchor="middle" class="skill-pill">PyTorch</text>
+  <g style="--rot: 7.0deg; animation: floatD 5.72s ease-in-out infinite; animation-delay: 2.5s; transform-origin: 965px 57px;">
+    <rect x="911" y="40" width="108" height="34" fill="#2C2D72" class="badge-bg" />
+    <text x="965" y="61" fill="#FFF" text-anchor="middle" class="skill-pill">Lua</text>
   </g>
-  <g style="--rot: -3.8deg; animation: floatC 4.0s ease-in-out infinite; animation-delay: 1.61s; transform-origin: 209px 106px;">
-    <rect x="152" y="88" width="115" height="36" fill="#FF6F00" class="badge-bg" />
-    <text x="209" y="110" fill="#FFF" text-anchor="middle" class="skill-pill">TensorFlow</text>
+  <g style="--rot: 6.9deg; animation: floatA 5.53s ease-in-out infinite; animation-delay: 0.27s; transform-origin: 1053px 50px;">
+    <rect x="999" y="33" width="108" height="34" fill="#4EAA25" class="badge-bg" />
+    <text x="1053" y="54" fill="#FFF" text-anchor="middle" class="skill-pill">Bash</text>
   </g>
-  <g style="--rot: 0.7deg; animation: floatA 4.7s ease-in-out infinite; animation-delay: 0.21s; transform-origin: 367px 105px;">
-    <rect x="310" y="87" width="115" height="36" fill="#5C3EE8" class="badge-bg" />
-    <text x="367" y="109" fill="#FFF" text-anchor="middle" class="skill-pill">OpenCV</text>
+  <g style="--rot: -4.5deg; animation: floatB 3.8s ease-in-out infinite; animation-delay: 1.5s; transform-origin: 58px 90px;">
+    <rect x="4" y="73" width="108" height="34" fill="#F1502F" class="badge-bg" />
+    <text x="58" y="94" fill="#FFF" text-anchor="middle" class="skill-pill">Zsh</text>
   </g>
-  <g style="--rot: -1.9deg; animation: floatB 3.64s ease-in-out infinite; animation-delay: 0.66s; transform-origin: 479px 118px;">
-    <rect x="422" y="100" width="115" height="36" fill="#FFD21E" class="badge-bg" />
-    <text x="479" y="122" fill="#000" text-anchor="middle" class="skill-pill">Hugging Face</text>
+  <g style="--rot: -7.3deg; animation: floatC 5.62s ease-in-out infinite; animation-delay: 1.13s; transform-origin: 217px 98px;">
+    <rect x="163" y="81" width="108" height="34" fill="#A8B9CC" class="badge-bg" />
+    <text x="217" y="102" fill="#000" text-anchor="middle" class="skill-pill">C</text>
   </g>
-  <g style="--rot: -2.0deg; animation: floatC 4.58s ease-in-out infinite; animation-delay: 0.98s; transform-origin: 608px 106px;">
-    <rect x="551" y="88" width="115" height="36" fill="#000000" class="badge-bg" />
-    <text x="608" y="110" fill="#FFF" text-anchor="middle" class="skill-pill">Vercel AI</text>
+  <g style="--rot: 0.7deg; animation: floatD 5.17s ease-in-out infinite; animation-delay: 1.82s; transform-origin: 341px 92px;">
+    <rect x="287" y="75" width="108" height="34" fill="#6E4C13" class="badge-bg" />
+    <text x="341" y="96" fill="#FFF" text-anchor="middle" class="skill-pill">Assembly</text>
   </g>
-  <g style="--rot: -2.6deg; animation: floatA 3.95s ease-in-out infinite; animation-delay: 2.35s; transform-origin: 749px 105px;">
-    <rect x="692" y="87" width="115" height="36" fill="#1C3C3C" class="badge-bg" />
-    <text x="749" y="109" fill="#FFF" text-anchor="middle" class="skill-pill">LangChain</text>
+  <g style="--rot: 5.2deg; animation: floatA 3.6s ease-in-out infinite; animation-delay: 3.12s; transform-origin: 470px 97px;">
+    <rect x="416" y="80" width="108" height="34" fill="#EE4C2C" class="badge-bg" />
+    <text x="470" y="101" fill="#FFF" text-anchor="middle" class="skill-pill">PyTorch</text>
   </g>
-  <g style="--rot: 1.0deg; animation: floatB 3.79s ease-in-out infinite; animation-delay: 1.85s; transform-origin: 891px 96px;">
-    <rect x="834" y="78" width="115" height="36" fill="#76B900" class="badge-bg" />
-    <text x="891" y="100" fill="#000" text-anchor="middle" class="skill-pill">CUDA</text>
+  <g style="--rot: 0.4deg; animation: floatB 5.17s ease-in-out infinite; animation-delay: 0.26s; transform-origin: 586px 111px;">
+    <rect x="532" y="94" width="108" height="34" fill="#FF6F00" class="badge-bg" />
+    <text x="586" y="115" fill="#FFF" text-anchor="middle" class="skill-pill">TensorFlow</text>
   </g>
-  <g style="--rot: -1.1deg; animation: floatC 5.18s ease-in-out infinite; animation-delay: 1.64s; transform-origin: 78px 166px;">
-    <rect x="21" y="148" width="115" height="36" fill="#61DAFB" class="badge-bg" />
-    <text x="78" y="170" fill="#000" text-anchor="middle" class="skill-pill">React</text>
+  <g style="--rot: 7.1deg; animation: floatC 3.07s ease-in-out infinite; animation-delay: 1.72s; transform-origin: 708px 107px;">
+    <rect x="654" y="90" width="108" height="34" fill="#5C3EE8" class="badge-bg" />
+    <text x="708" y="111" fill="#FFF" text-anchor="middle" class="skill-pill">OpenCV</text>
   </g>
-  <g style="--rot: 1.7deg; animation: floatA 4.93s ease-in-out infinite; animation-delay: 1.96s; transform-origin: 223px 159px;">
-    <rect x="166" y="141" width="115" height="36" fill="#000000" class="badge-bg" />
-    <text x="223" y="163" fill="#FFF" text-anchor="middle" class="skill-pill">Next.js</text>
+  <g style="--rot: 3.5deg; animation: floatD 5.24s ease-in-out infinite; animation-delay: 2.1s; transform-origin: 835px 100px;">
+    <rect x="781" y="83" width="108" height="34" fill="#FFD21E" class="badge-bg" />
+    <text x="835" y="104" fill="#000" text-anchor="middle" class="skill-pill">Hugging Face</text>
   </g>
-  <g style="--rot: 2.7deg; animation: floatB 4.18s ease-in-out infinite; animation-delay: 0.26s; transform-origin: 346px 153px;">
-    <rect x="289" y="135" width="115" height="36" fill="#646CFF" class="badge-bg" />
-    <text x="346" y="157" fill="#FFF" text-anchor="middle" class="skill-pill">Vite</text>
+  <g style="--rot: 3.1deg; animation: floatA 5.65s ease-in-out infinite; animation-delay: 2.9s; transform-origin: 941px 82px;">
+    <rect x="887" y="65" width="108" height="34" fill="#000000" class="badge-bg" />
+    <text x="941" y="86" fill="#FFF" text-anchor="middle" class="skill-pill">Vercel AI</text>
   </g>
-  <g style="--rot: -1.7deg; animation: floatC 4.61s ease-in-out infinite; animation-delay: 1.05s; transform-origin: 490px 174px;">
-    <rect x="433" y="156" width="115" height="36" fill="#4FC08D" class="badge-bg" />
-    <text x="490" y="178" fill="#FFF" text-anchor="middle" class="skill-pill">Vue.js</text>
+  <g style="--rot: -4.6deg; animation: floatB 5.67s ease-in-out infinite; animation-delay: 2.68s; transform-origin: 1069px 83px;">
+    <rect x="1015" y="66" width="108" height="34" fill="#1C3C3C" class="badge-bg" />
+    <text x="1069" y="87" fill="#FFF" text-anchor="middle" class="skill-pill">LangChain</text>
   </g>
-  <g style="--rot: -3.2deg; animation: floatA 3.74s ease-in-out infinite; animation-delay: 1.89s; transform-origin: 625px 166px;">
-    <rect x="568" y="148" width="115" height="36" fill="#06B6D4" class="badge-bg" />
-    <text x="625" y="170" fill="#FFF" text-anchor="middle" class="skill-pill">Tailwind</text>
+  <g style="--rot: -5.3deg; animation: floatC 3.98s ease-in-out infinite; animation-delay: 2.32s; transform-origin: 60px 167px;">
+    <rect x="6" y="150" width="108" height="34" fill="#000000" class="badge-bg" />
+    <text x="60" y="171" fill="#FFF" text-anchor="middle" class="skill-pill">LlamaIndex</text>
   </g>
-  <g style="--rot: 2.2deg; animation: floatB 4.23s ease-in-out infinite; animation-delay: 1.5s; transform-origin: 755px 160px;">
-    <rect x="698" y="142" width="115" height="36" fill="#000000" class="badge-bg" />
-    <text x="755" y="164" fill="#FFF" text-anchor="middle" class="skill-pill">Expo</text>
+  <g style="--rot: -3.2deg; animation: floatD 5.72s ease-in-out infinite; animation-delay: 0.27s; transform-origin: 183px 159px;">
+    <rect x="129" y="142" width="108" height="34" fill="#000000" class="badge-bg" />
+    <text x="183" y="163" fill="#FFF" text-anchor="middle" class="skill-pill">Ollama</text>
   </g>
-  <g style="--rot: 4.5deg; animation: floatC 3.74s ease-in-out infinite; animation-delay: 1.28s; transform-origin: 882px 159px;">
-    <rect x="825" y="141" width="115" height="36" fill="#764ABC" class="badge-bg" />
-    <text x="882" y="163" fill="#FFF" text-anchor="middle" class="skill-pill">Redux</text>
+  <g style="--rot: -1.8deg; animation: floatA 3.58s ease-in-out infinite; animation-delay: 2.14s; transform-origin: 334px 154px;">
+    <rect x="280" y="137" width="108" height="34" fill="#76B900" class="badge-bg" />
+    <text x="334" y="158" fill="#000" text-anchor="middle" class="skill-pill">CUDA</text>
   </g>
-  <g style="--rot: 3.2deg; animation: floatA 3.76s ease-in-out infinite; animation-delay: 0.48s; transform-origin: 97px 211px;">
-    <rect x="40" y="193" width="115" height="36" fill="#FCC624" class="badge-bg" />
-    <text x="97" y="215" fill="#000" text-anchor="middle" class="skill-pill">Linux</text>
+  <g style="--rot: 3.3deg; animation: floatB 3.54s ease-in-out infinite; animation-delay: 1.6s; transform-origin: 470px 148px;">
+    <rect x="416" y="131" width="108" height="34" fill="#013243" class="badge-bg" />
+    <text x="470" y="152" fill="#FFF" text-anchor="middle" class="skill-pill">NumPy</text>
   </g>
-  <g style="--rot: 0.9deg; animation: floatB 4.15s ease-in-out infinite; animation-delay: 1.53s; transform-origin: 227px 223px;">
-    <rect x="170" y="205" width="115" height="36" fill="#2E3440" class="badge-bg" />
-    <text x="227" y="227" fill="#FFF" text-anchor="middle" class="skill-pill">Quickshell</text>
+  <g style="--rot: 0.8deg; animation: floatC 3.45s ease-in-out infinite; animation-delay: 2.31s; transform-origin: 592px 159px;">
+    <rect x="538" y="142" width="108" height="34" fill="#150458" class="badge-bg" />
+    <text x="592" y="163" fill="#FFF" text-anchor="middle" class="skill-pill">Pandas</text>
   </g>
-  <g style="--rot: -2.2deg; animation: floatC 4.44s ease-in-out infinite; animation-delay: 2.36s; transform-origin: 353px 226px;">
-    <rect x="296" y="208" width="115" height="36" fill="#41CD52" class="badge-bg" />
-    <text x="353" y="230" fill="#FFF" text-anchor="middle" class="skill-pill">QML</text>
+  <g style="--rot: 1.9deg; animation: floatD 5.25s ease-in-out infinite; animation-delay: 3.07s; transform-origin: 698px 157px;">
+    <rect x="644" y="140" width="108" height="34" fill="#F7931E" class="badge-bg" />
+    <text x="698" y="161" fill="#FFF" text-anchor="middle" class="skill-pill">Scikit-Learn</text>
   </g>
-  <g style="--rot: -3.5deg; animation: floatA 5.0s ease-in-out infinite; animation-delay: 1.9s; transform-origin: 493px 233px;">
-    <rect x="436" y="215" width="115" height="36" fill="#2C2D72" class="badge-bg" />
-    <text x="493" y="237" fill="#FFF" text-anchor="middle" class="skill-pill">Lua</text>
+  <g style="--rot: 3.3deg; animation: floatA 4.74s ease-in-out infinite; animation-delay: 2.05s; transform-origin: 827px 142px;">
+    <rect x="773" y="125" width="108" height="34" fill="#412991" class="badge-bg" />
+    <text x="827" y="146" fill="#FFF" text-anchor="middle" class="skill-pill">OpenAI API</text>
   </g>
-  <g style="--rot: -1.4deg; animation: floatB 4.0s ease-in-out infinite; animation-delay: 0.48s; transform-origin: 629px 230px;">
-    <rect x="572" y="212" width="115" height="36" fill="#4EAA25" class="badge-bg" />
-    <text x="629" y="234" fill="#FFF" text-anchor="middle" class="skill-pill">Bash</text>
+  <g style="--rot: 0.6deg; animation: floatB 3.54s ease-in-out infinite; animation-delay: 1.46s; transform-origin: 927px 133px;">
+    <rect x="873" y="116" width="108" height="34" fill="#D97757" class="badge-bg" />
+    <text x="927" y="137" fill="#FFF" text-anchor="middle" class="skill-pill">Anthropic</text>
   </g>
-  <g style="--rot: 3.4deg; animation: floatC 3.95s ease-in-out infinite; animation-delay: 1.3s; transform-origin: 738px 233px;">
-    <rect x="681" y="215" width="115" height="36" fill="#1793D1" class="badge-bg" />
-    <text x="738" y="237" fill="#FFF" text-anchor="middle" class="skill-pill">Arch Linux</text>
+  <g style="--rot: 4.2deg; animation: floatC 5.45s ease-in-out infinite; animation-delay: 0.8s; transform-origin: 1083px 152px;">
+    <rect x="1029" y="135" width="108" height="34" fill="#4D6BFE" class="badge-bg" />
+    <text x="1083" y="156" fill="#FFF" text-anchor="middle" class="skill-pill">DeepSeek</text>
   </g>
-  <g style="--rot: 3.7deg; animation: floatA 4.98s ease-in-out infinite; animation-delay: 0.82s; transform-origin: 876px 226px;">
-    <rect x="819" y="208" width="115" height="36" fill="#51A2DA" class="badge-bg" />
-    <text x="876" y="230" fill="#FFF" text-anchor="middle" class="skill-pill">Fedora</text>
+  <g style="--rot: 1.2deg; animation: floatD 5.7s ease-in-out infinite; animation-delay: 1.28s; transform-origin: 76px 214px;">
+    <rect x="22" y="197" width="108" height="34" fill="#00A67E" class="badge-bg" />
+    <text x="76" y="218" fill="#FFF" text-anchor="middle" class="skill-pill">Whisper</text>
   </g>
-  <g style="--rot: 1.0deg; animation: floatB 3.76s ease-in-out infinite; animation-delay: 1.93s; transform-origin: 93px 284px;">
-    <rect x="36" y="266" width="115" height="36" fill="#339933" class="badge-bg" />
-    <text x="93" y="288" fill="#FFF" text-anchor="middle" class="skill-pill">Node.js</text>
+  <g style="--rot: 3.9deg; animation: floatA 3.66s ease-in-out infinite; animation-delay: 2.62s; transform-origin: 220px 203px;">
+    <rect x="166" y="186" width="108" height="34" fill="#51A2DA" class="badge-bg" />
+    <text x="220" y="207" fill="#FFF" text-anchor="middle" class="skill-pill">Fedora</text>
   </g>
-  <g style="--rot: 3.8deg; animation: floatC 5.06s ease-in-out infinite; animation-delay: 1.54s; transform-origin: 223px 292px;">
-    <rect x="166" y="274" width="115" height="36" fill="#000000" class="badge-bg" />
-    <text x="223" y="296" fill="#FFF" text-anchor="middle" class="skill-pill">Express</text>
+  <g style="--rot: 2.9deg; animation: floatB 3.96s ease-in-out infinite; animation-delay: 2.71s; transform-origin: 310px 215px;">
+    <rect x="256" y="198" width="108" height="34" fill="#1793D1" class="badge-bg" />
+    <text x="310" y="219" fill="#FFF" text-anchor="middle" class="skill-pill">Arch Linux</text>
   </g>
-  <g style="--rot: -3.5deg; animation: floatA 4.12s ease-in-out infinite; animation-delay: 2.46s; transform-origin: 354px 268px;">
-    <rect x="297" y="250" width="115" height="36" fill="#009688" class="badge-bg" />
-    <text x="354" y="272" fill="#FFF" text-anchor="middle" class="skill-pill">FastAPI</text>
+  <g style="--rot: 0.4deg; animation: floatC 4.66s ease-in-out infinite; animation-delay: 1.31s; transform-origin: 446px 217px;">
+    <rect x="392" y="200" width="108" height="34" fill="#00A6A6" class="badge-bg" />
+    <text x="446" y="221" fill="#FFF" text-anchor="middle" class="skill-pill">Hyprland</text>
   </g>
-  <g style="--rot: -2.3deg; animation: floatB 3.91s ease-in-out infinite; animation-delay: 1.46s; transform-origin: 497px 277px;">
-    <rect x="440" y="259" width="115" height="36" fill="#E10098" class="badge-bg" />
-    <text x="497" y="281" fill="#FFF" text-anchor="middle" class="skill-pill">GraphQL</text>
+  <g style="--rot: 5.4deg; animation: floatD 4.41s ease-in-out infinite; animation-delay: 1.27s; transform-origin: 561px 188px;">
+    <rect x="507" y="171" width="108" height="34" fill="#2E3440" class="badge-bg" />
+    <text x="561" y="192" fill="#FFF" text-anchor="middle" class="skill-pill">Quickshell</text>
   </g>
-  <g style="--rot: 2.1deg; animation: floatC 4.89s ease-in-out infinite; animation-delay: 2.45s; transform-origin: 607px 270px;">
-    <rect x="550" y="252" width="115" height="36" fill="#02569B" class="badge-bg" />
-    <text x="607" y="274" fill="#FFF" text-anchor="middle" class="skill-pill">REST API</text>
+  <g style="--rot: -5.8deg; animation: floatA 3.68s ease-in-out infinite; animation-delay: 0.26s; transform-origin: 717px 214px;">
+    <rect x="663" y="197" width="108" height="34" fill="#000000" class="badge-bg" />
+    <text x="717" y="218" fill="#FFF" text-anchor="middle" class="skill-pill">Wayland</text>
   </g>
-  <g style="--rot: -3.4deg; animation: floatA 4.62s ease-in-out infinite; animation-delay: 2.37s; transform-origin: 755px 292px;">
-    <rect x="698" y="274" width="115" height="36" fill="#010101" class="badge-bg" />
-    <text x="755" y="296" fill="#FFF" text-anchor="middle" class="skill-pill">WebSockets</text>
+  <g style="--rot: 0.5deg; animation: floatB 5.6s ease-in-out infinite; animation-delay: 1.9s; transform-origin: 814px 208px;">
+    <rect x="760" y="191" width="108" height="34" fill="#41CD52" class="badge-bg" />
+    <text x="814" y="212" fill="#FFF" text-anchor="middle" class="skill-pill">QML</text>
   </g>
-  <g style="--rot: 0.2deg; animation: floatB 4.53s ease-in-out infinite; animation-delay: 2.41s; transform-origin: 876px 276px;">
-    <rect x="819" y="258" width="115" height="36" fill="#000000" class="badge-bg" />
-    <text x="876" y="280" fill="#FFF" text-anchor="middle" class="skill-pill">Micro</text>
+  <g style="--rot: 0.1deg; animation: floatC 4.65s ease-in-out infinite; animation-delay: 2.1s; transform-origin: 931px 195px;">
+    <rect x="877" y="178" width="108" height="34" fill="#E5A000" class="badge-bg" />
+    <text x="931" y="199" fill="#000" text-anchor="middle" class="skill-pill">Matugen</text>
   </g>
-  <g style="--rot: 2.1deg; animation: floatC 3.84s ease-in-out infinite; animation-delay: 0.85s; transform-origin: 90px 350px;">
-    <rect x="33" y="332" width="115" height="36" fill="#4169E1" class="badge-bg" />
-    <text x="90" y="354" fill="#FFF" text-anchor="middle" class="skill-pill">PostgreSQL</text>
+  <g style="--rot: -0.1deg; animation: floatD 3.04s ease-in-out infinite; animation-delay: 0.56s; transform-origin: 1090px 221px;">
+    <rect x="1036" y="204" width="108" height="34" fill="#2A52BE" class="badge-bg" />
+    <text x="1090" y="225" fill="#FFF" text-anchor="middle" class="skill-pill">Pipewire</text>
   </g>
-  <g style="--rot: -1.1deg; animation: floatA 5.03s ease-in-out infinite; animation-delay: 1.18s; transform-origin: 227px 346px;">
-    <rect x="170" y="328" width="115" height="36" fill="#DC382D" class="badge-bg" />
-    <text x="227" y="350" fill="#FFF" text-anchor="middle" class="skill-pill">Redis</text>
+  <g style="--rot: 6.5deg; animation: floatA 5.06s ease-in-out infinite; animation-delay: 0.16s; transform-origin: 62px 271px;">
+    <rect x="8" y="254" width="108" height="34" fill="#000000" class="badge-bg" />
+    <text x="62" y="275" fill="#FFF" text-anchor="middle" class="skill-pill">Systemd</text>
   </g>
-  <g style="--rot: -3.9deg; animation: floatB 3.54s ease-in-out infinite; animation-delay: 1.43s; transform-origin: 346px 333px;">
-    <rect x="289" y="315" width="115" height="36" fill="#003B57" class="badge-bg" />
-    <text x="346" y="337" fill="#FFF" text-anchor="middle" class="skill-pill">SQLite</text>
+  <g style="--rot: -3.9deg; animation: floatB 3.62s ease-in-out infinite; animation-delay: 0.23s; transform-origin: 193px 250px;">
+    <rect x="139" y="233" width="108" height="34" fill="#57A143" class="badge-bg" />
+    <text x="193" y="254" fill="#FFF" text-anchor="middle" class="skill-pill">Neovim</text>
   </g>
-  <g style="--rot: -4.4deg; animation: floatC 4.7s ease-in-out infinite; animation-delay: 0.24s; transform-origin: 490px 333px;">
-    <rect x="433" y="315" width="115" height="36" fill="#3ECF8E" class="badge-bg" />
-    <text x="490" y="337" fill="#FFF" text-anchor="middle" class="skill-pill">Supabase</text>
+  <g style="--rot: -0.6deg; animation: floatC 5.25s ease-in-out infinite; animation-delay: 2.19s; transform-origin: 345px 268px;">
+    <rect x="291" y="251" width="108" height="34" fill="#007ACC" class="badge-bg" />
+    <text x="345" y="272" fill="#FFF" text-anchor="middle" class="skill-pill">VS Code</text>
   </g>
-  <g style="--rot: 3.2deg; animation: floatA 3.62s ease-in-out infinite; animation-delay: 0.67s; transform-origin: 607px 327px;">
-    <rect x="550" y="309" width="115" height="36" fill="#FFCA28" class="badge-bg" />
-    <text x="607" y="331" fill="#000" text-anchor="middle" class="skill-pill">Firebase</text>
+  <g style="--rot: 2.9deg; animation: floatD 3.99s ease-in-out infinite; animation-delay: 2.05s; transform-origin: 449px 241px;">
+    <rect x="395" y="224" width="108" height="34" fill="#1BB91F" class="badge-bg" />
+    <text x="449" y="245" fill="#FFF" text-anchor="middle" class="skill-pill">Tmux</text>
   </g>
-  <g style="--rot: -2.6deg; animation: floatB 3.72s ease-in-out infinite; animation-delay: 2.35s; transform-origin: 759px 341px;">
-    <rect x="702" y="323" width="115" height="36" fill="#47A248" class="badge-bg" />
-    <text x="759" y="345" fill="#FFF" text-anchor="middle" class="skill-pill">MongoDB</text>
+  <g style="--rot: 3.3deg; animation: floatA 5.54s ease-in-out infinite; animation-delay: 2.05s; transform-origin: 563px 245px;">
+    <rect x="509" y="228" width="108" height="34" fill="#000000" class="badge-bg" />
+    <text x="563" y="249" fill="#FFF" text-anchor="middle" class="skill-pill">Kitty</text>
   </g>
-  <g style="--rot: -0.2deg; animation: floatC 4.83s ease-in-out infinite; animation-delay: 2.04s; transform-origin: 889px 344px;">
-    <rect x="832" y="326" width="115" height="36" fill="#008CC1" class="badge-bg" />
-    <text x="889" y="348" fill="#FFF" text-anchor="middle" class="skill-pill">Neo4j</text>
+  <g style="--rot: 2.8deg; animation: floatB 3.3s ease-in-out infinite; animation-delay: 0.59s; transform-origin: 689px 250px;">
+    <rect x="635" y="233" width="108" height="34" fill="#F43E31" class="badge-bg" />
+    <text x="689" y="254" fill="#FFF" text-anchor="middle" class="skill-pill">Alacritty</text>
   </g>
-  <g style="--rot: -3.6deg; animation: floatA 4.23s ease-in-out infinite; animation-delay: 1.12s; transform-origin: 79px 387px;">
-    <rect x="22" y="369" width="115" height="36" fill="#2496ED" class="badge-bg" />
-    <text x="79" y="391" fill="#FFF" text-anchor="middle" class="skill-pill">Docker</text>
+  <g style="--rot: 1.2deg; animation: floatC 3.69s ease-in-out infinite; animation-delay: 2.93s; transform-origin: 842px 265px;">
+    <rect x="788" y="248" width="108" height="34" fill="#DD4B39" class="badge-bg" />
+    <text x="842" y="269" fill="#FFF" text-anchor="middle" class="skill-pill">Starship</text>
   </g>
-  <g style="--rot: -4.0deg; animation: floatB 4.61s ease-in-out infinite; animation-delay: 1.65s; transform-origin: 220px 407px;">
-    <rect x="163" y="389" width="115" height="36" fill="#326CE5" class="badge-bg" />
-    <text x="220" y="411" fill="#FFF" text-anchor="middle" class="skill-pill">Kubernetes</text>
+  <g style="--rot: -4.1deg; animation: floatD 5.21s ease-in-out infinite; animation-delay: 1.12s; transform-origin: 928px 267px;">
+    <rect x="874" y="250" width="108" height="34" fill="#CE422B" class="badge-bg" />
+    <text x="928" y="271" fill="#FFF" text-anchor="middle" class="skill-pill">RTK</text>
   </g>
-  <g style="--rot: 2.1deg; animation: floatC 4.86s ease-in-out infinite; animation-delay: 0.36s; transform-origin: 340px 396px;">
-    <rect x="283" y="378" width="115" height="36" fill="#F05032" class="badge-bg" />
-    <text x="340" y="400" fill="#FFF" text-anchor="middle" class="skill-pill">Git</text>
+  <g style="--rot: -0.4deg; animation: floatA 3.54s ease-in-out infinite; animation-delay: 0.33s; transform-origin: 1084px 269px;">
+    <rect x="1030" y="252" width="108" height="34" fill="#61DAFB" class="badge-bg" />
+    <text x="1084" y="273" fill="#000" text-anchor="middle" class="skill-pill">React</text>
   </g>
-  <g style="--rot: 0.3deg; animation: floatA 3.74s ease-in-out infinite; animation-delay: 0.54s; transform-origin: 478px 390px;">
-    <rect x="421" y="372" width="115" height="36" fill="#2088FF" class="badge-bg" />
-    <text x="478" y="394" fill="#FFF" text-anchor="middle" class="skill-pill">GitHub Actions</text>
+  <g style="--rot: -2.1deg; animation: floatB 4.62s ease-in-out infinite; animation-delay: 0.19s; transform-origin: 98px 302px;">
+    <rect x="44" y="285" width="108" height="34" fill="#000000" class="badge-bg" />
+    <text x="98" y="306" fill="#FFF" text-anchor="middle" class="skill-pill">Next.js</text>
   </g>
-  <g style="--rot: 3.4deg; animation: floatB 3.63s ease-in-out infinite; animation-delay: 2.04s; transform-origin: 619px 391px;">
-    <rect x="562" y="373" width="115" height="36" fill="#232F3E" class="badge-bg" />
-    <text x="619" y="395" fill="#FFF" text-anchor="middle" class="skill-pill">AWS</text>
+  <g style="--rot: -6.6deg; animation: floatC 4.54s ease-in-out infinite; animation-delay: 0.46s; transform-origin: 224px 309px;">
+    <rect x="170" y="292" width="108" height="34" fill="#646CFF" class="badge-bg" />
+    <text x="224" y="313" fill="#FFF" text-anchor="middle" class="skill-pill">Vite</text>
   </g>
-  <g style="--rot: -3.6deg; animation: floatC 4.61s ease-in-out infinite; animation-delay: 1.4s; transform-origin: 765px 401px;">
-    <rect x="708" y="383" width="115" height="36" fill="#000000" class="badge-bg" />
-    <text x="765" y="405" fill="#FFF" text-anchor="middle" class="skill-pill">Vercel</text>
+  <g style="--rot: 6.9deg; animation: floatD 4.46s ease-in-out infinite; animation-delay: 2.94s; transform-origin: 346px 319px;">
+    <rect x="292" y="302" width="108" height="34" fill="#4FC08D" class="badge-bg" />
+    <text x="346" y="323" fill="#FFF" text-anchor="middle" class="skill-pill">Vue.js</text>
   </g>
-  <g style="--rot: 3.8deg; animation: floatA 4.94s ease-in-out infinite; animation-delay: 0.5s; transform-origin: 871px 386px;">
-    <rect x="814" y="368" width="115" height="36" fill="#F38020" class="badge-bg" />
-    <text x="871" y="390" fill="#FFF" text-anchor="middle" class="skill-pill">Cloudflare</text>
+  <g style="--rot: 5.2deg; animation: floatA 4.16s ease-in-out infinite; animation-delay: 1.61s; transform-origin: 438px 294px;">
+    <rect x="384" y="277" width="108" height="34" fill="#FF3E00" class="badge-bg" />
+    <text x="438" y="298" fill="#FFF" text-anchor="middle" class="skill-pill">Svelte</text>
   </g>
-  <g style="--rot: -2.6deg; animation: floatB 4.18s ease-in-out infinite; animation-delay: 0.24s; transform-origin: 88px 457px;">
-    <rect x="31" y="439" width="115" height="36" fill="#57A143" class="badge-bg" />
-    <text x="88" y="461" fill="#FFF" text-anchor="middle" class="skill-pill">Neovim</text>
+  <g style="--rot: -7.3deg; animation: floatB 4.69s ease-in-out infinite; animation-delay: 0.38s; transform-origin: 555px 314px;">
+    <rect x="501" y="297" width="108" height="34" fill="#06B6D4" class="badge-bg" />
+    <text x="555" y="318" fill="#FFF" text-anchor="middle" class="skill-pill">Tailwind</text>
   </g>
-  <g style="--rot: 4.4deg; animation: floatC 3.95s ease-in-out infinite; animation-delay: 1.98s; transform-origin: 218px 442px;">
-    <rect x="161" y="424" width="115" height="36" fill="#007ACC" class="badge-bg" />
-    <text x="218" y="446" fill="#FFF" text-anchor="middle" class="skill-pill">VS Code</text>
+  <g style="--rot: 4.5deg; animation: floatC 4.74s ease-in-out infinite; animation-delay: 1.33s; transform-origin: 680px 317px;">
+    <rect x="626" y="300" width="108" height="34" fill="#000000" class="badge-bg" />
+    <text x="680" y="321" fill="#FFF" text-anchor="middle" class="skill-pill">Expo</text>
   </g>
-  <g style="--rot: -0.7deg; animation: floatA 5.13s ease-in-out infinite; animation-delay: 2.49s; transform-origin: 353px 451px;">
-    <rect x="296" y="433" width="115" height="36" fill="#00A6A6" class="badge-bg" />
-    <text x="353" y="455" fill="#FFF" text-anchor="middle" class="skill-pill">Hyprland</text>
+  <g style="--rot: -0.0deg; animation: floatD 4.89s ease-in-out infinite; animation-delay: 0.67s; transform-origin: 812px 294px;">
+    <rect x="758" y="277" width="108" height="34" fill="#764ABC" class="badge-bg" />
+    <text x="812" y="298" fill="#FFF" text-anchor="middle" class="skill-pill">Redux</text>
   </g>
-  <g style="--rot: 2.0deg; animation: floatB 3.76s ease-in-out infinite; animation-delay: 0.81s; transform-origin: 489px 463px;">
-    <rect x="432" y="445" width="115" height="36" fill="#000000" class="badge-bg" />
-    <text x="489" y="467" fill="#FFF" text-anchor="middle" class="skill-pill">Wayland</text>
+  <g style="--rot: -4.7deg; animation: floatA 5.71s ease-in-out infinite; animation-delay: 2.08s; transform-origin: 929px 321px;">
+    <rect x="875" y="304" width="108" height="34" fill="#339933" class="badge-bg" />
+    <text x="929" y="325" fill="#FFF" text-anchor="middle" class="skill-pill">Node.js</text>
   </g>
-  <g style="--rot: 2.1deg; animation: floatC 3.6s ease-in-out infinite; animation-delay: 0.85s; transform-origin: 606px 460px;">
-    <rect x="549" y="442" width="115" height="36" fill="#F1502F" class="badge-bg" />
-    <text x="606" y="464" fill="#FFF" text-anchor="middle" class="skill-pill">Zsh</text>
+  <g style="--rot: -4.2deg; animation: floatB 4.69s ease-in-out infinite; animation-delay: 0.35s; transform-origin: 1059px 320px;">
+    <rect x="1005" y="303" width="108" height="34" fill="#000000" class="badge-bg" />
+    <text x="1059" y="324" fill="#FFF" text-anchor="middle" class="skill-pill">Express</text>
   </g>
-  <g style="--rot: -0.2deg; animation: floatA 5.06s ease-in-out infinite; animation-delay: 1.37s; transform-origin: 739px 460px;">
-    <rect x="682" y="442" width="115" height="36" fill="#1BB91F" class="badge-bg" />
-    <text x="739" y="464" fill="#FFF" text-anchor="middle" class="skill-pill">Tmux</text>
+  <g style="--rot: -4.7deg; animation: floatC 3.06s ease-in-out infinite; animation-delay: 3.08s; transform-origin: 71px 380px;">
+    <rect x="17" y="363" width="108" height="34" fill="#009688" class="badge-bg" />
+    <text x="71" y="384" fill="#FFF" text-anchor="middle" class="skill-pill">FastAPI</text>
   </g>
-  <g style="--rot: -3.8deg; animation: floatB 3.82s ease-in-out infinite; animation-delay: 1.53s; transform-origin: 872px 458px;">
-    <rect x="815" y="440" width="115" height="36" fill="#F24E1E" class="badge-bg" />
-    <text x="872" y="462" fill="#FFF" text-anchor="middle" class="skill-pill">Figma</text>
+  <g style="--rot: 3.8deg; animation: floatD 3.29s ease-in-out infinite; animation-delay: 2.97s; transform-origin: 214px 382px;">
+    <rect x="160" y="365" width="108" height="34" fill="#092E20" class="badge-bg" />
+    <text x="214" y="386" fill="#FFF" text-anchor="middle" class="skill-pill">Django</text>
   </g>
-  <g style="--rot: -0.9deg; animation: floatC 5.1s ease-in-out infinite; animation-delay: 1.47s; transform-origin: 94px 507px;">
-    <rect x="37" y="489" width="115" height="36" fill="#F05138" class="badge-bg" />
-    <text x="94" y="511" fill="#FFF" text-anchor="middle" class="skill-pill">Swift</text>
+  <g style="--rot: -6.7deg; animation: floatA 4.99s ease-in-out infinite; animation-delay: 1.62s; transform-origin: 325px 366px;">
+    <rect x="271" y="349" width="108" height="34" fill="#000000" class="badge-bg" />
+    <text x="325" y="370" fill="#FFF" text-anchor="middle" class="skill-pill">Flask</text>
   </g>
-  <g style="--rot: -4.1deg; animation: floatA 3.64s ease-in-out infinite; animation-delay: 1.68s; transform-origin: 224px 519px;">
-    <rect x="167" y="501" width="115" height="36" fill="#7F52FF" class="badge-bg" />
-    <text x="224" y="523" fill="#FFF" text-anchor="middle" class="skill-pill">Kotlin</text>
+  <g style="--rot: 4.2deg; animation: floatB 4.64s ease-in-out infinite; animation-delay: 1.12s; transform-origin: 449px 349px;">
+    <rect x="395" y="332" width="108" height="34" fill="#E10098" class="badge-bg" />
+    <text x="449" y="353" fill="#FFF" text-anchor="middle" class="skill-pill">GraphQL</text>
   </g>
-  <g style="--rot: -1.7deg; animation: floatB 3.94s ease-in-out infinite; animation-delay: 1.71s; transform-origin: 357px 516px;">
-    <rect x="300" y="498" width="115" height="36" fill="#6E4C13" class="badge-bg" />
-    <text x="357" y="520" fill="#FFF" text-anchor="middle" class="skill-pill">Assembly</text>
+  <g style="--rot: -5.9deg; animation: floatC 4.51s ease-in-out infinite; animation-delay: 2.26s; transform-origin: 597px 361px;">
+    <rect x="543" y="344" width="108" height="34" fill="#02569B" class="badge-bg" />
+    <text x="597" y="365" fill="#FFF" text-anchor="middle" class="skill-pill">REST API</text>
   </g>
-  <g style="--rot: -2.1deg; animation: floatC 3.72s ease-in-out infinite; animation-delay: 1.65s; transform-origin: 482px 507px;">
-    <rect x="425" y="489" width="115" height="36" fill="#000000" class="badge-bg" />
-    <text x="482" y="511" fill="#FFF" text-anchor="middle" class="skill-pill">Ollama</text>
+  <g style="--rot: 2.8deg; animation: floatD 4.12s ease-in-out infinite; animation-delay: 0.22s; transform-origin: 680px 373px;">
+    <rect x="626" y="356" width="108" height="34" fill="#010101" class="badge-bg" />
+    <text x="680" y="377" fill="#FFF" text-anchor="middle" class="skill-pill">WebSockets</text>
   </g>
-  <g style="--rot: 3.9deg; animation: floatA 5.09s ease-in-out infinite; animation-delay: 0.12s; transform-origin: 619px 510px;">
-    <rect x="562" y="492" width="115" height="36" fill="#013243" class="badge-bg" />
-    <text x="619" y="514" fill="#FFF" text-anchor="middle" class="skill-pill">NumPy</text>
+  <g style="--rot: 7.2deg; animation: floatA 3.11s ease-in-out infinite; animation-delay: 2.01s; transform-origin: 826px 348px;">
+    <rect x="772" y="331" width="108" height="34" fill="#244C5A" class="badge-bg" />
+    <text x="826" y="352" fill="#FFF" text-anchor="middle" class="skill-pill">gRPC</text>
   </g>
-  <g style="--rot: 4.5deg; animation: floatB 3.62s ease-in-out infinite; animation-delay: 0.61s; transform-origin: 757px 518px;">
-    <rect x="700" y="500" width="115" height="36" fill="#150458" class="badge-bg" />
-    <text x="757" y="522" fill="#FFF" text-anchor="middle" class="skill-pill">Pandas</text>
+  <g style="--rot: -6.3deg; animation: floatB 3.9s ease-in-out infinite; animation-delay: 1.72s; transform-origin: 952px 377px;">
+    <rect x="898" y="360" width="108" height="34" fill="#47848F" class="badge-bg" />
+    <text x="952" y="381" fill="#FFF" text-anchor="middle" class="skill-pill">Electron</text>
   </g>
-  <g style="--rot: 3.9deg; animation: floatC 5.0s ease-in-out infinite; animation-delay: 2.21s; transform-origin: 879px 504px;">
-    <rect x="822" y="486" width="115" height="36" fill="#F7931E" class="badge-bg" />
-    <text x="879" y="508" fill="#FFF" text-anchor="middle" class="skill-pill">Scikit-Learn</text>
+  <g style="--rot: 0.2deg; animation: floatC 3.6s ease-in-out infinite; animation-delay: 1.52s; transform-origin: 1077px 383px;">
+    <rect x="1023" y="366" width="108" height="34" fill="#FFC131" class="badge-bg" />
+    <text x="1077" y="387" fill="#000" text-anchor="middle" class="skill-pill">Tauri</text>
+  </g>
+  <g style="--rot: 3.7deg; animation: floatD 3.09s ease-in-out infinite; animation-delay: 0.55s; transform-origin: 94px 425px;">
+    <rect x="40" y="408" width="108" height="34" fill="#000000" class="badge-bg" />
+    <text x="94" y="429" fill="#FFF" text-anchor="middle" class="skill-pill">Three.js</text>
+  </g>
+  <g style="--rot: -5.0deg; animation: floatA 3.56s ease-in-out infinite; animation-delay: 2.65s; transform-origin: 195px 428px;">
+    <rect x="141" y="411" width="108" height="34" fill="#4169E1" class="badge-bg" />
+    <text x="195" y="432" fill="#FFF" text-anchor="middle" class="skill-pill">PostgreSQL</text>
+  </g>
+  <g style="--rot: -2.4deg; animation: floatB 4.05s ease-in-out infinite; animation-delay: 0.77s; transform-origin: 329px 432px;">
+    <rect x="275" y="415" width="108" height="34" fill="#DC382D" class="badge-bg" />
+    <text x="329" y="436" fill="#FFF" text-anchor="middle" class="skill-pill">Redis</text>
+  </g>
+  <g style="--rot: -3.5deg; animation: floatC 4.51s ease-in-out infinite; animation-delay: 0.37s; transform-origin: 467px 432px;">
+    <rect x="413" y="415" width="108" height="34" fill="#003B57" class="badge-bg" />
+    <text x="467" y="436" fill="#FFF" text-anchor="middle" class="skill-pill">SQLite</text>
+  </g>
+  <g style="--rot: -3.6deg; animation: floatD 5.05s ease-in-out infinite; animation-delay: 2.47s; transform-origin: 570px 432px;">
+    <rect x="516" y="415" width="108" height="34" fill="#3ECF8E" class="badge-bg" />
+    <text x="570" y="436" fill="#FFF" text-anchor="middle" class="skill-pill">Supabase</text>
+  </g>
+  <g style="--rot: -5.2deg; animation: floatA 4.85s ease-in-out infinite; animation-delay: 0.27s; transform-origin: 686px 412px;">
+    <rect x="632" y="395" width="108" height="34" fill="#FFCA28" class="badge-bg" />
+    <text x="686" y="416" fill="#000" text-anchor="middle" class="skill-pill">Firebase</text>
+  </g>
+  <g style="--rot: -2.9deg; animation: floatB 4.84s ease-in-out infinite; animation-delay: 2.37s; transform-origin: 823px 409px;">
+    <rect x="769" y="392" width="108" height="34" fill="#47A248" class="badge-bg" />
+    <text x="823" y="413" fill="#FFF" text-anchor="middle" class="skill-pill">MongoDB</text>
+  </g>
+  <g style="--rot: 1.1deg; animation: floatC 4.06s ease-in-out infinite; animation-delay: 3.05s; transform-origin: 952px 435px;">
+    <rect x="898" y="418" width="108" height="34" fill="#DC2626" class="badge-bg" />
+    <text x="952" y="439" fill="#FFF" text-anchor="middle" class="skill-pill">Qdrant</text>
+  </g>
+  <g style="--rot: 4.7deg; animation: floatD 5.01s ease-in-out infinite; animation-delay: 1.22s; transform-origin: 1054px 414px;">
+    <rect x="1000" y="397" width="108" height="34" fill="#E11D48" class="badge-bg" />
+    <text x="1054" y="418" fill="#FFF" text-anchor="middle" class="skill-pill">ChromaDB</text>
+  </g>
+  <g style="--rot: 7.4deg; animation: floatA 5.55s ease-in-out infinite; animation-delay: 2.34s; transform-origin: 70px 489px;">
+    <rect x="16" y="472" width="108" height="34" fill="#2496ED" class="badge-bg" />
+    <text x="70" y="493" fill="#FFF" text-anchor="middle" class="skill-pill">Docker</text>
+  </g>
+  <g style="--rot: -3.1deg; animation: floatB 3.89s ease-in-out infinite; animation-delay: 1.11s; transform-origin: 196px 462px;">
+    <rect x="142" y="445" width="108" height="34" fill="#326CE5" class="badge-bg" />
+    <text x="196" y="466" fill="#FFF" text-anchor="middle" class="skill-pill">Kubernetes</text>
+  </g>
+  <g style="--rot: -3.7deg; animation: floatC 3.9s ease-in-out infinite; animation-delay: 2.24s; transform-origin: 323px 458px;">
+    <rect x="269" y="441" width="108" height="34" fill="#F05032" class="badge-bg" />
+    <text x="323" y="462" fill="#FFF" text-anchor="middle" class="skill-pill">Git</text>
+  </g>
+  <g style="--rot: 3.9deg; animation: floatD 3.75s ease-in-out infinite; animation-delay: 0.95s; transform-origin: 470px 490px;">
+    <rect x="416" y="473" width="108" height="34" fill="#2088FF" class="badge-bg" />
+    <text x="470" y="494" fill="#FFF" text-anchor="middle" class="skill-pill">GitHub Actions</text>
+  </g>
+  <g style="--rot: 6.5deg; animation: floatA 4.2s ease-in-out infinite; animation-delay: 2.85s; transform-origin: 573px 459px;">
+    <rect x="519" y="442" width="108" height="34" fill="#232F3E" class="badge-bg" />
+    <text x="573" y="463" fill="#FFF" text-anchor="middle" class="skill-pill">AWS</text>
+  </g>
+  <g style="--rot: -2.3deg; animation: floatB 4.68s ease-in-out infinite; animation-delay: 3.12s; transform-origin: 718px 492px;">
+    <rect x="664" y="475" width="108" height="34" fill="#000000" class="badge-bg" />
+    <text x="718" y="496" fill="#FFF" text-anchor="middle" class="skill-pill">Vercel</text>
+  </g>
+  <g style="--rot: -0.9deg; animation: floatC 4.64s ease-in-out infinite; animation-delay: 2.82s; transform-origin: 843px 457px;">
+    <rect x="789" y="440" width="108" height="34" fill="#00C7B7" class="badge-bg" />
+    <text x="843" y="461" fill="#000" text-anchor="middle" class="skill-pill">Netlify</text>
+  </g>
+  <g style="--rot: 3.6deg; animation: floatD 3.58s ease-in-out infinite; animation-delay: 1.73s; transform-origin: 959px 480px;">
+    <rect x="905" y="463" width="108" height="34" fill="#F38020" class="badge-bg" />
+    <text x="959" y="484" fill="#FFF" text-anchor="middle" class="skill-pill">Cloudflare</text>
+  </g>
+  <g style="--rot: 0.9deg; animation: floatA 5.78s ease-in-out infinite; animation-delay: 1.94s; transform-origin: 1092px 482px;">
+    <rect x="1038" y="465" width="108" height="34" fill="#009639" class="badge-bg" />
+    <text x="1092" y="486" fill="#FFF" text-anchor="middle" class="skill-pill">NGINX</text>
+  </g>
+  <g style="--rot: 3.7deg; animation: floatB 3.5s ease-in-out infinite; animation-delay: 0.91s; transform-origin: 82px 534px;">
+    <rect x="28" y="517" width="108" height="34" fill="#FF6C37" class="badge-bg" />
+    <text x="82" y="538" fill="#FFF" text-anchor="middle" class="skill-pill">Postman</text>
+  </g>
+  <g style="--rot: 2.1deg; animation: floatC 3.76s ease-in-out infinite; animation-delay: 1.72s; transform-origin: 189px 526px;">
+    <rect x="135" y="509" width="108" height="34" fill="#F24E1E" class="badge-bg" />
+    <text x="189" y="530" fill="#FFF" text-anchor="middle" class="skill-pill">Figma</text>
+  </g>
+  <g style="--rot: 1.8deg; animation: floatD 3.37s ease-in-out infinite; animation-delay: 2.2s; transform-origin: 311px 516px;">
+    <rect x="257" y="499" width="108" height="34" fill="#6366F1" class="badge-bg" />
+    <text x="311" y="520" fill="#FFF" text-anchor="middle" class="skill-pill">Uriel AI</text>
+  </g>
+  <g style="--rot: -5.7deg; animation: floatA 3.43s ease-in-out infinite; animation-delay: 1.3s; transform-origin: 437px 542px;">
+    <rect x="383" y="525" width="108" height="34" fill="#3B82F6" class="badge-bg" />
+    <text x="437" y="546" fill="#FFF" text-anchor="middle" class="skill-pill">Infinity Shell</text>
+  </g>
+  <g style="--rot: 0.8deg; animation: floatB 5.17s ease-in-out infinite; animation-delay: 1.04s; transform-origin: 575px 537px;">
+    <rect x="521" y="520" width="108" height="34" fill="#10B981" class="badge-bg" />
+    <text x="575" y="541" fill="#FFF" text-anchor="middle" class="skill-pill">Arc Tracker</text>
   </g>
 </svg>
