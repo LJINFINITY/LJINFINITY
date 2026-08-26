@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="legend_title.svg" width="750" alt="Legend Header" />
+<img src="live_to_header.svg" width="650" alt="Live to..." />
 
 <br/><br/>
 

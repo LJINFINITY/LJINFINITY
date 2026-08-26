@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 60" width="100%" height="60">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap');
+
+      .base-text {
+        font-family: 'Share Tech Mono', monospace, sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        fill: #94A3B8;
+        text-transform: uppercase;
+      }
+
+      .sliding-group {
+        animation: slideUp 10s infinite cubic-bezier(0.65, 0, 0.35, 1);
+      }
+
+      .word {
+        font-family: 'Share Tech Mono', monospace, sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+      }
+
+      .w-think    { fill: #38BDF8; filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.8)); }
+      .w-create   { fill: #8B5CF6; filter: drop-shadow(0 0 8px rgba(139, 92, 246, 0.8)); }
+      .w-explore  { fill: #10B981; filter: drop-shadow(0 0 8px rgba(16, 185, 129, 0.8)); }
+      .w-build    { fill: #F59E0B; filter: drop-shadow(0 0 8px rgba(245, 158, 11, 0.8)); }
+      .w-innovate { fill: #EC4899; filter: drop-shadow(0 0 8px rgba(236, 72, 153, 0.8)); }
+
+      @keyframes slideUp {
+        0%, 16%    { transform: translateY(0px); }
+        20%, 36%   { transform: translateY(-40px); }
+        40%, 56%   { transform: translateY(-80px); }
+        60%, 76%   { transform: translateY(-120px); }
+        80%, 96%   { transform: translateY(-160px); }
+        100%       { transform: translateY(0px); }
+      }
+    </style>
+    
+    <clipPath id="text-clip">
+      <rect x="0" y="10" width="650" height="40" />
+    </clipPath>
+  </defs>
+
+  <g transform="translate(0, 0)">
+    <!-- Static Prefix -->
+    <text x="210" y="36" text-anchor="end" class="base-text">LIVE TO</text>
+
+    <!-- Sliding Words Masked Container -->
+    <g clip-path="url(#text-clip)">
+      <g class="sliding-group" transform="translate(225, 0)">
+        <text x="0" y="36" class="word w-think">THINK</text>
+        <text x="0" y="76" class="word w-create">CREATE</text>
+        <text x="0" y="116" class="word w-explore">EXPLORE</text>
+        <text x="0" y="156" class="word w-build">BUILD</text>
+        <text x="0" y="196" class="word w-innovate">INNOVATE</text>
+      </g>
+    </g>
+  </g>
+</svg>
