@@ -13,7 +13,7 @@
       }
 
       .sliding-group {
-        animation: slideUp 10s infinite cubic-bezier(0.65, 0, 0.35, 1);
+        animation: slideUpInfinite 12s infinite cubic-bezier(0.65, 0, 0.35, 1);
       }
 
       .word {
@@ -30,33 +30,36 @@
       .w-build    { fill: #F59E0B; filter: drop-shadow(0 0 8px rgba(245, 158, 11, 0.8)); }
       .w-innovate { fill: #EC4899; filter: drop-shadow(0 0 8px rgba(236, 72, 153, 0.8)); }
 
-      @keyframes slideUp {
-        0%, 16%    { transform: translateY(0px); }
-        20%, 36%   { transform: translateY(-40px); }
-        40%, 56%   { transform: translateY(-80px); }
-        60%, 76%   { transform: translateY(-120px); }
-        80%, 96%   { transform: translateY(-160px); }
-        100%       { transform: translateY(0px); }
+      @keyframes slideUpInfinite {
+        0%, 15%    { transform: translateY(0px); }
+        18%, 33%   { transform: translateY(-40px); }
+        36%, 51%   { transform: translateY(-80px); }
+        54%, 69%   { transform: translateY(-120px); }
+        72%, 87%   { transform: translateY(-160px); }
+        90%, 98%   { transform: translateY(-200px); }
+        100%       { transform: translateY(-200px); }
       }
     </style>
     
     <clipPath id="text-clip">
-      <rect x="0" y="10" width="650" height="40" />
+      <rect x="280" y="10" width="350" height="42" />
     </clipPath>
   </defs>
 
   <g transform="translate(0, 0)">
     <!-- Static Prefix -->
-    <text x="210" y="36" text-anchor="end" class="base-text">LIVE TO</text>
+    <text x="270" y="38" text-anchor="end" class="base-text">LIVE TO</text>
 
     <!-- Sliding Words Masked Container -->
     <g clip-path="url(#text-clip)">
-      <g class="sliding-group" transform="translate(225, 0)">
-        <text x="0" y="36" class="word w-think">THINK</text>
-        <text x="0" y="76" class="word w-create">CREATE</text>
-        <text x="0" y="116" class="word w-explore">EXPLORE</text>
-        <text x="0" y="156" class="word w-build">BUILD</text>
-        <text x="0" y="196" class="word w-innovate">INNOVATE</text>
+      <g class="sliding-group" transform="translate(285, 0)">
+        <text x="0" y="38" class="word w-think">THINK</text>
+        <text x="0" y="78" class="word w-create">CREATE</text>
+        <text x="0" y="118" class="word w-explore">EXPLORE</text>
+        <text x="0" y="158" class="word w-build">BUILD</text>
+        <text x="0" y="198" class="word w-innovate">INNOVATE</text>
+        <!-- Duplicate of first word for seamless continuous infinite loop -->
+        <text x="0" y="238" class="word w-think">THINK</text>
       </g>
     </g>
   </g>
