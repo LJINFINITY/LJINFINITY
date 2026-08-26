@@ -53,20 +53,36 @@
 <br/><br/>
 
 <!-- ========================================== -->
-<!-- SECTION 3: ABOUT ME & PORTFOLIO            -->
+<!-- SECTION 3: ABOUT ME & PHILOSOPHY           -->
 <!-- ========================================== -->
 
 ### `// ABOUT ME & PHILOSOPHY`
 
-> Hi there! I'm **Jerin Rajan**, widely known online as **LJINFINITY**. I am an aspiring software architect, AI developer, and relentless technology enthusiast who truly lives and breathes modern computing.
-> 
-> My path into software development started with a simple belief: work should be an engaging, creative journey. For me, programming isn't just typing lines of code — it's the thrill of starting from a blank editor, enjoying every step of the engineering process, and crafting tools and systems I genuinely desire to see in the world.
-> 
-> Currently, my primary focus centers on **advanced AI agent architectures**, **intelligent system design**, and **custom desktop environments**. Some of my proudest milestones include:
-> - **Uriel**: My custom-built autonomous AI assistant, architected and trained independently to handle complex workflows, reasoning, and intelligent task execution.
-> - **Bespoke Linux Rig**: A hand-tailored, custom-tuned Linux operating system environment built to perfection from the ground up, optimized for zero-latency developer productivity.
-> 
-> I am constantly exploring the bleeding edge of software engineering, system performance, and artificial intelligence — continuously sharpening my skills for both personal passion projects and production-grade software development.
+<h4>
+
+Hi there! I'm **Jerin Rajan**, widely known online as **LJINFINITY**. I am an aspiring software architect, AI developer, and relentless technology enthusiast who truly lives and breathes modern computing.
+
+<br/>
+
+My path into software development started with a simple belief: work should be an engaging, creative journey. For me, programming isn't just typing lines of code — it's the thrill of starting from a blank editor, enjoying every step of the engineering process, and crafting tools and systems I genuinely desire to see in the world.
+
+</h4>
+
+<br/>
+
+#### `// FLAGSHIP PROJECTS & CORE MILESTONES`
+
+- **Uriel AI Assistant**: My custom-built autonomous personal AI assistant and multi-agent orchestrator, designed independently to handle complex reasoning, self-correction, and tool execution.
+- **Bespoke Linux System**: A hand-crafted, custom-tuned Linux operating system environment built to perfection from scratch, optimized for zero-latency developer productivity.
+- **Multi-Agent Swarms**: Engineering distributed AI agent architectures capable of parallel execution, automated planning, and high-throughput tool dispatching.
+
+<br/>
+
+#### `// ENGINEERING VISION & FOCUS`
+
+- **Systems Architecture**: Deep-diving into low-level performance, memory safety, and high-throughput systems using Rust & C++.
+- **Autonomous Intelligence**: Pioneering adaptive AI swarms, context persistence, and real-time execution engines.
+- **Bespoke Developer Experience**: Crafting zero-friction desktop shells, custom CLI workflows, and sleek user interfaces.
 
 <br/>
 
