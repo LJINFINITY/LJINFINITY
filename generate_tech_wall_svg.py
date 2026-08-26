@@ -35,19 +35,46 @@ skills = [
     ("Infinity Shell", "#3B82F6", "#FFF"), ("Arc Tracker", "#10B981", "#FFF")
 ]
 
-def generate_clean_scattered_svg():
-    random.seed(777)
+def generate_true_random_smooth_svg():
+    random.seed(8888) # Completely organic scatter distribution
 
-    cols = 6
+    total_w = 1150
+    total_h = 1850
     badge_w, badge_h = 145, 46
-    gap_x, gap_y = 38, 75
-    padding_x, padding_y = 45, 50
 
-    total_w = cols * badge_w + (cols - 1) * gap_x + padding_x * 2 # 1150px
-    rows = (len(skills) + cols - 1) // cols
-    total_h = rows * badge_h + (rows - 1) * gap_y + padding_y * 2 + 80 # ~1750px
+    # Generate non-overlapping random scatter positions
+    positions = []
+    attempts = 0
+    max_attempts = 50000
 
-    # NOTE: NO @import url()! GitHub Camo sanitizer blocks @import statements in SVGs!
+    for skill in skills:
+        placed = False
+        for _ in range(max_attempts):
+            rx = random.randint(40, total_w - badge_w - 40)
+            ry = random.randint(40, total_h - badge_h - 40)
+            
+            # Check overlap with placed badges (minimum padding clearance)
+            overlap = False
+            for (px, py, _, _, _) in positions:
+                if abs(rx - px) < (badge_w + 22) and abs(ry - py) < (badge_h + 28):
+                    overlap = True
+                    break
+            
+            if not overlap:
+                rot = round(random.uniform(-10.0, 10.0), 1)
+                anim_idx = random.randint(1, 6)
+                positions.append((rx, ry, rot, anim_idx, skill))
+                placed = True
+                break
+        
+        if not placed:
+            # Fallback random placement if dense area
+            rx = random.randint(40, total_w - badge_w - 40)
+            ry = random.randint(40, total_h - badge_h - 40)
+            rot = round(random.uniform(-10.0, 10.0), 1)
+            anim_idx = random.randint(1, 6)
+            positions.append((rx, ry, rot, anim_idx, skill))
+
     svg_content = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {total_w} {total_h}" width="100%" height="{total_h}">
   <defs>
     <style>
@@ -58,28 +85,41 @@ def generate_clean_scattered_svg():
         letter-spacing: 0.5px;
       }}
 
-      @keyframes floatA {{
-        0% {{ transform: translate(0px, 0px) rotate(var(--rot)); }}
-        50% {{ transform: translate(-12px, -24px) rotate(calc(var(--rot) + 2.2deg)); }}
-        100% {{ transform: translate(0px, 0px) rotate(var(--rot)); }}
+      /* Explicit keyframes with direct degree interpolation for buttery-smooth rotation */
+      @keyframes float1 {{
+        0%   {{ transform: translate(0px, 0px) rotate(-8deg); }}
+        50%  {{ transform: translate(-14px, -26px) rotate(-3deg); }}
+        100% {{ transform: translate(0px, 0px) rotate(-8deg); }}
       }}
 
-      @keyframes floatB {{
-        0% {{ transform: translate(0px, 0px) rotate(var(--rot)); }}
-        50% {{ transform: translate(14px, -20px) rotate(calc(var(--rot) - 2.5deg)); }}
-        100% {{ transform: translate(0px, 0px) rotate(var(--rot)); }}
+      @keyframes float2 {{
+        0%   {{ transform: translate(0px, 0px) rotate(7deg); }}
+        50%  {{ transform: translate(16px, -22px) rotate(2deg); }}
+        100% {{ transform: translate(0px, 0px) rotate(7deg); }}
       }}
 
-      @keyframes floatC {{
-        0% {{ transform: translate(0px, 0px) rotate(var(--rot)); }}
-        50% {{ transform: translate(-10px, 22px) rotate(calc(var(--rot) + 1.8deg)); }}
-        100% {{ transform: translate(0px, 0px) rotate(var(--rot)); }}
+      @keyframes float3 {{
+        0%   {{ transform: translate(0px, 0px) rotate(-5deg); }}
+        50%  {{ transform: translate(-12px, 25px) rotate(-9deg); }}
+        100% {{ transform: translate(0px, 0px) rotate(-5deg); }}
       }}
 
-      @keyframes floatD {{
-        0% {{ transform: translate(0px, 0px) rotate(var(--rot)); }}
-        50% {{ transform: translate(12px, 18px) rotate(calc(var(--rot) - 2.0deg)); }}
-        100% {{ transform: translate(0px, 0px) rotate(var(--rot)); }}
+      @keyframes float4 {{
+        0%   {{ transform: translate(0px, 0px) rotate(9deg); }}
+        50%  {{ transform: translate(15px, 20px) rotate(4deg); }}
+        100% {{ transform: translate(0px, 0px) rotate(9deg); }}
+      }}
+
+      @keyframes float5 {{
+        0%   {{ transform: translate(0px, 0px) rotate(-3deg); }}
+        50%  {{ transform: translate(-18px, -15px) rotate(-7deg); }}
+        100% {{ transform: translate(0px, 0px) rotate(-3deg); }}
+      }}
+
+      @keyframes float6 {{
+        0%   {{ transform: translate(0px, 0px) rotate(6deg); }}
+        50%  {{ transform: translate(12px, -28px) rotate(10deg); }}
+        100% {{ transform: translate(0px, 0px) rotate(6deg); }}
       }}
 
       .badge-bg {{
@@ -93,27 +133,15 @@ def generate_clean_scattered_svg():
 
 '''
 
-    for i, (name, bg, fg) in enumerate(skills):
-        r = i // cols
-        c = i % cols
-
-        offset_x = random.randint(-25, 25)
-        offset_y = random.randint(-30, 30)
-        rot_deg = round(random.uniform(-9.5, 9.5), 1)
-
-        x = padding_x + c * (badge_w + gap_x) + offset_x
-        y = padding_y + r * (badge_h + gap_y) + offset_y
-
+    for (x, y, rot, anim_idx, (name, bg, fg)) in positions:
         center_x = x + badge_w // 2
         center_y = y + badge_h // 2 + 5
 
-        anim_type = ["floatA", "floatB", "floatC", "floatD"][i % 4]
-        dur = round(random.uniform(7.5, 12.0), 2)
-        delay = round(random.uniform(0.1, 5.0), 2)
+        dur = round(random.uniform(8.0, 13.0), 2)
+        delay = round(random.uniform(0.1, 5.5), 2)
+        transform_origin = f"{center_x}px {center_y - 5}px"
 
-        transform_origin = f"{x + badge_w // 2}px {y + badge_h // 2}px"
-
-        svg_content += f'''  <g style="--rot: {rot_deg}deg; animation: {anim_type} {dur}s cubic-bezier(0.42, 0, 0.58, 1) infinite; animation-delay: {delay}s; transform-origin: {transform_origin};">
+        svg_content += f'''  <g style="animation: float{anim_idx} {dur}s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite; animation-delay: {delay}s; transform-origin: {transform_origin};">
     <rect x="{x}" y="{y}" width="{badge_w}" height="{badge_h}" fill="{bg}" class="badge-bg" />
     <text x="{center_x}" y="{center_y}" fill="{fg}" text-anchor="middle" class="skill-pill">{name}</text>
   </g>
@@ -121,10 +149,10 @@ def generate_clean_scattered_svg():
 
     svg_content += "</svg>\n"
 
-    output_path = "/home/lj/Work/Me/tech_stack_wall_v6.svg"
+    output_path = "/home/lj/Work/Me/tech_stack_wall_v7.svg"
     with open(output_path, "w") as f:
         f.write(svg_content)
-    print(f"Successfully generated CLEAN GitHub Camo sanitized tech_stack_wall_v6.svg at {output_path}!")
+    print(f"Successfully generated TRUE RANDOM SMOOTH FLOATING tech_stack_wall_v7.svg at {output_path}!")
 
 if __name__ == "__main__":
-    generate_clean_scattered_svg()
+    generate_true_random_smooth_svg()
