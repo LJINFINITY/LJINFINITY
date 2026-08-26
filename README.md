@@ -14,10 +14,6 @@
 
 <img src="headline.svg" width="550" alt="AI Full Stack Dev" />
 
-<br/>
-
-[![Trophies](https://github-profile-trophy.vercel.app/?username=LJINFINITY&theme=tokyonight&no-bg=true&no-frame=true&margin-w=15)](https://github.com/LJINFINITY)
-
 </div>
 
 <br/>

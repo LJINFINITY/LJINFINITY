@@ -3,14 +3,12 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 def create_animated_gif():
     width, height = 750, 110
-    bg_color = (13, 17, 23, 0)
     
     font_paths = [
+        "/usr/share/fonts/adwaita-mono-fonts/AdwaitaMono-Bold.ttf",
+        "/usr/share/fonts/dejavu-sans-fonts/DejaVuSans-Bold.ttf",
         "/usr/share/fonts/dejavu-sans-mono-fonts/DejaVuSansMono-Bold.ttf",
-        "/usr/share/fonts/dejavu/DejaVuSansMono-Bold.ttf",
-        "/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf",
-        "/usr/share/fonts/liberation-mono/LiberationMono-Bold.ttf",
-        "/usr/share/fonts/gnu-free/FreeMonoBold.ttf"
+        "/usr/share/fonts/gnu-free/FreeSansBold.ttf"
     ]
     
     font_path = None
@@ -19,8 +17,9 @@ def create_animated_gif():
             font_path = p
             break
             
+    print("Using TTF font path:", font_path)
     if font_path:
-        font = ImageFont.truetype(font_path, 72)
+        font = ImageFont.truetype(font_path, 60)
     else:
         font = ImageFont.load_default()
 
@@ -30,7 +29,7 @@ def create_animated_gif():
     def draw_text_frame(text, color):
         img = Image.new("RGBA", (width, height), (0, 0, 0, 0))
         
-        bbox = font.getbbox(text) if hasattr(font, "getbbox") else (0, 0, font.getsize(text)[0], font.getsize(text)[1])
+        bbox = font.getbbox(text)
         text_w = bbox[2] - bbox[0]
         text_h = bbox[3] - bbox[1]
         x = (width - text_w) // 2
@@ -40,7 +39,7 @@ def create_animated_gif():
         glow_img = Image.new("RGBA", (width, height), (0, 0, 0, 0))
         glow_draw = ImageDraw.Draw(glow_img)
         glow_draw.text((x, y), text, font=font, fill=color + (220,))
-        glow_img = glow_img.filter(ImageFilter.GaussianBlur(radius=8))
+        glow_img = glow_img.filter(ImageFilter.GaussianBlur(radius=6))
 
         draw = ImageDraw.Draw(img)
         img.paste(glow_img, (0, 0), glow_img)
@@ -96,7 +95,7 @@ def create_animated_gif():
         loop=0,
         disposal=2
     )
-    print("Successfully generated HUGE title_animated.gif (72px font)!")
+    print("Successfully generated LARGE title_animated.gif using AdwaitaMono-Bold font!")
 
 if __name__ == "__main__":
     create_animated_gif()
