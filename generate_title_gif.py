@@ -2,7 +2,7 @@ import os
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 def create_animated_gif():
-    width, height = 750, 110
+    width, height = 900, 140
     
     font_paths = [
         "/usr/share/fonts/adwaita-mono-fonts/AdwaitaMono-Bold.ttf",
@@ -19,7 +19,7 @@ def create_animated_gif():
             
     print("Using TTF font path:", font_path)
     if font_path:
-        font = ImageFont.truetype(font_path, 60)
+        font = ImageFont.truetype(font_path, 72)
     else:
         font = ImageFont.load_default()
 
@@ -29,7 +29,7 @@ def create_animated_gif():
     def draw_text_frame(text, color):
         img = Image.new("RGBA", (width, height), (0, 0, 0, 0))
         
-        bbox = font.getbbox(text)
+        bbox = font.getbbox(text) if hasattr(font, "getbbox") else (0, 0, font.getsize(text)[0], font.getsize(text)[1])
         text_w = bbox[2] - bbox[0]
         text_h = bbox[3] - bbox[1]
         x = (width - text_w) // 2
@@ -39,7 +39,7 @@ def create_animated_gif():
         glow_img = Image.new("RGBA", (width, height), (0, 0, 0, 0))
         glow_draw = ImageDraw.Draw(glow_img)
         glow_draw.text((x, y), text, font=font, fill=color + (220,))
-        glow_img = glow_img.filter(ImageFilter.GaussianBlur(radius=6))
+        glow_img = glow_img.filter(ImageFilter.GaussianBlur(radius=8))
 
         draw = ImageDraw.Draw(img)
         img.paste(glow_img, (0, 0), glow_img)
@@ -53,36 +53,36 @@ def create_animated_gif():
     # Text 1: Jerin Rajan (Blue)
     text1 = "Jerin Rajan"
     for i in range(1, len(text1) + 1):
-        frames.append(draw_text_frame(text1[:i] + "█", blue_color))
+        frames.append(draw_text_frame(text1[:i] + "|", blue_color))
         durations.append(80)
     
     # Hold full text
     full_text1_frame = draw_text_frame(text1, blue_color)
-    for _ in range(20):
+    for _ in range(22):
         frames.append(full_text1_frame)
         durations.append(80)
 
     # Erase text 1
     for i in range(len(text1) - 1, -1, -1):
-        txt = text1[:i] + "█" if i > 0 else ""
+        txt = text1[:i] + "|" if i > 0 else ""
         frames.append(draw_text_frame(txt, blue_color))
         durations.append(50)
 
     # Text 2: LJ INFINITY (Red)
     text2 = "LJ INFINITY"
     for i in range(1, len(text2) + 1):
-        frames.append(draw_text_frame(text2[:i] + "█", red_color))
+        frames.append(draw_text_frame(text2[:i] + "|", red_color))
         durations.append(80)
         
     # Hold full text
     full_text2_frame = draw_text_frame(text2, red_color)
-    for _ in range(20):
+    for _ in range(22):
         frames.append(full_text2_frame)
         durations.append(80)
 
     # Erase text 2
     for i in range(len(text2) - 1, -1, -1):
-        txt = text2[:i] + "█" if i > 0 else ""
+        txt = text2[:i] + "|" if i > 0 else ""
         frames.append(draw_text_frame(txt, red_color))
         durations.append(50)
 
@@ -95,7 +95,7 @@ def create_animated_gif():
         loop=0,
         disposal=2
     )
-    print("Successfully generated LARGE title_animated.gif using AdwaitaMono-Bold font!")
+    print("Successfully generated HUGE title_animated.gif with 72px AdwaitaMono font!")
 
 if __name__ == "__main__":
     create_animated_gif()
