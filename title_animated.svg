@@ -23,21 +23,24 @@
       }
 
       @keyframes typeJerin {
-        0%   { clip-path: inset(0 100% 0 0); opacity: 1; }
-        22%  { clip-path: inset(0 0% 0 0); opacity: 1; }
-        42%  { clip-path: inset(0 0% 0 0); opacity: 1; }
-        48%  { clip-path: inset(0 100% 0 0); opacity: 1; }
-        50%  { opacity: 0; }
-        100% { opacity: 0; }
+        0%   { clip-path: inset(0 100% 0 0); opacity: 1; visibility: visible; }
+        22%  { clip-path: inset(0 0% 0 0); opacity: 1; visibility: visible; }
+        42%  { clip-path: inset(0 0% 0 0); opacity: 1; visibility: visible; }
+        48%  { clip-path: inset(0 100% 0 0); opacity: 1; visibility: visible; }
+        49%  { opacity: 0; visibility: hidden; }
+        99%  { opacity: 0; visibility: hidden; }
+        100% { opacity: 0; visibility: hidden; }
       }
 
       @keyframes typeLJ {
-        0%   { opacity: 0; }
-        50%  { clip-path: inset(0 100% 0 0); opacity: 1; }
-        72%  { clip-path: inset(0 0% 0 0); opacity: 1; }
-        92%  { clip-path: inset(0 0% 0 0); opacity: 1; }
-        98%  { clip-path: inset(0 100% 0 0); opacity: 1; }
-        100% { opacity: 0; }
+        0%   { opacity: 0; visibility: hidden; }
+        49%  { opacity: 0; visibility: hidden; }
+        50%  { clip-path: inset(0 100% 0 0); opacity: 1; visibility: visible; }
+        72%  { clip-path: inset(0 0% 0 0); opacity: 1; visibility: visible; }
+        92%  { clip-path: inset(0 0% 0 0); opacity: 1; visibility: visible; }
+        98%  { clip-path: inset(0 100% 0 0); opacity: 1; visibility: visible; }
+        99%  { opacity: 0; visibility: hidden; }
+        100% { opacity: 0; visibility: hidden; }
       }
     </style>
   </defs>
