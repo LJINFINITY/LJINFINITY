@@ -1,9 +1,16 @@
 import os
+import shutil
+import subprocess
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 def create_animated_gif():
+    frames_dir = "/tmp/title_frames"
+    if os.path.exists(frames_dir):
+        shutil.rmtree(frames_dir)
+    os.makedirs(frames_dir, exist_ok=True)
+
     width, height = 800, 120
-    bg_rgb = (13, 17, 23) # GitHub exact Dark Mode background (#0D1117)
+    bg_rgb = (13, 17, 23) # #0D1117
     
     font_paths = [
         "/usr/share/fonts/adwaita-mono-fonts/AdwaitaMono-Bold.ttf",
@@ -47,58 +54,57 @@ def create_animated_gif():
         
         return img
 
-    frames = []
-    durations = []
+    frame_count = 0
 
     # Text 1: Jerin Rajan (Blue)
     text1 = "Jerin Rajan"
     for i in range(1, len(text1) + 1):
-        frames.append(draw_text_frame(text1[:i] + "|", blue_color))
-        durations.append(80)
+        frame_img = draw_text_frame(text1[:i] + "|", blue_color)
+        for _ in range(4): # 60 FPS hold per char
+            frame_img.save(os.path.join(frames_dir, f"frame_{frame_count:04d}.png"))
+            frame_count += 1
     
     full_text1_frame = draw_text_frame(text1, blue_color)
-    for _ in range(22):
-        frames.append(full_text1_frame)
-        durations.append(80)
+    for _ in range(90): # Hold 1.5s
+        full_text1_frame.save(os.path.join(frames_dir, f"frame_{frame_count:04d}.png"))
+        frame_count += 1
 
     for i in range(len(text1) - 1, -1, -1):
         txt = text1[:i] + "|" if i > 0 else ""
-        frames.append(draw_text_frame(txt, blue_color))
-        durations.append(50)
+        frame_img = draw_text_frame(txt, blue_color)
+        for _ in range(3):
+            frame_img.save(os.path.join(frames_dir, f"frame_{frame_count:04d}.png"))
+            frame_count += 1
 
     # Text 2: LJ INFINITY (Red)
     text2 = "LJ INFINITY"
     for i in range(1, len(text2) + 1):
-        frames.append(draw_text_frame(text2[:i] + "|", red_color))
-        durations.append(80)
+        frame_img = draw_text_frame(text2[:i] + "|", red_color)
+        for _ in range(4):
+            frame_img.save(os.path.join(frames_dir, f"frame_{frame_count:04d}.png"))
+            frame_count += 1
         
     full_text2_frame = draw_text_frame(text2, red_color)
-    for _ in range(22):
-        frames.append(full_text2_frame)
-        durations.append(80)
+    for _ in range(90): # Hold 1.5s
+        full_text2_frame.save(os.path.join(frames_dir, f"frame_{frame_count:04d}.png"))
+        frame_count += 1
 
     for i in range(len(text2) - 1, -1, -1):
         txt = text2[:i] + "|" if i > 0 else ""
-        frames.append(draw_text_frame(txt, red_color))
-        durations.append(50)
+        frame_img = draw_text_frame(txt, red_color)
+        for _ in range(3):
+            frame_img.save(os.path.join(frames_dir, f"frame_{frame_count:04d}.png"))
+            frame_count += 1
 
-    # Master palette generation
-    master = Image.new("RGB", (width, height * 2), bg_rgb)
-    m_draw = ImageDraw.Draw(master)
-    m_draw.text((10, 10), text1, font=font, fill=blue_color)
-    m_draw.text((10, height + 10), text2, font=font, fill=red_color)
-    palette_img = master.quantize(colors=256)
-
-    palette_frames = [f.quantize(palette=palette_img) for f in frames]
-
-    palette_frames[0].save(
-        "/home/lj/Work/Me/title_animated.gif",
-        save_all=True,
-        append_images=palette_frames[1:],
-        duration=durations,
-        loop=0
-    )
-    print("Successfully generated master-palette quantized title_animated.gif!")
+    output_gif = "/home/lj/Work/Me/title_animated.gif"
+    cmd = [
+        "ffmpeg", "-y", "-framerate", "60",
+        "-i", f"{frames_dir}/frame_%04d.png",
+        "-vf", "fps=60,scale=800:-1:flags=lanczos,split[s0][s1];[s0]palettegen=stats_mode=single[p];[s1][p]paletteuse=dither=sierra2_4a",
+        output_gif
+    ]
+    subprocess.run(cmd, check=True)
+    print("Successfully encoded 60 FPS broadcast-quality title_animated.gif with FFmpeg!")
 
 if __name__ == "__main__":
     create_animated_gif()
