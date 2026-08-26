@@ -93,7 +93,7 @@
 
 <div align="center">
 
-<img src="tech_stack_wall.svg?v=6" width="950" alt="Massive 1750px Bigger Cards Scattered Floating Tech Stack Wall" />
+<img src="tech_stack_wall_v6.svg" width="950" alt="Massive 1750px Scattered Floating Tech Stack Wall" />
 
 <br/><br/><br/>
 

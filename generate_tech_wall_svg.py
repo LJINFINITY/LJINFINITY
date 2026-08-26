@@ -35,31 +35,29 @@ skills = [
     ("Infinity Shell", "#3B82F6", "#FFF"), ("Arc Tracker", "#10B981", "#FFF")
 ]
 
-def generate_huge_scattered_svg():
-    random.seed(777) # High impact massive scatter seed
+def generate_clean_scattered_svg():
+    random.seed(777)
 
-    cols = 6 # 6 wide columns for bigger badges
-    badge_w, badge_h = 145, 46 # BIGGER CARDS!
-    gap_x, gap_y = 38, 75 # MUCH MORE VERTICAL & HORIZONTAL SPACING!
+    cols = 6
+    badge_w, badge_h = 145, 46
+    gap_x, gap_y = 38, 75
     padding_x, padding_y = 45, 50
 
     total_w = cols * badge_w + (cols - 1) * gap_x + padding_x * 2 # 1150px
     rows = (len(skills) + cols - 1) // cols
-    total_h = rows * badge_h + (rows - 1) * gap_y + padding_y * 2 + 80 # ~1750px MASSIVE HEIGHT!
+    total_h = rows * badge_h + (rows - 1) * gap_y + padding_y * 2 + 80 # ~1750px
 
+    # NOTE: NO @import url()! GitHub Camo sanitizer blocks @import statements in SVGs!
     svg_content = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {total_w} {total_h}" width="100%" height="{total_h}">
   <defs>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap');
-
       .skill-pill {{
-        font-family: 'Share Tech Mono', monospace, sans-serif;
-        font-size: 15px;
+        font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+        font-size: 14px;
         font-weight: 700;
-        letter-spacing: 0.6px;
+        letter-spacing: 0.5px;
       }}
 
-      /* Buttery-smooth long-cycle floating & rotating keyframes */
       @keyframes floatA {{
         0% {{ transform: translate(0px, 0px) rotate(var(--rot)); }}
         50% {{ transform: translate(-12px, -24px) rotate(calc(var(--rot) + 2.2deg)); }}
@@ -89,7 +87,6 @@ def generate_huge_scattered_svg():
         ry: 12px;
         stroke: rgba(255, 255, 255, 0.25);
         stroke-width: 1.2px;
-        filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.5));
       }}
     </style>
   </defs>
@@ -100,7 +97,6 @@ def generate_huge_scattered_svg():
         r = i // cols
         c = i % cols
 
-        # Wild scatter offsets for spacious vertical layout
         offset_x = random.randint(-25, 25)
         offset_y = random.randint(-30, 30)
         rot_deg = round(random.uniform(-9.5, 9.5), 1)
@@ -111,7 +107,6 @@ def generate_huge_scattered_svg():
         center_x = x + badge_w // 2
         center_y = y + badge_h // 2 + 5
 
-        # Silky smooth long durations (7.5s to 12.0s)
         anim_type = ["floatA", "floatB", "floatC", "floatD"][i % 4]
         dur = round(random.uniform(7.5, 12.0), 2)
         delay = round(random.uniform(0.1, 5.0), 2)
@@ -126,10 +121,10 @@ def generate_huge_scattered_svg():
 
     svg_content += "</svg>\n"
 
-    output_path = "/home/lj/Work/Me/tech_stack_wall.svg"
+    output_path = "/home/lj/Work/Me/tech_stack_wall_v6.svg"
     with open(output_path, "w") as f:
         f.write(svg_content)
-    print(f"Successfully generated HUGE 1750PX BIGGER CARDS SCATTERED tech_stack_wall.svg at {output_path}!")
+    print(f"Successfully generated CLEAN GitHub Camo sanitized tech_stack_wall_v6.svg at {output_path}!")
 
 if __name__ == "__main__":
-    generate_huge_scattered_svg()
+    generate_clean_scattered_svg()
