@@ -35,17 +35,17 @@ skills = [
     ("Infinity Shell", "#3B82F6", "#FFF"), ("Arc Tracker", "#10B981", "#FFF")
 ]
 
-def generate_random_scattered_svg():
-    random.seed(1337) # High-quality random spread
+def generate_spacious_scattered_svg():
+    random.seed(2026) # Deterministic non-overlapping seed
 
-    cols = 9
-    badge_w, badge_h = 108, 34
-    gap_x, gap_y = 16, 20
-    padding_x, padding_y = 25, 25
+    cols = 8
+    badge_w, badge_h = 112, 36
+    gap_x, gap_y = 22, 28
+    padding_x, padding_y = 35, 35
 
-    total_w = cols * badge_w + (cols - 1) * gap_x + padding_x * 2 # ~1090px
+    total_w = cols * badge_w + (cols - 1) * gap_x + padding_x * 2 # 1050px
     rows = (len(skills) + cols - 1) // cols
-    total_h = rows * badge_h + (rows - 1) * gap_y + padding_y * 2 + 40 # ~560px
+    total_h = rows * badge_h + (rows - 1) * gap_y + padding_y * 2 + 60 # 840px
 
     svg_content = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {total_w} {total_h}" width="100%" height="{total_h}">
   <defs>
@@ -56,36 +56,36 @@ def generate_random_scattered_svg():
         font-family: 'Share Tech Mono', monospace, sans-serif;
         font-size: 12px;
         font-weight: 700;
-        letter-spacing: 0.3px;
+        letter-spacing: 0.4px;
       }}
 
       @keyframes floatA {{
         0% {{ transform: translate(0px, 0px) rotate(var(--rot)); }}
-        50% {{ transform: translate(-8px, -12px) rotate(calc(var(--rot) + 3deg)); }}
+        50% {{ transform: translate(-6px, -10px) rotate(calc(var(--rot) + 2.5deg)); }}
         100% {{ transform: translate(0px, 0px) rotate(var(--rot)); }}
       }}
 
       @keyframes floatB {{
         0% {{ transform: translate(0px, 0px) rotate(var(--rot)); }}
-        50% {{ transform: translate(10px, -10px) rotate(calc(var(--rot) - 4deg)); }}
+        50% {{ transform: translate(8px, -8px) rotate(calc(var(--rot) - 3deg)); }}
         100% {{ transform: translate(0px, 0px) rotate(var(--rot)); }}
       }}
 
       @keyframes floatC {{
         0% {{ transform: translate(0px, 0px) rotate(var(--rot)); }}
-        50% {{ transform: translate(-6px, 11px) rotate(calc(var(--rot) + 2.5deg)); }}
+        50% {{ transform: translate(-5px, 9px) rotate(calc(var(--rot) + 2deg)); }}
         100% {{ transform: translate(0px, 0px) rotate(var(--rot)); }}
       }}
 
       @keyframes floatD {{
         0% {{ transform: translate(0px, 0px) rotate(var(--rot)); }}
-        50% {{ transform: translate(9px, 8px) rotate(calc(var(--rot) - 3deg)); }}
+        50% {{ transform: translate(7px, 7px) rotate(calc(var(--rot) - 2.5deg)); }}
         100% {{ transform: translate(0px, 0px) rotate(var(--rot)); }}
       }}
 
       .badge-bg {{
-        rx: 9px;
-        ry: 9px;
+        rx: 10px;
+        ry: 10px;
         stroke: rgba(255, 255, 255, 0.22);
         stroke-width: 1px;
       }}
@@ -98,10 +98,10 @@ def generate_random_scattered_svg():
         r = i // cols
         c = i % cols
 
-        # Strong random scatter offsets
-        offset_x = random.randint(-22, 22)
-        offset_y = random.randint(-18, 18)
-        rot_deg = round(random.uniform(-7.5, 7.5), 1)
+        # Controlled non-overlapping scatter jitter
+        offset_x = random.randint(-12, 12)
+        offset_y = random.randint(-10, 10)
+        rot_deg = round(random.uniform(-7.0, 7.0), 1)
 
         x = padding_x + c * (badge_w + gap_x) + offset_x
         y = padding_y + r * (badge_h + gap_y) + offset_y
@@ -111,8 +111,8 @@ def generate_random_scattered_svg():
 
         # Select float animation variant
         anim_type = ["floatA", "floatB", "floatC", "floatD"][i % 4]
-        dur = round(random.uniform(3.0, 5.8), 2)
-        delay = round(random.uniform(0.1, 3.2), 2)
+        dur = round(random.uniform(3.2, 5.5), 2)
+        delay = round(random.uniform(0.1, 3.0), 2)
 
         transform_origin = f"{x + badge_w // 2}px {y + badge_h // 2}px"
 
@@ -127,7 +127,7 @@ def generate_random_scattered_svg():
     output_path = "/home/lj/Work/Me/tech_stack_wall.svg"
     with open(output_path, "w") as f:
         f.write(svg_content)
-    print(f"Successfully generated 80+ RANDOM SCATTER FLOATING tech_stack_wall.svg at {output_path}!")
+    print(f"Successfully generated SPACIOUS NON-OVERLAPPING SCATTERED tech_stack_wall.svg at {output_path}!")
 
 if __name__ == "__main__":
-    generate_random_scattered_svg()
+    generate_spacious_scattered_svg()
