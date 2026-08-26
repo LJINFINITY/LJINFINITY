@@ -5,7 +5,7 @@
 
       .legend-text {
         font-family: 'Share Tech Mono', monospace, sans-serif;
-        font-size: 20px;
+        font-size: 19px;
         font-weight: 700;
         letter-spacing: 4px;
         text-transform: uppercase;
@@ -50,5 +50,5 @@
   </defs>
 
   <rect x="5" y="5" width="740" height="50" class="legend-border" />
-  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" class="legend-text">✦ You are witnessing the story of a legend ✦</text>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" class="legend-text">// YOU ARE WITNESSING THE STORY OF A LEGEND //</text>
 </svg>
