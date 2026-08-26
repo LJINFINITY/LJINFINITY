@@ -1,5 +1,13 @@
 import os
+import math
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
+
+def cubic_ease_in_out(t):
+    """Cubic ease-in-out curve for butter-smooth acceleration & deceleration."""
+    if t < 0.5:
+        return 4.0 * t * t * t
+    else:
+        return 1.0 - math.pow(-2.0 * t + 2.0, 3) / 2.0
 
 def create_live_to_gif():
     width, height = 750, 70
@@ -28,11 +36,11 @@ def create_live_to_gif():
     prefix_color = (148, 163, 184) # #94A3B8
 
     words_info = [
-        ("THINK", (56, 189, 248)),    # #38BDF8
-        ("CREATE", (139, 92, 246)),   # #8B5CF6
-        ("EXPLORE", (16, 185, 129)),  # #10B981
-        ("BUILD", (245, 158, 11)),    # #F59E0B
-        ("INNOVATE", (236, 72, 153))  # #EC4899
+        ("THINK", (56, 189, 248)),    # #38BDF8 (Cyan)
+        ("CREATE", (139, 92, 246)),   # #8B5CF6 (Purple)
+        ("EXPLORE", (16, 185, 129)),  # #10B981 (Emerald)
+        ("BUILD", (245, 158, 11)),    # #F59E0B (Amber)
+        ("INNOVATE", (236, 72, 153))  # #EC4899 (Rose)
     ]
 
     max_word_w = max([font.getbbox(w[0])[2] - font.getbbox(w[0])[0] for w in words_info])
@@ -53,9 +61,10 @@ def create_live_to_gif():
         py = center_y - (bbox_prefix[3] - bbox_prefix[1]) // 2 - bbox_prefix[1]
         draw.text((prefix_x, py), prefix_text, font=font, fill=prefix_color)
 
-        # Word canvas
+        # Isolated word canvas for slide-up clipping
         word_canvas = Image.new("RGB", (max_word_w + 50, height), bg_rgb)
 
+        # Current Word 1 (sliding up out of frame)
         if word1_text:
             bbox1 = font.getbbox(word1_text)
             w1_y = (center_y - (bbox1[3] - bbox1[1]) // 2 - bbox1[1]) + offset_y
@@ -63,12 +72,13 @@ def create_live_to_gif():
             glow1 = Image.new("RGB", (max_word_w + 50, height), bg_rgb)
             g1_draw = ImageDraw.Draw(glow1)
             g1_draw.text((5, w1_y), word1_text, font=font, fill=word1_color)
-            glow1 = glow1.filter(ImageFilter.GaussianBlur(radius=4))
+            glow1 = glow1.filter(ImageFilter.GaussianBlur(radius=5))
             
-            word_canvas = Image.blend(word_canvas, glow1, alpha=0.7)
+            word_canvas = Image.blend(word_canvas, glow1, alpha=0.75)
             w_draw = ImageDraw.Draw(word_canvas)
             w_draw.text((5, w1_y), word1_text, font=font, fill=word1_color)
 
+        # Incoming Word 2 (sliding up into frame from below)
         if word2_text:
             bbox2 = font.getbbox(word2_text)
             w2_y = (center_y - (bbox2[3] - bbox2[1]) // 2 - bbox2[1]) + offset_y + height
@@ -76,9 +86,9 @@ def create_live_to_gif():
             glow2 = Image.new("RGB", (max_word_w + 50, height), bg_rgb)
             g2_draw = ImageDraw.Draw(glow2)
             g2_draw.text((5, w2_y), word2_text, font=font, fill=word2_color)
-            glow2 = glow2.filter(ImageFilter.GaussianBlur(radius=4))
+            glow2 = glow2.filter(ImageFilter.GaussianBlur(radius=5))
             
-            word_canvas = Image.blend(word_canvas, glow2, alpha=0.7)
+            word_canvas = Image.blend(word_canvas, glow2, alpha=0.75)
             w_draw = ImageDraw.Draw(word_canvas)
             w_draw.text((5, w2_y), word2_text, font=font, fill=word2_color)
 
@@ -93,17 +103,23 @@ def create_live_to_gif():
         w1_text, w1_color = words_info[idx]
         w2_text, w2_color = words_info[(idx + 1) % num_words]
 
+        # 1. Steady Hold Phase (1.5 seconds @ 60ms = 25 frames)
         hold_img = render_frame(w1_text, w1_color, None, None, 0)
         for _ in range(25):
             frames.append(hold_img)
-            durations.append(80)
+            durations.append(60)
 
-        steps = 8
-        for s in range(1, steps + 1):
-            offset_y = int(-height * (s / steps))
+        # 2. 50 FPS Butter-Smooth Eased Slide-Up Transition (400ms @ 20ms = 20 cubic-eased frames)
+        transition_steps = 20
+        for s in range(1, transition_steps + 1):
+            progress = s / float(transition_steps)
+            eased_progress = cubic_ease_in_out(progress)
+            offset_y = int(round(-height * eased_progress))
+            
             frames.append(render_frame(w1_text, w1_color, w2_text, w2_color, offset_y))
-            durations.append(40)
+            durations.append(20) # 50 FPS high frame rate!
 
+    # Save 50 FPS GIF with optimal frame palette quantization
     frames[0].save(
         "/home/lj/Work/Me/live_to_header.gif",
         save_all=True,
@@ -112,7 +128,7 @@ def create_live_to_gif():
         loop=0,
         optimize=True
     )
-    print("Successfully generated live_to_header.gif with solid dark background!")
+    print("Successfully generated 50 FPS butter-smooth cubic-eased live_to_header.gif!")
 
 if __name__ == "__main__":
     create_live_to_gif()
