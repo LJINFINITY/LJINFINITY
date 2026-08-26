@@ -1,4 +1,4 @@
-<br/><br/>
+<br/><br/><br/><br/><br/><br/>
 
 <!-- ========================================== -->
 <!-- TOPMOST WELCOME BANNER (MONOCHROME V2)     -->
@@ -10,7 +10,7 @@
 
 </div>
 
-<br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/>
 
 <!-- ========================================== -->
 <!-- SECTION 1: LIVE TO... ANIMATION            -->
@@ -22,7 +22,7 @@
 
 </div>
 
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/>
 
 ---
 
