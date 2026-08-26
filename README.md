@@ -22,11 +22,11 @@
 
 </div>
 
-<br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 ---
 
-<br/><br/><br/>
+<br/><br/><br/><br/><br/>
 
 <!-- ========================================== -->
 <!-- SECTION 2: BANNER GIF, NAME & TITLE        -->
@@ -36,11 +36,11 @@
 
 <img src="221617.gif" width="650" alt="Animated Banner" />
 
-<br/><br/>
+<br/><br/><br/>
 
 <img src="title_animated_v4.gif" width="700" alt="Jerin Rajan / LJ INFINITY" />
 
-<br/>
+<br/><br/>
 
 <img src="headline.svg" width="550" alt="AI Full Stack Dev" />
 
