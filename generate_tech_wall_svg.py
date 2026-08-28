@@ -32,7 +32,7 @@ skills = [
     ("Docker", "#2496ED", "#FFF"), ("Kubernetes", "#326CE5", "#FFF"), ("Git", "#F05032", "#FFF"), ("GitHub Actions", "#2088FF", "#FFF"), 
     ("AWS", "#232F3E", "#FFF"), ("Vercel", "#000000", "#FFF"), ("Netlify", "#00C7B7", "#000"), ("Cloudflare", "#F38020", "#FFF"), 
     ("NGINX", "#009639", "#FFF"), ("Postman", "#FF6C37", "#FFF"), ("Figma", "#F24E1E", "#FFF"), ("Uriel AI", "#6366F1", "#FFF"),
-    ("Infinity Shell", "#3B82F6", "#FFF"), ("Arc Tracker", "#10B981", "#FFF")
+    ("Zyurix Shell", "#3B82F6", "#FFF"), ("Arc Tracker", "#10B981", "#FFF")
 ]
 
 def generate_true_random_smooth_svg():

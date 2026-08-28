@@ -71,7 +71,7 @@
 
 <br/>
 
-- **[SYS] Infinity Shell** — *Feature-rich custom desktop shell setup built from scratch with Quickshell to my exact liking.*  
+- **[SYS] Zyurix Shell** — *Feature-rich custom desktop shell setup built from scratch with Quickshell to my exact liking.*  
   `Quickshell` • `QML` • `Lua` • `Python`
 
 <br/>
