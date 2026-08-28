@@ -71,7 +71,7 @@
 
 <br/>
 
-- **[SYS] Zyurix Shell** — *Feature-rich custom desktop shell setup built from scratch with Quickshell to my exact liking.*  
+- **[SYS] Enoch Shell** — *Feature-rich custom desktop shell setup built from scratch with Quickshell to my exact liking.*  
   `Quickshell` • `QML` • `Lua` • `Python`
 
 <br/>
