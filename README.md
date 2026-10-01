@@ -204,6 +204,26 @@
 
 <br/>
 
+### `// WAKATIME CODING STATS`
+
+<div align="center">
+
+[![WakaTime](https://img.shields.io/badge/WakaTime-13E67A?style=for-the-badge&logo=wakatime&logoColor=white)](https://wakatime.com/@LJINFINITY)
+
+<br/><br/><br/>
+
+<a href="https://wakatime.com/@LJINFINITY">
+  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=LJINFINITY&theme=tokyo-night&hide_border=true" width="750" alt="WakaTime Stats" />
+</a>
+
+</div>
+
+<br/>
+
+---
+
+<br/>
+
 ### `// CONNECT`
 
 <div align="center">
