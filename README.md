@@ -51,25 +51,26 @@
 ### `// 02. ARCH LINUX FASTFETCH TELEMETRY`
 
 ```text
-                  -`                   ┌── [ lj@archlinux // FASTFETCH ] ─────────────────────────┐
-                 .o+`                  │  Tagline     :: I use Arch BTW                           │
-                `ooo/                  │  Host        :: lj                                       │
-               `+oooo:                 │  System      :: Rog Strix 2023 G16 (Current)             │
-              `+oooooo:                │  OS          :: Arch Linux x86_64                        │
-              -+oooooo+:               │  Kernel      :: 7.3.4-arch1-2                            │
-            `/:-:++oooo+:              │  CPU         :: 13th Gen Intel Core i7-13650HX (20)      │
-           `/++++/+++++++:             │  GPU         :: NVIDIA GeForce RTX 4060 Mobile (8GB)     │
-          `/++++++++++++++:            │  Compositor  :: Hyprland (Wayland)                       │
-         `/+++ooooooooooooo/`          │  Shell       :: Enoch (Quickshell)                       │
-        ./ooosssso++osssssso+`         │  Editor      :: Code (VSCode)                            │
-       .oossssso-````/ossssss+`        │  Terminal    :: Kitty                                    │
-      -osssssso.      :ssssssso.       │  Memory      :: 16GB DDR5                                │
-     :osssssss/        osssso+++.      │  Audio Flow  :: Lamp // J-Pop & Modern Jazz              │
-    /ossssssss/        +ssssooo/-      │  Telemetry   :: 0.08ms // Real-Time Flow State           │
-  `/ossssso+/:-        -:/+osssso+-    └──────────────────────────────────────────────────────────┘
- `+sso+:-`                 `.-/+oso:      ● ● ● ● ● ● ● ●   [ ARCH-LINUX // OPERATIONAL ]
+                  -`
+                 .o+`
+                `ooo/                  ┌── [ lj@archlinux // FASTFETCH ] ─────────────────────────┐
+               `+oooo:                 │  Host        :: lj                                       │
+              `+oooooo:                │  System      :: Rog Strix 2023 G16 (Current)             │
+              -+oooooo+:               │  OS          :: Arch Linux x86_64                        │
+            `/:-:++oooo+:              │  Kernel      :: 7.3.4-arch1-2                            │
+           `/++++/+++++++:             │  CPU         :: 13th Gen Intel Core i7-13650HX (20)      │
+          `/++++++++++++++:            │  GPU         :: NVIDIA GeForce RTX 4060 Mobile (8GB)     │
+         `/+++ooooooooooooo/`          │  Compositor  :: Hyprland (Wayland)                       │
+        ./ooosssso++osssssso+`         │  Shell       :: Enoch (Quickshell)                       │
+       .oossssso-````/ossssss+`        │  Editor      :: Code (VSCode)                            │
+      -osssssso.      :ssssssso.       │  Terminal    :: Kitty                                    │
+     :osssssss/        osssso+++.      │  Memory      :: 16GB DDR5                                │
+    /ossssssss/        +ssssooo/-      └──────────────────────────────────────────────────────────┘
+  `/ossssso+/:-        -:/+osssso+-       ● ● ● ● ● ● ● ●   [ ARCH-LINUX // OPERATIONAL ]
+ `+sso+:-`                 `.-/+oso:
 `++:.                           `-/+/
 .`                                 `/
+           "I use Arch BTW"
 ```
 
 <br/>
