@@ -1,4 +1,5 @@
 import math
+import os
 
 def generate_sine_path(width, height, y_offset, amplitude, wavelength, phase, num_points=40):
     """Generate SVG path string for a sine wave with cubic bezier curves."""
@@ -22,20 +23,20 @@ def generate_sine_path(width, height, y_offset, amplitude, wavelength, phase, nu
     return d
 
 WIDTH = 900
-HEIGHT = 75
-Y_MID = 50
+HEIGHT = 100
+Y_MID = 70
 
 # 4 keyframes for 360-degree seamless phase loop
 phases = [0, math.pi / 2, math.pi, 3 * math.pi / 2, 2 * math.pi]
 
 # Primary Wave
-wave1_frames = [generate_sine_path(WIDTH, HEIGHT, Y_MID, 11, 240, p) for p in phases]
+wave1_frames = [generate_sine_path(WIDTH, HEIGHT, Y_MID, 9, 240, p) for p in phases]
 
 # Secondary Harmonic Wave
-wave2_frames = [generate_sine_path(WIDTH, HEIGHT, Y_MID, 6.5, 150, p + math.pi/3) for p in phases]
+wave2_frames = [generate_sine_path(WIDTH, HEIGHT, Y_MID, 5.5, 150, p + math.pi/3) for p in phases]
 
 # Sub-harmonic Ambient Wave
-wave3_frames = [generate_sine_path(WIDTH, HEIGHT, Y_MID, 4, 320, -p) for p in phases]
+wave3_frames = [generate_sine_path(WIDTH, HEIGHT, Y_MID, 3.5, 320, -p) for p in phases]
 
 val1 = "; ".join(wave1_frames)
 val2 = "; ".join(wave2_frames)
@@ -43,7 +44,7 @@ val3 = "; ".join(wave3_frames)
 
 # Exactly matching customColorList=1,12,24 from capsule-render header
 # #feac5e (peach/sunset) -> #c779d0 (violet) -> #4bc0c8 (teal/cyan)
-svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 75" width="100%" height="75">
+svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 100" width="100%" height="100">
   <defs>
     <!-- Perfectly Synced Gradient with Capsule-Render Header (1,12,24) -->
     <linearGradient id="headerSyncGrad" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -73,18 +74,18 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 75" width="10
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Roboto, sans-serif;
       font-size: 15px;
       font-weight: 700;
-      letter-spacing: 4px;
+      letter-spacing: 5px;
       text-transform: uppercase;
       fill: url(#headerSyncGrad);
     }}
   </style>
 
   <!-- Background Chassis -->
-  <rect x="0" y="0" width="900" height="75" rx="10" fill="#0D1117" />
-  <rect x="0" y="0" width="900" height="75" rx="10" fill="none" stroke="url(#headerSyncGrad)" stroke-width="1" stroke-opacity="0.25" />
+  <rect x="0" y="0" width="900" height="100" rx="12" fill="#0D1117" />
+  <rect x="0" y="0" width="900" height="100" rx="12" fill="none" stroke="url(#headerSyncGrad)" stroke-width="1" stroke-opacity="0.25" />
 
-  <!-- Main Centered Greeting Text (Synced Gradient, No side telemetry) -->
-  <text x="450" y="28" text-anchor="middle" class="greeting-title">
+  <!-- Main Centered Greeting Text with Clear Separation from Wave -->
+  <text x="450" y="32" text-anchor="middle" class="greeting-title">
     GREETINGS VISITOR  •  ENJOY YOUR TIME HERE
   </text>
 
@@ -105,10 +106,8 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 75" width="10
 </svg>
 '''
 
-import os
-
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUT_PATH = os.path.join(REPO_ROOT, 'assets', 'greeting_wave.svg')
+OUT_PATH = os.path.join(REPO_ROOT, 'assets', 'greeting_soundwave.svg')
 
 with open(OUT_PATH, 'w') as f:
     f.write(svg)
