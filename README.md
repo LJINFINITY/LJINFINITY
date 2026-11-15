@@ -8,9 +8,9 @@
 
 <br/>
 
-<h3 align="center">
-  ✨ <i>“Greetings visitor, Enjoy your time here!!!”</i> ✨
-</h3>
+<a href="https://github.com/LJINFINITY">
+  <img src="https://capsule-render.vercel.app/api?type=transparent&fontColor=00F0FF&text=✨%20Greetings%20visitor,%20Enjoy%20your%20time%20here!!!%20✨&height=60&fontSize=24&animation=twinkling" width="100%" alt="Greetings Visitor" />
+</a>
 
 </div>
 
