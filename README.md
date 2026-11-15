@@ -219,6 +219,10 @@
 
 <br/><br/>
 
-<sub><i>Architected with passion by <b>Jerin Rajan (LJINFINITY)</b> • Purring in flow state 🐾</i></sub>
+<sub><i>Architected with passion by <b>Jerin Rajan (LJINFINITY)</b></i></sub>
+
+<br/><br/>
+
+<img src="assets/footer_wave.svg" width="100%" alt="Footer Wave Outro" />
 
 </div>
