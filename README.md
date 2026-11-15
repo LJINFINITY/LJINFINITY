@@ -1,42 +1,22 @@
 <div align="center">
 
 <!-- ============================================================ -->
-<!-- HEADER: KINETIC BANNER, ANIMATED TITLE & PULSATING HEADLINE  -->
+<!-- TOP GRID: HIGH-RES ANIMATED ASCII CAT + DEVELOPER HUD GIFS   -->
 <!-- ============================================================ -->
 
-<img src="live_to_header_v5.gif" width="620" alt="Live to Think / Create / Explore / Build / Innovate" />
-
-<br/><br/>
-
-<img src="title_animated_v4.gif" width="700" alt="Jerin Rajan // LJ INFINITY" />
-
-<br/>
-
-<img src="headline.svg" width="500" alt="AI Full Stack Dev" />
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr style="border: none;">
+    <td width="44%" align="center" valign="middle" style="border: none;">
+      <img src="ascii_cat_animated.gif" width="100%" alt="ASCII Cyber Cat" />
+    </td>
+    <td width="2%" style="border: none;"></td>
+    <td width="54%" align="center" valign="middle" style="border: none;">
+      <img src="header_animated.gif" width="100%" alt="Jerin Rajan Profile Header" />
+    </td>
+  </tr>
+</table>
 
 </div>
-
-<br/>
-
-<!-- ============================================================ -->
-<!-- SECTION: SYSTEM TELEMETRY / NEKO-FETCH (PIXEL-PERFECT MONO)  -->
-<!-- ============================================================ -->
-
-```text
-┌── [ SYSTEM TELEMETRY // NEKO-FETCH v2.6 ] ────────────────────────────────┐
-│                                                                           │
-│         /\_____/\          user: Jerin Rajan (LJINFINITY)                 │
-│        /  o   o  \         role: AI Architect & Systems Crafter           │
-│       (  =  ^  =  )        host: Custom Linux Rig (64GB DDR5)             │
-│        )         (         os: Fedora / Arch Linux                        │
-│       /   [SYS]   \        shell: Enoch (Quickshell + QML)                │
-│      (  |   |   |  )       wm: Hyprland (Wayland)                         │
-│     ( ( m   m   m ) )      editor: Neovim                                 │
-│     ═════════════════      runtime: Autonomous Agents & Runtimes          │
-│                            focus: J-Pop & Modern Jazz                     │
-│                                                                           │
-└───────────────────────────────────────────────────────────────────────────┘
-```
 
 <br/>
 
@@ -53,7 +33,7 @@
 <br/>
 
 <!-- ============================================================ -->
-<!-- SECTION: THE BIG THREE FLAGSHIPS                             -->
+<!-- SECTION: THE BIG THREE FLAGSHIP PROJECTS                     -->
 <!-- ============================================================ -->
 
 ### `// THE BIG THREE FLAGSHIPS`
@@ -97,7 +77,7 @@
 <br/>
 
 <!-- ============================================================ -->
-<!-- SECTION: NOW PLAYING                                         -->
+<!-- SECTION: AUDIO VIBE & NOW PLAYING                            -->
 <!-- ============================================================ -->
 
 ### `// AUDIO VIBE & NOW PLAYING`
