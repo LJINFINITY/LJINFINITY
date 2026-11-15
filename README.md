@@ -85,6 +85,12 @@
 
 ### `// 03. FLAGSHIP ARCHITECTURAL DOSSIERS`
 
+<div align="center">
+  <img src="assets/uriel_agent_core.svg" width="100%" alt="Uriel AI Swarm Core Visualizer" />
+</div>
+
+<br/>
+
 #### 🐾 01. [Uriel AI Assistant](https://github.com/LJINFINITY) `v2.4`
 > *Custom Autonomous Multi-Agent Orchestrator with Recursive Self-Correction*
 
@@ -135,6 +141,10 @@
 ### `// 04. TECH STACK & ARSENAL`
 
 <div align="center">
+
+<img src="assets/tech_circuit_stream.svg" width="100%" alt="Hardware Bus & Circuit Trace" />
+
+<br/><br/>
 
 <img src="https://skillicons.dev/icons?i=rust,cpp,c,py,ts,js,go,bash,linux,arch,neovim,qt,react,nextjs,tailwind,fastapi,nodejs,postgres,redis,docker,git,aws&perline=11" alt="Tech Stack Icons" />
 
