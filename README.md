@@ -1,16 +1,10 @@
 <!-- ============================================================ -->
-<!-- HERO: FLUID ANIMATED WAVING BANNER & TYPING SUBTITLE         -->
+<!-- HERO: FLUID ANIMATED WAVING BANNER                           -->
 <!-- ============================================================ -->
 
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,12,24&height=220&section=header&text=JERIN%20RAJAN&fontSize=56&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=AI%20Full-Stack%20Architect%20%2F%2F%20LJINFINITY&descSize=20&descAlignY=60&descAlign=50" width="100%" alt="Jerin Rajan Waving Header" />
-
-<br/>
-
-<a href="https://github.com/LJINFINITY">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=17&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&width=700&lines=%3E+Architecting+Autonomous+Multi-Agent+Intelligence;%3E+Engineering+Low-Latency+Systems+in+Rust+%26+C%2B%2B;%3E+Crafting+Bespoke+Declarative+Wayland+Desktop+Rigs;%3E+Obsessed+with+Zero-Lag+Ergonomics+%26+Deep+Flow+State" alt="Typing Subtitle" />
-</a>
 
 <br/><br/>
 
