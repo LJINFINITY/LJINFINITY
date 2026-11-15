@@ -4,7 +4,7 @@
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,12,24&height=220&section=header&text=JERIN%20RAJAN&fontSize=56&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=AI%20Full-Stack%20Architect%20%2F%2F%20LJINFINITY&descSize=20&descAlignY=60&descAlign=50" width="100%" alt="Jerin Rajan Waving Header" />
+<img src="assets/hero_wave.svg" width="100%" alt="Jerin Rajan // LJINFINITY Waving Header" />
 
 <br/>
 
