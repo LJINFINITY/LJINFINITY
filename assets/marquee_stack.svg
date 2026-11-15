@@ -1,413 +1,414 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 106" width="100%" height="106">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 116" width="100%" height="116">
   <defs>
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&amp;display=swap');
       
     @keyframes slideLeft {
       0%   { transform: translateX(0px); }
-      100% { transform: translateX(-2244px); }
+      100% { transform: translateX(-2361px); }
     }
       
     @keyframes slideRight {
-      0%   { transform: translateX(-2211px); }
+      0%   { transform: translateX(-2294px); }
       100% { transform: translateX(0px); }
     }
     </style>
     
     <!-- Linear Gradients for Edge Fading -->
     <linearGradient id="fadeLeft" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0D1117" stop-opacity="1" />
-      <stop offset="100%" stop-color="#0D1117" stop-opacity="0" />
+      <stop offset="0%" stop-color="#0A0E14" stop-opacity="1" />
+      <stop offset="100%" stop-color="#0A0E14" stop-opacity="0" />
     </linearGradient>
     <linearGradient id="fadeRight" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0D1117" stop-opacity="0" />
-      <stop offset="100%" stop-color="#0D1117" stop-opacity="1" />
+      <stop offset="0%" stop-color="#0A0E14" stop-opacity="0" />
+      <stop offset="100%" stop-color="#0A0E14" stop-opacity="1" />
     </linearGradient>
   </defs>
 
-  <!-- Dark Background -->
-  <rect width="850" height="106" fill="#0D1117" rx="12" stroke="#30363D" stroke-width="1"/>
+  <!-- Dark Obsidian Container -->
+  <rect width="900" height="116" fill="#0A0E14" rx="12" stroke="#21262D" stroke-width="1.2"/>
 
   <!-- Clipping mask viewport -->
   <g clip-path="url(#marqueeClip)">
     <clipPath id="marqueeClip">
-      <rect x="2" y="2" width="846" height="102" rx="10"/>
+      <rect x="2" y="2" width="896" height="112" rx="10"/>
     </clipPath>
     
     
-    <g transform="translate(0, 10)">
-      <g style="animation: slideLeft 30s linear infinite;">
+    <g transform="translate(0, 12)">
+      <g style="animation: slideLeft 28s linear infinite;">
         
       <g transform="translate(0, 0)">
-        <rect width="90" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#DEA584"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Rust</text>
+        <rect width="98" height="36" rx="8" fill="#111620" stroke="#DEA584" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#DEA584"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Rust</text>
       </g>
-      <g transform="translate(104, 0)">
-        <rect width="90" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#F34B7D"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">C++</text>
+      <g transform="translate(114, 0)">
+        <rect width="98" height="36" rx="8" fill="#111620" stroke="#F34B7D" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#F34B7D"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">C++</text>
       </g>
-      <g transform="translate(208, 0)">
-        <rect width="102" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#3572A5"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Python</text>
+      <g transform="translate(228, 0)">
+        <rect width="102" height="36" rx="8" fill="#111620" stroke="#38BDF8" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#38BDF8"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Python</text>
       </g>
-      <g transform="translate(324, 0)">
-        <rect width="138" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#3178C6"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">TypeScript</text>
+      <g transform="translate(346, 0)">
+        <rect width="138" height="36" rx="8" fill="#111620" stroke="#3178C6" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#3178C6"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">TypeScript</text>
       </g>
-      <g transform="translate(476, 0)">
-        <rect width="90" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#00ADD8"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Go</text>
+      <g transform="translate(500, 0)">
+        <rect width="98" height="36" rx="8" fill="#111620" stroke="#00ADD8" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#00ADD8"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Go</text>
       </g>
-      <g transform="translate(580, 0)">
-        <rect width="111" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#EE4C2C"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">PyTorch</text>
+      <g transform="translate(614, 0)">
+        <rect width="111" height="36" rx="8" fill="#111620" stroke="#EE4C2C" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#EE4C2C"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">PyTorch</text>
       </g>
-      <g transform="translate(705, 0)">
-        <rect width="129" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#1C3C3C"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">LangChain</text>
+      <g transform="translate(741, 0)">
+        <rect width="129" height="36" rx="8" fill="#111620" stroke="#10B981" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#10B981"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">LangChain</text>
       </g>
-      <g transform="translate(848, 0)">
-        <rect width="90" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#76B900"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">CUDA</text>
+      <g transform="translate(886, 0)">
+        <rect width="98" height="36" rx="8" fill="#111620" stroke="#76B900" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#76B900"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">CUDA</text>
       </g>
-      <g transform="translate(952, 0)">
-        <rect width="156" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#FFD21E"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Hugging Face</text>
+      <g transform="translate(1000, 0)">
+        <rect width="156" height="36" rx="8" fill="#111620" stroke="#FFD21E" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#FFD21E"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Hugging Face</text>
       </g>
-      <g transform="translate(1122, 0)">
-        <rect width="102" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#5C3EE8"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">OpenCV</text>
+      <g transform="translate(1172, 0)">
+        <rect width="102" height="36" rx="8" fill="#111620" stroke="#8B5CF6" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#8B5CF6"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">OpenCV</text>
       </g>
-      <g transform="translate(1238, 0)">
-        <rect width="93" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#FCC624"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Linux</text>
+      <g transform="translate(1290, 0)">
+        <rect width="98" height="36" rx="8" fill="#111620" stroke="#FCC624" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#FCC624"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Linux</text>
       </g>
-      <g transform="translate(1345, 0)">
-        <rect width="120" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#00A6A6"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Hyprland</text>
+      <g transform="translate(1404, 0)">
+        <rect width="120" height="36" rx="8" fill="#111620" stroke="#00F0FF" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#00F0FF"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Hyprland</text>
       </g>
-      <g transform="translate(1479, 0)">
-        <rect width="138" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#5E81AC"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Quickshell</text>
+      <g transform="translate(1540, 0)">
+        <rect width="138" height="36" rx="8" fill="#111620" stroke="#818CF8" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#818CF8"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Quickshell</text>
       </g>
-      <g transform="translate(1631, 0)">
-        <rect width="102" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#57A143"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Neovim</text>
+      <g transform="translate(1694, 0)">
+        <rect width="102" height="36" rx="8" fill="#111620" stroke="#57A143" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#57A143"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Neovim</text>
       </g>
-      <g transform="translate(1747, 0)">
-        <rect width="90" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#89E051"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Bash</text>
+      <g transform="translate(1812, 0)">
+        <rect width="98" height="36" rx="8" fill="#111620" stroke="#89E051" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#89E051"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Bash</text>
       </g>
-      <g transform="translate(1851, 0)">
-        <rect width="120" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#4D6BFE"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">DeepSeek</text>
+      <g transform="translate(1926, 0)">
+        <rect width="120" height="36" rx="8" fill="#111620" stroke="#4D6BFE" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#4D6BFE"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">DeepSeek</text>
       </g>
-      <g transform="translate(1985, 0)">
-        <rect width="129" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#D97757"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Anthropic</text>
+      <g transform="translate(2062, 0)">
+        <rect width="129" height="36" rx="8" fill="#111620" stroke="#D97757" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#D97757"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Anthropic</text>
       </g>
-      <g transform="translate(2128, 0)">
-        <rect width="102" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#10A37F"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">OpenAI</text>
+      <g transform="translate(2207, 0)">
+        <rect width="138" height="36" rx="8" fill="#111620" stroke="#10A37F" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#10A37F"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">OpenAI API</text>
       </g>
-      <g transform="translate(2244, 0)">
-        <rect width="90" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#DEA584"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Rust</text>
+      <g transform="translate(2361, 0)">
+        <rect width="98" height="36" rx="8" fill="#111620" stroke="#DEA584" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#DEA584"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Rust</text>
       </g>
-      <g transform="translate(2348, 0)">
-        <rect width="90" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#F34B7D"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">C++</text>
+      <g transform="translate(2475, 0)">
+        <rect width="98" height="36" rx="8" fill="#111620" stroke="#F34B7D" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#F34B7D"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">C++</text>
       </g>
-      <g transform="translate(2452, 0)">
-        <rect width="102" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#3572A5"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Python</text>
+      <g transform="translate(2589, 0)">
+        <rect width="102" height="36" rx="8" fill="#111620" stroke="#38BDF8" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#38BDF8"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Python</text>
       </g>
-      <g transform="translate(2568, 0)">
-        <rect width="138" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#3178C6"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">TypeScript</text>
+      <g transform="translate(2707, 0)">
+        <rect width="138" height="36" rx="8" fill="#111620" stroke="#3178C6" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#3178C6"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">TypeScript</text>
       </g>
-      <g transform="translate(2720, 0)">
-        <rect width="90" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#00ADD8"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Go</text>
+      <g transform="translate(2861, 0)">
+        <rect width="98" height="36" rx="8" fill="#111620" stroke="#00ADD8" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#00ADD8"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Go</text>
       </g>
-      <g transform="translate(2824, 0)">
-        <rect width="111" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#EE4C2C"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">PyTorch</text>
+      <g transform="translate(2975, 0)">
+        <rect width="111" height="36" rx="8" fill="#111620" stroke="#EE4C2C" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#EE4C2C"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">PyTorch</text>
       </g>
-      <g transform="translate(2949, 0)">
-        <rect width="129" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#1C3C3C"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">LangChain</text>
+      <g transform="translate(3102, 0)">
+        <rect width="129" height="36" rx="8" fill="#111620" stroke="#10B981" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#10B981"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">LangChain</text>
       </g>
-      <g transform="translate(3092, 0)">
-        <rect width="90" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#76B900"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">CUDA</text>
+      <g transform="translate(3247, 0)">
+        <rect width="98" height="36" rx="8" fill="#111620" stroke="#76B900" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#76B900"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">CUDA</text>
       </g>
-      <g transform="translate(3196, 0)">
-        <rect width="156" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#FFD21E"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Hugging Face</text>
+      <g transform="translate(3361, 0)">
+        <rect width="156" height="36" rx="8" fill="#111620" stroke="#FFD21E" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#FFD21E"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Hugging Face</text>
       </g>
-      <g transform="translate(3366, 0)">
-        <rect width="102" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#5C3EE8"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">OpenCV</text>
+      <g transform="translate(3533, 0)">
+        <rect width="102" height="36" rx="8" fill="#111620" stroke="#8B5CF6" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#8B5CF6"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">OpenCV</text>
       </g>
-      <g transform="translate(3482, 0)">
-        <rect width="93" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#FCC624"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Linux</text>
+      <g transform="translate(3651, 0)">
+        <rect width="98" height="36" rx="8" fill="#111620" stroke="#FCC624" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#FCC624"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Linux</text>
       </g>
-      <g transform="translate(3589, 0)">
-        <rect width="120" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#00A6A6"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Hyprland</text>
+      <g transform="translate(3765, 0)">
+        <rect width="120" height="36" rx="8" fill="#111620" stroke="#00F0FF" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#00F0FF"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Hyprland</text>
       </g>
-      <g transform="translate(3723, 0)">
-        <rect width="138" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#5E81AC"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Quickshell</text>
+      <g transform="translate(3901, 0)">
+        <rect width="138" height="36" rx="8" fill="#111620" stroke="#818CF8" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#818CF8"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Quickshell</text>
       </g>
-      <g transform="translate(3875, 0)">
-        <rect width="102" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#57A143"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Neovim</text>
+      <g transform="translate(4055, 0)">
+        <rect width="102" height="36" rx="8" fill="#111620" stroke="#57A143" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#57A143"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Neovim</text>
       </g>
-      <g transform="translate(3991, 0)">
-        <rect width="90" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#89E051"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Bash</text>
+      <g transform="translate(4173, 0)">
+        <rect width="98" height="36" rx="8" fill="#111620" stroke="#89E051" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#89E051"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Bash</text>
       </g>
-      <g transform="translate(4095, 0)">
-        <rect width="120" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#4D6BFE"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">DeepSeek</text>
+      <g transform="translate(4287, 0)">
+        <rect width="120" height="36" rx="8" fill="#111620" stroke="#4D6BFE" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#4D6BFE"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">DeepSeek</text>
       </g>
-      <g transform="translate(4229, 0)">
-        <rect width="129" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#D97757"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Anthropic</text>
+      <g transform="translate(4423, 0)">
+        <rect width="129" height="36" rx="8" fill="#111620" stroke="#D97757" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#D97757"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Anthropic</text>
       </g>
-      <g transform="translate(4372, 0)">
-        <rect width="102" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#10A37F"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">OpenAI</text>
+      <g transform="translate(4568, 0)">
+        <rect width="138" height="36" rx="8" fill="#111620" stroke="#10A37F" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#10A37F"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">OpenAI API</text>
       </g>
       </g>
     </g>
     
-    <g transform="translate(0, 56)">
-      <g style="animation: slideRight 34s linear infinite;">
+    <g transform="translate(0, 58)">
+      <g style="animation: slideRight 32s linear infinite;">
         
       <g transform="translate(0, 0)">
-        <rect width="93" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#61DAFB"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">React</text>
+        <rect width="98" height="36" rx="8" fill="#111620" stroke="#61DAFB" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#61DAFB"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">React</text>
       </g>
-      <g transform="translate(107, 0)">
-        <rect width="111" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#FFFFFF"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Next.js</text>
+      <g transform="translate(114, 0)">
+        <rect width="111" height="36" rx="8" fill="#111620" stroke="#FFFFFF" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#FFFFFF"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Next.js</text>
       </g>
-      <g transform="translate(232, 0)">
-        <rect width="156" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#38BDF8"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Tailwind CSS</text>
+      <g transform="translate(241, 0)">
+        <rect width="156" height="36" rx="8" fill="#111620" stroke="#38BDF8" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#38BDF8"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Tailwind CSS</text>
       </g>
-      <g transform="translate(402, 0)">
-        <rect width="111" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#5FA04E"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Node.js</text>
+      <g transform="translate(413, 0)">
+        <rect width="111" height="36" rx="8" fill="#111620" stroke="#5FA04E" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#5FA04E"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Node.js</text>
       </g>
-      <g transform="translate(527, 0)">
-        <rect width="111" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#059669"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">FastAPI</text>
+      <g transform="translate(540, 0)">
+        <rect width="111" height="36" rx="8" fill="#111620" stroke="#059669" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#059669"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">FastAPI</text>
       </g>
-      <g transform="translate(652, 0)">
-        <rect width="138" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#336791"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">PostgreSQL</text>
+      <g transform="translate(667, 0)">
+        <rect width="138" height="36" rx="8" fill="#111620" stroke="#336791" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#336791"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">PostgreSQL</text>
       </g>
-      <g transform="translate(804, 0)">
-        <rect width="93" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#DC382D"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Redis</text>
+      <g transform="translate(821, 0)">
+        <rect width="98" height="36" rx="8" fill="#111620" stroke="#DC382D" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#DC382D"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Redis</text>
       </g>
-      <g transform="translate(911, 0)">
-        <rect width="102" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#2496ED"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Docker</text>
+      <g transform="translate(935, 0)">
+        <rect width="102" height="36" rx="8" fill="#111620" stroke="#2496ED" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#2496ED"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Docker</text>
       </g>
-      <g transform="translate(1027, 0)">
-        <rect width="138" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#326CE5"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Kubernetes</text>
+      <g transform="translate(1053, 0)">
+        <rect width="138" height="36" rx="8" fill="#111620" stroke="#326CE5" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#326CE5"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Kubernetes</text>
       </g>
-      <g transform="translate(1179, 0)">
-        <rect width="102" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#003B57"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">SQLite</text>
+      <g transform="translate(1207, 0)">
+        <rect width="102" height="36" rx="8" fill="#111620" stroke="#003B57" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#003B57"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">SQLite</text>
       </g>
-      <g transform="translate(1295, 0)">
-        <rect width="120" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#3ECF8E"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Supabase</text>
+      <g transform="translate(1325, 0)">
+        <rect width="120" height="36" rx="8" fill="#111620" stroke="#3ECF8E" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#3ECF8E"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Supabase</text>
       </g>
-      <g transform="translate(1429, 0)">
-        <rect width="111" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#E10098"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">GraphQL</text>
+      <g transform="translate(1461, 0)">
+        <rect width="111" height="36" rx="8" fill="#111620" stroke="#E10098" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#E10098"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">GraphQL</text>
       </g>
-      <g transform="translate(1554, 0)">
-        <rect width="90" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#FF9900"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">AWS</text>
+      <g transform="translate(1588, 0)">
+        <rect width="98" height="36" rx="8" fill="#111620" stroke="#FF9900" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#FF9900"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">AWS</text>
       </g>
-      <g transform="translate(1658, 0)">
-        <rect width="90" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#F05032"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Git</text>
+      <g transform="translate(1702, 0)">
+        <rect width="98" height="36" rx="8" fill="#111620" stroke="#F05032" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#F05032"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Git</text>
       </g>
-      <g transform="translate(1762, 0)">
-        <rect width="90" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#1BB91F"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Tmux</text>
+      <g transform="translate(1816, 0)">
+        <rect width="98" height="36" rx="8" fill="#111620" stroke="#1BB91F" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#1BB91F"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Tmux</text>
       </g>
-      <g transform="translate(1866, 0)">
-        <rect width="93" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#FF6B6B"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Kitty</text>
+      <g transform="translate(1930, 0)">
+        <rect width="98" height="36" rx="8" fill="#111620" stroke="#FF6B6B" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#FF6B6B"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Kitty</text>
       </g>
-      <g transform="translate(1973, 0)">
-        <rect width="120" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#DD4B39"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Starship</text>
+      <g transform="translate(2044, 0)">
+        <rect width="120" height="36" rx="8" fill="#111620" stroke="#DD4B39" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#DD4B39"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Starship</text>
       </g>
-      <g transform="translate(2107, 0)">
-        <rect width="90" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#F43F5E"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">RTK</text>
+      <g transform="translate(2180, 0)">
+        <rect width="98" height="36" rx="8" fill="#111620" stroke="#F43F5E" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#F43F5E"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">RTK</text>
       </g>
-      <g transform="translate(2211, 0)">
-        <rect width="93" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#61DAFB"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">React</text>
+      <g transform="translate(2294, 0)">
+        <rect width="98" height="36" rx="8" fill="#111620" stroke="#61DAFB" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#61DAFB"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">React</text>
       </g>
-      <g transform="translate(2318, 0)">
-        <rect width="111" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#FFFFFF"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Next.js</text>
+      <g transform="translate(2408, 0)">
+        <rect width="111" height="36" rx="8" fill="#111620" stroke="#FFFFFF" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#FFFFFF"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Next.js</text>
       </g>
-      <g transform="translate(2443, 0)">
-        <rect width="156" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#38BDF8"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Tailwind CSS</text>
+      <g transform="translate(2535, 0)">
+        <rect width="156" height="36" rx="8" fill="#111620" stroke="#38BDF8" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#38BDF8"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Tailwind CSS</text>
       </g>
-      <g transform="translate(2613, 0)">
-        <rect width="111" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#5FA04E"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Node.js</text>
+      <g transform="translate(2707, 0)">
+        <rect width="111" height="36" rx="8" fill="#111620" stroke="#5FA04E" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#5FA04E"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Node.js</text>
       </g>
-      <g transform="translate(2738, 0)">
-        <rect width="111" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#059669"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">FastAPI</text>
+      <g transform="translate(2834, 0)">
+        <rect width="111" height="36" rx="8" fill="#111620" stroke="#059669" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#059669"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">FastAPI</text>
       </g>
-      <g transform="translate(2863, 0)">
-        <rect width="138" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#336791"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">PostgreSQL</text>
+      <g transform="translate(2961, 0)">
+        <rect width="138" height="36" rx="8" fill="#111620" stroke="#336791" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#336791"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">PostgreSQL</text>
       </g>
-      <g transform="translate(3015, 0)">
-        <rect width="93" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#DC382D"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Redis</text>
+      <g transform="translate(3115, 0)">
+        <rect width="98" height="36" rx="8" fill="#111620" stroke="#DC382D" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#DC382D"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Redis</text>
       </g>
-      <g transform="translate(3122, 0)">
-        <rect width="102" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#2496ED"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Docker</text>
+      <g transform="translate(3229, 0)">
+        <rect width="102" height="36" rx="8" fill="#111620" stroke="#2496ED" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#2496ED"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Docker</text>
       </g>
-      <g transform="translate(3238, 0)">
-        <rect width="138" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#326CE5"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Kubernetes</text>
+      <g transform="translate(3347, 0)">
+        <rect width="138" height="36" rx="8" fill="#111620" stroke="#326CE5" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#326CE5"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Kubernetes</text>
       </g>
-      <g transform="translate(3390, 0)">
-        <rect width="102" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#003B57"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">SQLite</text>
+      <g transform="translate(3501, 0)">
+        <rect width="102" height="36" rx="8" fill="#111620" stroke="#003B57" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#003B57"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">SQLite</text>
       </g>
-      <g transform="translate(3506, 0)">
-        <rect width="120" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#3ECF8E"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Supabase</text>
+      <g transform="translate(3619, 0)">
+        <rect width="120" height="36" rx="8" fill="#111620" stroke="#3ECF8E" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#3ECF8E"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Supabase</text>
       </g>
-      <g transform="translate(3640, 0)">
-        <rect width="111" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#E10098"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">GraphQL</text>
+      <g transform="translate(3755, 0)">
+        <rect width="111" height="36" rx="8" fill="#111620" stroke="#E10098" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#E10098"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">GraphQL</text>
       </g>
-      <g transform="translate(3765, 0)">
-        <rect width="90" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#FF9900"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">AWS</text>
+      <g transform="translate(3882, 0)">
+        <rect width="98" height="36" rx="8" fill="#111620" stroke="#FF9900" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#FF9900"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">AWS</text>
       </g>
-      <g transform="translate(3869, 0)">
-        <rect width="90" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#F05032"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Git</text>
+      <g transform="translate(3996, 0)">
+        <rect width="98" height="36" rx="8" fill="#111620" stroke="#F05032" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#F05032"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Git</text>
       </g>
-      <g transform="translate(3973, 0)">
-        <rect width="90" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#1BB91F"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Tmux</text>
+      <g transform="translate(4110, 0)">
+        <rect width="98" height="36" rx="8" fill="#111620" stroke="#1BB91F" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#1BB91F"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Tmux</text>
       </g>
-      <g transform="translate(4077, 0)">
-        <rect width="93" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#FF6B6B"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Kitty</text>
+      <g transform="translate(4224, 0)">
+        <rect width="98" height="36" rx="8" fill="#111620" stroke="#FF6B6B" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#FF6B6B"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Kitty</text>
       </g>
-      <g transform="translate(4184, 0)">
-        <rect width="120" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#DD4B39"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Starship</text>
+      <g transform="translate(4338, 0)">
+        <rect width="120" height="36" rx="8" fill="#111620" stroke="#DD4B39" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#DD4B39"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">Starship</text>
       </g>
-      <g transform="translate(4318, 0)">
-        <rect width="90" height="36" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
-        <circle cx="18" cy="18" r="5" fill="#F43F5E"/>
-        <text x="32" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">RTK</text>
+      <g transform="translate(4474, 0)">
+        <rect width="98" height="36" rx="8" fill="#111620" stroke="#F43F5E" stroke-opacity="0.45" stroke-width="1.2"/>
+        <circle cx="18" cy="18" r="4.5" fill="#F43F5E"/>
+        <text x="30" y="23" font-family="'JetBrains Mono', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">RTK</text>
       </g>
       </g>
     </g>
   </g>
 
-  <!-- Left and Right Subtle Fade Overlays -->
-  <rect x="2" y="2" width="70" height="102" fill="url(#fadeLeft)" pointer-events="none"/>
-  <rect x="778" y="2" width="70" height="102" fill="url(#fadeRight)" pointer-events="none"/>
+  <!-- Left and Right Gradient Soft Fades -->
+  <rect x="2" y="2" width="85" height="112" fill="url(#fadeLeft)" pointer-events="none"/>
+  <rect x="813" y="2" width="85" height="112" fill="url(#fadeRight)" pointer-events="none"/>
 </svg>

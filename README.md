@@ -1,20 +1,10 @@
 <div align="center">
 
 <!-- ============================================================ -->
-<!-- TOP GRID: HIGH-RES ANIMATED ASCII CAT + SYNCHRONOUS HEADER  -->
+<!-- TOP CONSOLE: CYBERDECK HUD + HIGH-RES ANIMATED ASCII CAT      -->
 <!-- ============================================================ -->
 
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
-  <tr>
-    <td width="38%" align="center" valign="middle">
-      <img src="assets/ascii_cat_animated.svg" width="100%" alt="Cyber ASCII Cat" />
-    </td>
-    <td width="4%"></td>
-    <td width="58%" align="center" valign="middle">
-      <img src="assets/header_profile.svg" width="100%" alt="Jerin Rajan Profile Header" />
-    </td>
-  </tr>
-</table>
+<img src="assets/cyberdeck_header.svg" width="100%" alt="LJINFINITY Cyberdeck Console" />
 
 </div>
 
@@ -38,36 +28,11 @@
 
 ### `// THE BIG THREE FLAGSHIPS`
 
-<table width="100%" cellspacing="0" cellpadding="0">
-  <tr>
-    <td width="32%" valign="top">
-      <h4>🐾 01 // URIEL AI ASSISTANT</h4>
-      <p>Custom autonomous personal AI assistant and multi-agent orchestrator equipped with self-correction loops and tool reasoning.</p>
-      <p>
-        <code>Python</code> • <code>Multi-Agent</code> • <code>Self-Correction</code>
-      </p>
-      <sub>Status: <b><code>🟢 PRODUCTION</code></b></sub>
-    </td>
-    <td width="2%"></td>
-    <td width="32%" valign="top">
-      <h4>🐚 02 // ENOCH SHELL (MYSHELL)</h4>
-      <p>Feature-rich custom desktop environment built completely from scratch with Quickshell to my exact ergonomic liking.</p>
-      <p>
-        <code>Quickshell</code> • <code>QML</code> • <code>Lua</code> • <code>Hyprland</code>
-      </p>
-      <sub>Status: <b><code>⚡ DAILY RIG</code></b></sub>
-    </td>
-    <td width="2%"></td>
-    <td width="32%" valign="top">
-      <h4>🧭 03 // ARC TRACKER</h4>
-      <p>Personal life tracking and reflection engine to monitor life arcs, document milestones, and keep persistent developer journals.</p>
-      <p>
-        <code>Python</code> • <code>SQLite</code> • <code>Telemetry</code>
-      </p>
-      <sub>Status: <b><code>💎 STABLE</code></b></sub>
-    </td>
-  </tr>
-</table>
+<div align="center">
+
+<img src="assets/projects_showcase.svg" width="100%" alt="Flagship Projects Showcase" />
+
+</div>
 
 <br/>
 
@@ -102,10 +67,10 @@
 <br/>
 
 <!-- ============================================================ -->
-<!-- SECTION: NOW PLAYING & ANALYTICS                             -->
+<!-- SECTION: NOW PLAYING & TELEMETRY                             -->
 <!-- ============================================================ -->
 
-### `// NOW PLAYING [MYSPACE AUDIO TAPE]`
+### `// NOW PLAYING [VINTAGE CYBER-DECK]`
 
 <div align="center">
 
@@ -124,7 +89,7 @@
 
 <br/><br/>
 
-<img src="https://ghchart.rshah.org/38BDF8/LJINFINITY" width="100%" alt="Contribution Graph" />
+<img src="https://ghchart.rshah.org/00F0FF/LJINFINITY" width="100%" alt="Contribution Graph" />
 
 </div>
 

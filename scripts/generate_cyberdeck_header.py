@@ -1,0 +1,293 @@
+import html
+
+def generate_cyberdeck_header():
+    width = 900
+    height = 360
+
+    cat_art = [
+        r"                  /\                 /\\",
+        r"                 / \'._   (\_/)   _.'/ \\",
+        r"                /_.''._'--('.')--'_.''._\\",
+        r"                | \_ / `;=/ \" \=;` \ _/ |",
+        r"                 \/ `\__| \___/ |__/` \/",
+        r"                  \__   /       \   __/",
+        r"                    /  /    ▲    \  \\",
+        r"                   /  / |   |   | \  \\",
+        r"                  (___) (___)___) (___)",
+        r"                 [ SYSTEM  FELINE  v2.6 ]"
+    ]
+
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" width="100%" height="{height}">
+  <defs>
+    <!-- Neon Gradients -->
+    <linearGradient id="cyberBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF" />
+      <stop offset="50%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#EC4899" />
+    </linearGradient>
+
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0D1117" />
+      <stop offset="100%" stop-color="#161B22" />
+    </linearGradient>
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#00F0FF" />
+    </linearGradient>
+
+    <!-- Scanline Pattern -->
+    <pattern id="scanlines" width="100" height="4" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="100" y2="0" stroke="#000000" stroke-width="1.2" opacity="0.35" />
+    </pattern>
+
+    <!-- Glowing Filters -->
+    <filter id="neonGlowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="eyeGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&amp;family=Share+Tech+Mono&amp;display=swap');
+
+      .mono {{
+        font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      }}
+      .tech {{
+        font-family: 'Share Tech Mono', 'JetBrains Mono', monospace;
+      }}
+
+      /* Dynamic Role Typewriter Animations */
+      @keyframes roleCycle1 {{
+        0%, 21%   {{ opacity: 1; transform: translateY(0); }}
+        24%, 97%  {{ opacity: 0; transform: translateY(-10px); }}
+        100%      {{ opacity: 1; transform: translateY(0); }}
+      }}
+      @keyframes roleCycle2 {{
+        0%, 24%   {{ opacity: 0; transform: translateY(10px); }}
+        27%, 47%  {{ opacity: 1; transform: translateY(0); }}
+        50%, 100% {{ opacity: 0; transform: translateY(-10px); }}
+      }}
+      @keyframes roleCycle3 {{
+        0%, 50%   {{ opacity: 0; transform: translateY(10px); }}
+        53%, 73%  {{ opacity: 1; transform: translateY(0); }}
+        76%, 100% {{ opacity: 0; transform: translateY(-10px); }}
+      }}
+      @keyframes roleCycle4 {{
+        0%, 76%   {{ opacity: 0; transform: translateY(10px); }}
+        79%, 97%  {{ opacity: 1; transform: translateY(0); }}
+        100%      {{ opacity: 0; transform: translateY(10px); }}
+      }}
+
+      /* Eye Blinking Animation */
+      @keyframes catBlink {{
+        0%, 90%, 96%, 100% {{ transform: scaleY(1); opacity: 1; }}
+        93% {{ transform: scaleY(0.1); opacity: 0.2; }}
+      }}
+
+      /* Radar Sweep / Scanner */
+      @keyframes scanSweep {{
+        0%   {{ transform: translateY(0px); opacity: 0.8; }}
+        50%  {{ opacity: 0.3; }}
+        100% {{ transform: translateY(330px); opacity: 0.8; }}
+      }}
+
+      /* Pulse Indicator */
+      @keyframes pulseGlow {{
+        0%, 100% {{ opacity: 1; filter: drop-shadow(0 0 8px #00F0FF); }}
+        50%      {{ opacity: 0.5; filter: drop-shadow(0 0 2px #00F0FF); }}
+      }}
+
+      .cursor-blink {{
+        animation: cursorAnim 1s infinite;
+      }}
+      @keyframes cursorAnim {{
+        0%, 49% {{ opacity: 1; }}
+        50%, 100% {{ opacity: 0; }}
+      }}
+    </style>
+  </defs>
+
+  <!-- Main Chassis Background -->
+  <rect x="2" y="2" width="{width-4}" height="{height-4}" rx="14" fill="#0A0E14" stroke="url(#cyberBorder)" stroke-width="2" />
+
+  <!-- Inner Dark Glass Pane -->
+  <rect x="8" y="8" width="{width-16}" height="{height-16}" rx="10" fill="#0D1117" opacity="0.9" />
+
+  <!-- Background Scanline Grid Overlay -->
+  <rect x="8" y="8" width="{width-16}" height="{height-16}" fill="url(#scanlines)" pointer-events="none" />
+
+  <!-- Moving Holographic Radar Beam -->
+  <line x1="10" y1="35" x2="{width-10}" y2="35" stroke="#00F0FF" stroke-width="1.5" opacity="0.4" style="animation: scanSweep 6s infinite linear;" pointer-events="none" />
+
+  <!-- Top Title Bar -->
+  <path d="M 8 18 C 8 12.477 12.477 8 18 8 L {width-18} 8 C {width-12.477} 8 {width-8} 12.477 {width-8} 18 L {width-8} 38 L 8 38 Z" fill="#161B22" stroke="#21262D" stroke-width="1"/>
+  
+  <!-- Window Control Buttons (Cyber Glow) -->
+  <circle cx="28" cy="23" r="5.5" fill="#FF5F56" />
+  <circle cx="46" cy="23" r="5.5" fill="#FFBD2E" />
+  <circle cx="64" cy="23" r="5.5" fill="#27C93F" />
+
+  <!-- Window Header Text -->
+  <text x="{width/2}" y="27" text-anchor="middle" class="mono" font-size="12" font-weight="700" fill="#8B949E" letter-spacing="1.5px">LJ-INFINITY // CYBERDECK OS v4.8 [ONLINE]</text>
+  <text x="{width-32}" y="27" text-anchor="end" class="mono" font-size="11" font-weight="700" fill="#00F0FF" letter-spacing="1px">● TTY1</text>
+
+  <!-- ================= LEFT COLUMN: HIGH-RES ASCII CAT PANE ================= -->
+  <g transform="translate(24, 52)">
+    <!-- Cat Card Chassis -->
+    <rect width="320" height="286" rx="8" fill="#111620" stroke="#21262D" stroke-width="1.2" />
+
+    <!-- Corner Brackets -->
+    <path d="M 6 18 L 6 6 L 18 6" stroke="#00F0FF" stroke-width="2" fill="none" />
+    <path d="M 314 18 L 314 6 L 302 6" stroke="#00F0FF" stroke-width="2" fill="none" />
+    <path d="M 6 268 L 6 280 L 18 280" stroke="#00F0FF" stroke-width="2" fill="none" />
+    <path d="M 314 268 L 314 280 L 302 280" stroke="#00F0FF" stroke-width="2" fill="none" />
+
+    <!-- Sub-header -->
+    <text x="160" y="24" text-anchor="middle" class="mono" font-size="10.5" font-weight="700" fill="#38BDF8" letter-spacing="2px">// FELINE ARCHITECT // [ID: NEKO-01]</text>
+    <line x1="20" y1="32" x2="300" y2="32" stroke="#21262D" stroke-width="1" />
+
+    <!-- High-Res ASCII Art Lines -->
+    <g transform="translate(160, 52)" text-anchor="middle" class="mono" font-size="11.5" font-weight="700">
+      <text y="0" fill="#C084FC">{html.escape(cat_art[0])}</text>
+      <text y="16" fill="#C084FC">{html.escape(cat_art[1])}</text>
+      <text y="32" fill="#E2E8F0">{html.escape(cat_art[2])}</text>
+      
+      <!-- Glowing Animated Eyes Line -->
+      <g y="48">
+        <text y="48" fill="#E2E8F0">| \_ / `;=/ "</text>
+        <text x="-4" y="48" fill="#00F0FF" font-size="14" filter="url(#eyeGlow)" style="animation: catBlink 4.5s infinite ease-in-out; transform-origin: -4px 45px;">◉</text>
+        <text x="4" y="48" fill="#F43F5E">▲</text>
+        <text x="12" y="48" fill="#00F0FF" font-size="14" filter="url(#eyeGlow)" style="animation: catBlink 4.5s infinite ease-in-out; transform-origin: 12px 45px;">◉</text>
+        <text y="48" fill="#E2E8F0">" \=;` \ _/ |</text>
+      </g>
+      
+      <text y="64" fill="#94A3B8">{html.escape(cat_art[4])}</text>
+      <text y="80" fill="#94A3B8">{html.escape(cat_art[5])}</text>
+      <text y="96" fill="#64748B">{html.escape(cat_art[6])}</text>
+      <text y="112" fill="#64748B">{html.escape(cat_art[7])}</text>
+      <text y="128" fill="#475569">{html.escape(cat_art[8])}</text>
+      
+      <!-- Cat Tag Box -->
+      <rect x="-95" y="146" width="190" height="22" rx="4" fill="#1E293B" stroke="#38BDF8" stroke-width="1" />
+      <text y="161" fill="#38BDF8" font-size="10" font-weight="800" letter-spacing="1.5px">NEKO CORE: RECURSIVE</text>
+    </g>
+
+    <!-- Bottom Status Strip -->
+    <g transform="translate(18, 264)">
+      <circle cx="4" cy="4" r="3.5" fill="#10B981" />
+      <text x="16" y="8" class="mono" font-size="9.5" font-weight="600" fill="#10B981">DAEMON ACTIVE</text>
+      <text x="284" y="8" text-anchor="end" class="mono" font-size="9.5" font-weight="600" fill="#64748B">PID: 1337</text>
+    </g>
+  </g>
+
+  <!-- ================= RIGHT COLUMN: DEVELOPER HUD PANE ================= -->
+  <g transform="translate(364, 52)">
+    <!-- HUD Outer Box -->
+    <rect width="512" height="286" rx="8" fill="#111620" stroke="#21262D" stroke-width="1.2" />
+
+    <!-- Corner Accents -->
+    <path d="M 6 18 L 6 6 L 18 6" stroke="#8B5CF6" stroke-width="2" fill="none" />
+    <path d="M 506 18 L 506 6 L 494 6" stroke="#8B5CF6" stroke-width="2" fill="none" />
+    <path d="M 6 268 L 6 280 L 18 280" stroke="#8B5CF6" stroke-width="2" fill="none" />
+    <path d="M 506 268 L 506 280 L 494 280" stroke="#8B5CF6" stroke-width="2" fill="none" />
+
+    <!-- Identity & Title -->
+    <g transform="translate(24, 38)">
+      <text x="0" y="0" class="tech" font-size="34" font-weight="800" fill="url(#textGrad)" letter-spacing="2px">JERIN RAJAN</text>
+      <rect x="260" y="-22" width="140" height="24" rx="4" fill="#1E293B" stroke="#00F0FF" stroke-width="1"/>
+      <text x="330" y="-6" text-anchor="middle" class="mono" font-size="11" font-weight="800" fill="#00F0FF" letter-spacing="1.5px">// LJINFINITY</text>
+    </g>
+
+    <!-- Synchronous Role Line with Glowing Indicator -->
+    <g transform="translate(24, 76)">
+      <circle cx="4" cy="-4" r="4" fill="#00F0FF" style="animation: pulseGlow 2s infinite ease-in-out;" />
+      
+      <g style="animation: roleCycle1 12s infinite ease-in-out;">
+        <text x="18" y="0" class="mono" font-size="15" font-weight="700" fill="#38BDF8">> AI Full-Stack Developer &amp; Architect</text>
+      </g>
+      <g style="animation: roleCycle2 12s infinite ease-in-out;">
+        <text x="18" y="0" class="mono" font-size="15" font-weight="700" fill="#C084FC">> Autonomous Multi-Agent Swarm Engineer</text>
+      </g>
+      <g style="animation: roleCycle3 12s infinite ease-in-out;">
+        <text x="18" y="0" class="mono" font-size="15" font-weight="700" fill="#34D399">> Bespoke Linux Desktop Rig Designer</text>
+      </g>
+      <g style="animation: roleCycle4 12s infinite ease-in-out;">
+        <text x="18" y="0" class="mono" font-size="15" font-weight="700" fill="#FBBF24">> Low-Latency Systems Programmer</text>
+      </g>
+
+      <rect x="420" y="-13" width="9" height="17" fill="#00F0FF" class="cursor-blink"/>
+    </g>
+
+    <!-- Divider -->
+    <line x1="24" y1="102" x2="488" y2="102" stroke="#21262D" stroke-width="1" />
+
+    <!-- System Telemetry Metrics Matrix -->
+    <g transform="translate(24, 122)">
+      <!-- Row 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="144" height="34" rx="6" fill="#161B22" stroke="#30363D"/>
+        <text x="12" y="14" class="mono" font-size="8.5" fill="#8B949E" font-weight="600">SHELL ENVIRONMENT</text>
+        <text x="12" y="27" class="mono" font-size="11" fill="#38BDF8" font-weight="700">ENOCH // QUICKSHELL</text>
+      </g>
+
+      <g transform="translate(156, 0)">
+        <rect width="144" height="34" rx="6" fill="#161B22" stroke="#30363D"/>
+        <text x="12" y="14" class="mono" font-size="8.5" fill="#8B949E" font-weight="600">COMPOSITOR / WM</text>
+        <text x="12" y="27" class="mono" font-size="11" fill="#A855F7" font-weight="700">HYPRLAND (WAYLAND)</text>
+      </g>
+
+      <g transform="translate(312, 0)">
+        <rect width="152" height="34" rx="6" fill="#161B22" stroke="#30363D"/>
+        <text x="12" y="14" class="mono" font-size="8.5" fill="#8B949E" font-weight="600">CORE OS BASE</text>
+        <text x="12" y="27" class="mono" font-size="11" fill="#34D399" font-weight="700">FEDORA / ARCH LINUX</text>
+      </g>
+
+      <!-- Row 2 -->
+      <g transform="translate(0, 44)">
+        <rect width="144" height="34" rx="6" fill="#161B22" stroke="#30363D"/>
+        <text x="12" y="14" class="mono" font-size="8.5" fill="#8B949E" font-weight="600">COGNITIVE FLOW</text>
+        <text x="12" y="27" class="mono" font-size="11" fill="#FBBF24" font-weight="700">RECURSIVE DEEP WORK</text>
+      </g>
+
+      <g transform="translate(156, 44)">
+        <rect width="144" height="34" rx="6" fill="#161B22" stroke="#30363D"/>
+        <text x="12" y="14" class="mono" font-size="8.5" fill="#8B949E" font-weight="600">AUDIO SPECTRUM</text>
+        <text x="12" y="27" class="mono" font-size="11" fill="#EC4899" font-weight="700">J-POP &amp; MODERN JAZZ</text>
+      </g>
+
+      <g transform="translate(312, 44)">
+        <rect width="152" height="34" rx="6" fill="#161B22" stroke="#30363D"/>
+        <text x="12" y="14" class="mono" font-size="8.5" fill="#8B949E" font-weight="600">LATENCY PROFILE</text>
+        <text x="12" y="27" class="mono" font-size="11" fill="#00F0FF" font-weight="700">0.08ms // ZERO-LAG</text>
+      </g>
+    </g>
+
+    <!-- Bottom Telemetry HUD Line -->
+    <g transform="translate(24, 252)">
+      <rect width="464" height="20" rx="4" fill="#0A0E14" stroke="#21262D"/>
+      <text x="12" y="14" class="mono" font-size="9.5" fill="#00F0FF" font-weight="700">KERNEL: 6.10-ZEN</text>
+      <text x="140" y="14" class="mono" font-size="9.5" fill="#C084FC" font-weight="700">MEMORY: 64GB DDR5</text>
+      <text x="280" y="14" class="mono" font-size="9.5" fill="#34D399" font-weight="700">AGENT UPTIME: 99.98%</text>
+      <text x="452" y="14" text-anchor="end" class="mono" font-size="9.5" fill="#E2E8F0" font-weight="700">FLOW: 100%</text>
+    </g>
+  </g>
+</svg>'''
+
+    with open("/home/lj/Projects/gitreadme/assets/cyberdeck_header.svg", "w") as f:
+        f.write(svg)
+    print("Generated /home/lj/Projects/gitreadme/assets/cyberdeck_header.svg successfully!")
+
+if __name__ == "__main__":
+    generate_cyberdeck_header()
