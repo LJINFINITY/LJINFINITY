@@ -45,24 +45,31 @@
 <br/>
 
 <!-- ============================================================ -->
-<!-- SECTION: HARDWARE RIG & WORKSTATION TELEMETRY                -->
+<!-- SECTION: ARCH LINUX FASTFETCH TELEMETRY                      -->
 <!-- ============================================================ -->
 
-### `// 02. HARDWARE RIG & DESKTOP TELEMETRY`
+### `// 02. ARCH LINUX FASTFETCH TELEMETRY`
 
 ```text
-┌── [ jerin@infinity // WORKSTATION SPECIFICATIONS ] ──────────────────────────────────────┐
-│                                                                                          │
-│   █████████   Host        :: Custom Linux Workstation (64GB DDR5 6000MHz)                │
-│   █ █ █ █ █   Kernel      :: Linux (Zen High-Performance Kernel)                         │
-│   █████████   Compositor  :: Hyprland (Dynamic Wayland Tiling Engine)                    │
-│   █ █ █ █ █   Shell Suite :: Enoch (Custom Quickshell + QML Declarative Rigs)            │
-│   █████████   Editor      :: Neovim (Treesitter + Hand-Crafted Lua Suite)                │
-│               Terminal    :: Kitty & Tmux Multiplexer (GPU-Accelerated)                  │
-│   ● ● ● ● ●   Audio Flow  :: Lamp (J-Pop & Modern Jazz Chill Session)                    │
-│               Telemetry   :: 0.08ms // Zero-Lag Flow State                               │
-│                                                                                          │
-└──────────────────────────────────────────────────────────────────────────────────────────┘
+                  -`                   ┌── [ lj@archlinux // FASTFETCH ] ─────────────────────────┐
+                 .o+`                  │  Tagline     :: I use Arch BTW                           │
+                `ooo/                  │  Host        :: lj                                       │
+               `+oooo:                 │  System      :: Rog Strix 2023 G16 (Current)             │
+              `+oooooo:                │  OS          :: Arch Linux x86_64                        │
+              -+oooooo+:               │  Kernel      :: 7.3.4-arch1-2                            │
+            `/:-:++oooo+:              │  CPU         :: 13th Gen Intel Core i7-13650HX (20)      │
+           `/++++/+++++++:             │  GPU         :: NVIDIA GeForce RTX 4060 Mobile (8GB)     │
+          `/++++++++++++++:            │  Compositor  :: Hyprland (Wayland)                       │
+         `/+++ooooooooooooo/`          │  Shell       :: Enoch (Quickshell)                       │
+        ./ooosssso++osssssso+`         │  Editor      :: Code (VSCode)                            │
+       .oossssso-````/ossssss+`        │  Terminal    :: Kitty                                    │
+      -osssssso.      :ssssssso.       │  Memory      :: 16GB DDR5                                │
+     :osssssss/        osssso+++.      │  Audio Flow  :: Lamp // J-Pop & Modern Jazz              │
+    /ossssssss/        +ssssooo/-      │  Telemetry   :: 0.08ms // Real-Time Flow State           │
+  `/ossssso+/:-        -:/+osssso+-    └──────────────────────────────────────────────────────────┘
+ `+sso+:-`                 `.-/+oso:      ● ● ● ● ● ● ● ●   [ ARCH-LINUX // OPERATIONAL ]
+`++:.                           `-/+/
+.`                                 `/
 ```
 
 <br/>
