@@ -1,12 +1,42 @@
 <div align="center">
 
 <!-- ============================================================ -->
-<!-- TOP CONSOLE: CYBERDECK HUD + HIGH-RES ANIMATED ASCII CAT      -->
+<!-- HEADER: KINETIC BANNER, ANIMATED TITLE & PULSATING HEADLINE  -->
 <!-- ============================================================ -->
 
-<img src="assets/cyberdeck_header.svg" width="100%" alt="LJINFINITY Cyberdeck Console" />
+<img src="live_to_header_v5.gif" width="620" alt="Live to Think / Create / Explore / Build / Innovate" />
+
+<br/><br/>
+
+<img src="title_animated_v4.gif" width="700" alt="Jerin Rajan // LJ INFINITY" />
+
+<br/>
+
+<img src="headline.svg" width="500" alt="AI Full Stack Dev" />
 
 </div>
+
+<br/>
+
+<!-- ============================================================ -->
+<!-- SECTION: SYSTEM TELEMETRY / NEKO-FETCH (PIXEL-PERFECT MONO)  -->
+<!-- ============================================================ -->
+
+```text
+┌── [ SYSTEM TELEMETRY // NEKO-FETCH v2.6 ] ────────────────────────────────┐
+│                                                                           │
+│         /\_____/\          user: Jerin Rajan (LJINFINITY)                 │
+│        /  o   o  \         role: AI Architect & Systems Crafter           │
+│       (  =  ^  =  )        host: Custom Linux Rig (64GB DDR5)             │
+│        )         (         os: Fedora / Arch Linux                        │
+│       /   [SYS]   \        shell: Enoch (Quickshell + QML)                │
+│      (  |   |   |  )       wm: Hyprland (Wayland)                         │
+│     ( ( m   m   m ) )      editor: Neovim                                 │
+│     ═════════════════      runtime: Autonomous Agents & Runtimes          │
+│                            focus: J-Pop & Modern Jazz                     │
+│                                                                           │
+└───────────────────────────────────────────────────────────────────────────┘
+```
 
 <br/>
 
@@ -23,28 +53,28 @@
 <br/>
 
 <!-- ============================================================ -->
-<!-- SECTION: THE BIG THREE FLAGSHIP PROJECTS                     -->
+<!-- SECTION: THE BIG THREE FLAGSHIPS                             -->
 <!-- ============================================================ -->
 
 ### `// THE BIG THREE FLAGSHIPS`
 
-<div align="center">
-
-<img src="assets/projects_showcase.svg" width="100%" alt="Flagship Projects Showcase" />
-
-</div>
+| Flagship System | Domain & Architecture | Core Stack | Status |
+| :--- | :--- | :--- | :--- |
+| **[Uriel AI Assistant](https://github.com/LJINFINITY)** | Autonomous personal AI assistant & multi-agent orchestrator with self-correction loops and tool reasoning. | `Python` `Multi-Agent` `PyTorch` | `🟢 PRODUCTION` |
+| **[Enoch Shell (MyShell)](https://github.com/LJINFINITY)** | Feature-rich bespoke desktop environment built completely from scratch with Quickshell to my exact ergonomic flow. | `Quickshell` `QML` `Lua` `Hyprland` | `⚡ DAILY RIG` |
+| **[Arc Tracker](https://github.com/LJINFINITY)** | Personal life tracking and reflection engine to monitor lifelong arcs, document milestones, and keep persistent journals. | `Python` `SQLite` `Telemetry` | `💎 STABLE` |
 
 <br/>
 
 <!-- ============================================================ -->
-<!-- SECTION: KINETIC STACK MARQUEE                               -->
+<!-- SECTION: TECH STACK & TOOLING                                -->
 <!-- ============================================================ -->
 
-### `// TECH STACK ENGINE [KINETIC TICKER]`
+### `// TECH STACK MATRIX`
 
 <div align="center">
 
-<img src="assets/marquee_stack.svg" width="100%" alt="Kinetic Tech Stack Marquee" />
+<img src="https://skillicons.dev/icons?i=rust,cpp,c,py,ts,js,go,bash,linux,arch,neovim,qt,react,nextjs,tailwind,fastapi,nodejs,postgres,redis,docker,git,aws&perline=11" alt="Tech Stack Icons" />
 
 </div>
 
@@ -67,18 +97,25 @@
 <br/>
 
 <!-- ============================================================ -->
-<!-- SECTION: NOW PLAYING & TELEMETRY                             -->
+<!-- SECTION: NOW PLAYING                                         -->
 <!-- ============================================================ -->
 
-### `// NOW PLAYING [VINTAGE CYBER-DECK]`
+### `// AUDIO VIBE & NOW PLAYING`
 
-<div align="center">
-
-<img src="assets/player_widget.svg" width="100%" alt="Now Playing Widget" />
-
-</div>
+```text
+┌── [ NOW PLAYING // MYSPACE RETRO TAPE ] ──────────────────────────────────┐
+│                                                                           │
+│   ▶  02:41 ━━━━━━━━━━━━━━━━━━━●──────── 03:52   [ VOL: 85% ]   [ LOOP ]   │
+│   ♫  Track: Lamp — A Midnight Cold Session (J-Pop / Modern Jazz Flow)     │
+│                                                                           │
+└───────────────────────────────────────────────────────────────────────────┘
+```
 
 <br/>
+
+<!-- ============================================================ -->
+<!-- SECTION: TELEMETRY & STATS                                   -->
+<!-- ============================================================ -->
 
 ### `// TELEMETRY & RUNTIME STATS`
 
@@ -89,14 +126,14 @@
 
 <br/><br/>
 
-<img src="https://ghchart.rshah.org/00F0FF/LJINFINITY" width="100%" alt="Contribution Graph" />
+<img src="https://ghchart.rshah.org/38BDF8/LJINFINITY" width="100%" alt="Contribution Graph" />
 
 </div>
 
 <br/>
 
 <!-- ============================================================ -->
-<!-- SECTION: CONNECT & DOCK                                      -->
+<!-- SECTION: CONNECT & TRANSMIT                                  -->
 <!-- ============================================================ -->
 
 ### `// CONNECT & TRANSMIT`
