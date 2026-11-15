@@ -1,12 +1,12 @@
 <!-- ============================================================ -->
-<!-- HERO: SLEEK CYBER-FELINE VECTOR BANNER & TYPING SUBTITLE     -->
+<!-- HERO: BESPOKE HORIZON LUXURY BANNER & TYPING SUBTITLE        -->
 <!-- ============================================================ -->
 
 <div align="center">
 
-<img src="assets/hero_banner.svg" width="100%" alt="Jerin Rajan // LJINFINITY Hero Banner" />
+<img src="assets/banner.png" width="100%" alt="Jerin Rajan - Systems Architect & AI Engineer" />
 
-<br/><br/>
+<br/>
 
 <a href="https://github.com/LJINFINITY">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=17&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&width=700&lines=%3E+Architecting+Autonomous+Multi-Agent+Intelligence;%3E+Engineering+Low-Latency+Systems+in+Rust+%26+C%2B%2B;%3E+Crafting+Bespoke+Declarative+Wayland+Desktop+Rigs;%3E+Obsessed+with+Zero-Lag+Ergonomics+%26+Deep+Flow+State" alt="Typing Subtitle" />
