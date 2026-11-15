@@ -1,0 +1,105 @@
+def generate_player():
+    width = 850
+    height = 92
+    
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" width="100%" height="{height}">
+  <defs>
+    <style>
+      .player-bg {{
+        fill: #0D1117;
+        stroke: #30363D;
+        stroke-width: 1.2px;
+      }}
+      .track-title {{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        fill: #F0F6FC;
+        letter-spacing: 0.3px;
+      }}
+      .track-artist {{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+        font-size: 12.5px;
+        fill: #8B949E;
+      }}
+      .time-code {{
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-size: 11px;
+        fill: #58A6FF;
+        font-weight: 600;
+      }}
+      .ctrl-btn {{
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-size: 11px;
+        font-weight: 700;
+        fill: #C9D1D9;
+      }}
+
+      /* Equalizer Bar Animations */
+      @keyframes eq1 {{ 0%, 100% {{ height: 6px; y: 16px; }} 50% {{ height: 22px; y: 0px; }} }}
+      @keyframes eq2 {{ 0%, 100% {{ height: 18px; y: 4px; }} 50% {{ height: 8px; y: 14px; }} }}
+      @keyframes eq3 {{ 0%, 100% {{ height: 12px; y: 10px; }} 50% {{ height: 24px; y: -2px; }} }}
+      @keyframes eq4 {{ 0%, 100% {{ height: 20px; y: 2px; }} 50% {{ height: 10px; y: 12px; }} }}
+      @keyframes eq5 {{ 0%, 100% {{ height: 8px; y: 14px; }} 50% {{ height: 22px; y: 0px; }} }}
+      @keyframes eq6 {{ 0%, 100% {{ height: 16px; y: 6px; }} 50% {{ height: 6px; y: 16px; }} }}
+      
+      .eq-bar {{
+        fill: #38BDF8;
+        rx: 1.5;
+      }}
+    </style>
+  </defs>
+
+  <!-- Player Background -->
+  <rect width="{width}" height="{height}" rx="10" class="player-bg"/>
+
+  <!-- Left: Cassette / Vinyl Icon + Equalizer -->
+  <g transform="translate(24, 26)">
+    <!-- Vinyl / Disc Base -->
+    <circle cx="20" cy="20" r="18" fill="#161B22" stroke="#30363D" stroke-width="1.5"/>
+    <circle cx="20" cy="20" r="7" fill="#21262D"/>
+    <circle cx="20" cy="20" r="2.5" fill="#38BDF8"/>
+
+    <!-- Jumping Equalizer Bars -->
+    <g transform="translate(52, 9)">
+      <rect x="0" width="3.5" height="14" class="eq-bar" style="animation: eq1 1.2s infinite ease-in-out;"/>
+      <rect x="7" width="3.5" height="18" class="eq-bar" style="animation: eq2 0.9s infinite ease-in-out;"/>
+      <rect x="14" width="3.5" height="22" class="eq-bar" style="animation: eq3 1.4s infinite ease-in-out;"/>
+      <rect x="21" width="3.5" height="16" class="eq-bar" style="animation: eq4 1.1s infinite ease-in-out;"/>
+      <rect x="28" width="3.5" height="12" class="eq-bar" style="animation: eq5 0.8s infinite ease-in-out;"/>
+      <rect x="35" width="3.5" height="20" class="eq-bar" style="animation: eq6 1.3s infinite ease-in-out;"/>
+    </g>
+  </g>
+
+  <!-- Middle: Track Metadata & Progress -->
+  <g transform="translate(142, 28)">
+    <text x="0" y="0" class="track-title">Lamp — A Midnight Cold Session</text>
+    <text x="235" y="0" class="track-artist">// J-Pop &amp; Modern Jazz Tape</text>
+
+    <!-- Progress Bar -->
+    <g transform="translate(0, 16)">
+      <!-- Track bar line -->
+      <line x1="0" y1="8" x2="440" y2="8" stroke="#21262D" stroke-width="4" stroke-linecap="round"/>
+      <line x1="0" y1="8" x2="260" y2="8" stroke="#38BDF8" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="260" cy="8" r="5" fill="#F0F6FC" stroke="#38BDF8" stroke-width="2"/>
+      
+      <!-- Time codes -->
+      <text x="460" y="12" class="time-code">02:41 / 03:52</text>
+    </g>
+  </g>
+
+  <!-- Right: Playback Controls (MySpace Retro vibe) -->
+  <g transform="translate(680, 32)">
+    <rect x="0" y="0" width="144" height="30" rx="6" fill="#161B22" stroke="#30363D"/>
+    <text x="16" y="19" class="ctrl-btn">⏮</text>
+    <text x="44" y="19" class="ctrl-btn" fill="#38BDF8">❚❚ PAUSE</text>
+    <text x="116" y="19" class="ctrl-btn">⏭</text>
+  </g>
+</svg>'''
+
+    with open("/home/lj/Projects/gitreadme/assets/player_widget.svg", "w") as f:
+        f.write(svg)
+    print("Generated /home/lj/Projects/gitreadme/assets/player_widget.svg successfully!")
+
+if __name__ == "__main__":
+    generate_player()
