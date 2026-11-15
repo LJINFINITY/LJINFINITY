@@ -21,47 +21,49 @@
 <br/>
 
 <!-- ============================================================ -->
-<!-- BENTO CONSOLE: IDENTITY & SYSTEM RICE                        -->
+<!-- SECTION: CORE DIRECTIVE & ENGINEERING MANIFESTO              -->
 <!-- ============================================================ -->
 
-<table border="0" width="100%" cellspacing="0" cellpadding="0">
-  <tr style="border: none;">
-    <td width="48%" valign="top" style="border: none;">
+### `// 01. CORE DIRECTIVE & MANIFESTO`
 
-### `// IDENTITY & CORE DIRECTIVE`
-
-> *"Work should be an engaging, creative journey."*
+> ### ❝ *Work should be an engaging, creative journey.* ❞
 >
-> Hi there! I'm **Jerin Rajan**, widely known online as **LJINFINITY**. I am an aspiring software architect, AI developer, and relentless systems enthusiast who truly lives and breathes modern computing.
+> Hi there! I'm **Jerin Rajan**, widely known online as **LJINFINITY**. I am an aspiring software architect, AI developer, and relentless systems enthusiast who lives and breathes modern computing.
 >
 > For me, programming isn't just typing lines of code — it's the thrill of starting from a blank buffer, enjoying every step of the engineering process, and crafting tools and systems I genuinely desire to see in the world.
 
-**Engineering Focus**:
-- 🤖 **Autonomous Multi-Agent Swarms & Self-Correction Loops**
-- ⚡ **Low-Latency Runtimes & Distributed Microservices**
-- 🐚 **Declarative Wayland Desktops & Bespoke Unix Ricing**
+<br/>
 
-    </td>
-    <td width="4%" style="border: none;"></td>
-    <td width="48%" valign="top" style="border: none;">
+| 🤖 **Autonomous Multi-Agent Swarms** | ⚡ **Low-Latency Systems & Runtimes** | 🐚 **Declarative Wayland Desktops** |
+| :--- | :--- | :--- |
+| Dynamic tool routing, recursive self-correction loops, and state-machine agent graphs. | High-performance runtimes in **Rust** and **C++**, distributed microservices, and zero-lag concurrency. | Bespoke desktop suite (**Enoch**) built with **Hyprland** and **Quickshell QML** for zero-friction flow. |
 
-### `// SYSTEM RICE & HARDWARE RIG`
+<br/>
 
-```yaml
-Host: Custom Linux Workstation (64GB DDR5)
-Operating System: Fedora / Arch Linux (Zen Kernel)
-Compositor: Hyprland (Wayland)
-Shell Rig: Enoch (Quickshell + QML Declarative)
-Editor: Neovim (Treesitter + Custom Lua)
-Terminal: Kitty & Tmux Multiplexer
-Shell Prompt: Starship + RTK Token Killer
-Focus Atmosphere: Lamp / J-Pop & Modern Jazz
-Telemetry Profile: 0.08ms // Zero-Lag Flow State
+---
+
+<br/>
+
+<!-- ============================================================ -->
+<!-- SECTION: HARDWARE RIG & WORKSTATION TELEMETRY                -->
+<!-- ============================================================ -->
+
+### `// 02. HARDWARE RIG & DESKTOP TELEMETRY`
+
+```text
+┌── [ jerin@infinity // WORKSTATION SPECIFICATIONS ] ──────────────────────────────────────┐
+│                                                                                          │
+│   █████████   Host        :: Custom Linux Workstation (64GB DDR5 6000MHz)                │
+│   █ █ █ █ █   Kernel      :: Linux (Zen High-Performance Kernel)                         │
+│   █████████   Compositor  :: Hyprland (Dynamic Wayland Tiling Engine)                    │
+│   █ █ █ █ █   Shell Suite :: Enoch (Custom Quickshell + QML Declarative Rigs)            │
+│   █████████   Editor      :: Neovim (Treesitter + Hand-Crafted Lua Suite)                │
+│               Terminal    :: Kitty & Tmux Multiplexer (GPU-Accelerated)                  │
+│   ● ● ● ● ●   Audio Flow  :: Lamp (J-Pop & Modern Jazz Chill Session)                    │
+│               Telemetry   :: 0.08ms // Zero-Lag Flow State                               │
+│                                                                                          │
+└──────────────────────────────────────────────────────────────────────────────────────────┘
 ```
-
-    </td>
-  </tr>
-</table>
 
 <br/>
 
@@ -73,7 +75,7 @@ Telemetry Profile: 0.08ms // Zero-Lag Flow State
 <!-- SECTION: FLAGSHIP ARCHITECTURAL DOSSIERS                     -->
 <!-- ============================================================ -->
 
-### `// FLAGSHIP ARCHITECTURAL DOSSIERS`
+### `// 03. FLAGSHIP ARCHITECTURAL DOSSIERS`
 
 #### 🐾 01. [Uriel AI Assistant](https://github.com/LJINFINITY) `v2.4`
 > *Custom Autonomous Multi-Agent Orchestrator with Recursive Self-Correction*
@@ -122,7 +124,7 @@ Telemetry Profile: 0.08ms // Zero-Lag Flow State
 <!-- SECTION: COMPREHENSIVE TECH STACK WALL                       -->
 <!-- ============================================================ -->
 
-### `// TECH STACK & ARSENAL`
+### `// 04. TECH STACK & ARSENAL`
 
 <div align="center">
 
@@ -156,7 +158,7 @@ Telemetry Profile: 0.08ms // Zero-Lag Flow State
 <!-- SECTION: CONTRIBUTION SNAKE GAME                             -->
 <!-- ============================================================ -->
 
-### `// CONTRIBUTION ACTIVITY SNAKE`
+### `// 05. CONTRIBUTION ACTIVITY SNAKE`
 
 <div align="center">
 
@@ -178,7 +180,7 @@ Telemetry Profile: 0.08ms // Zero-Lag Flow State
 <!-- SECTION: NOW PLAYING / AUDIO ATMOSPHERE                      -->
 <!-- ============================================================ -->
 
-### `// NOW PLAYING [FLOW STATE TAPE]`
+### `// 06. NOW PLAYING [FLOW STATE TAPE]`
 
 ```text
 ┌── [ NOW PLAYING // MYSPACE RETRO TAPE ] ──────────────────────────────────┐
@@ -199,7 +201,7 @@ Telemetry Profile: 0.08ms // Zero-Lag Flow State
 <!-- SECTION: TELEMETRY & RUNTIME STATS                           -->
 <!-- ============================================================ -->
 
-### `// TELEMETRY & RUNTIME STATS`
+### `// 07. TELEMETRY & RUNTIME STATS`
 
 <div align="center">
 
@@ -218,7 +220,7 @@ Telemetry Profile: 0.08ms // Zero-Lag Flow State
 <!-- SECTION: CONNECT & TRANSMIT                                  -->
 <!-- ============================================================ -->
 
-### `// CONNECT & TRANSMIT`
+### `// 08. CONNECT & TRANSMIT`
 
 <div align="center">
 
