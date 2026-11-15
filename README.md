@@ -6,11 +6,11 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,12,24&height=220&section=header&text=JERIN%20RAJAN&fontSize=56&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=AI%20Full-Stack%20Architect%20%2F%2F%20LJINFINITY&descSize=20&descAlignY=60&descAlign=50" width="100%" alt="Jerin Rajan Waving Header" />
 
-<br/><br/>
+<br/>
 
-[![Status](https://img.shields.io/badge/STATUS-ARCHITECTING_SYSTEMS-00F0FF?style=for-the-badge&logoColor=white)](https://github.com/LJINFINITY)
-[![Focus](https://img.shields.io/badge/FLOW-J--POP_%2F_MODERN_JAZZ-A855F7?style=for-the-badge&logoColor=white)](https://github.com/LJINFINITY)
-[![Rig](https://img.shields.io/badge/DESKTOP-HYPRLAND_%2F_ENOCH-10B981?style=for-the-badge&logoColor=white)](https://github.com/LJINFINITY)
+<h3 align="center">
+  ✨ <i>“Greetings visitor, Enjoy your time here!!!”</i> ✨
+</h3>
 
 </div>
 
