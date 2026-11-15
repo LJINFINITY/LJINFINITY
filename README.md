@@ -9,7 +9,7 @@
 <br/>
 
 <a href="https://github.com/LJINFINITY">
-  <img src="assets/soundwave_greeting.svg" width="100%" alt="Greetings Visitor // Soundwave Visualizer" />
+  <img src="assets/greeting_wave.svg" width="100%" alt="Greetings Visitor // Soundwave Visualizer" />
 </a>
 
 </div>

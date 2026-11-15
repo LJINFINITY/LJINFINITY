@@ -105,7 +105,12 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 75" width="10
 </svg>
 '''
 
-with open('/tmp/soundwave_greeting_synced.svg', 'w') as f:
+import os
+
+REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+OUT_PATH = os.path.join(REPO_ROOT, 'assets', 'greeting_wave.svg')
+
+with open(OUT_PATH, 'w') as f:
     f.write(svg)
 
-print("Successfully generated /tmp/soundwave_greeting_synced.svg")
+print(f"Successfully generated {OUT_PATH}")
