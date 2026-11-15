@@ -185,31 +185,10 @@
 <br/>
 
 <!-- ============================================================ -->
-<!-- SECTION: NOW PLAYING / AUDIO ATMOSPHERE                      -->
-<!-- ============================================================ -->
-
-### `// 06. NOW PLAYING [FLOW STATE TAPE]`
-
-```text
-┌── [ NOW PLAYING // MYSPACE RETRO TAPE ] ──────────────────────────────────┐
-│                                                                           │
-│   ▶  02:41 ━━━━━━━━━━━━━━━━━━━●──────── 03:52   [ VOL: 85% ]   [ LOOP ]   │
-│   ♫  Track: Lamp — A Midnight Cold Session (J-Pop / Modern Jazz Flow)     │
-│                                                                           │
-└───────────────────────────────────────────────────────────────────────────┘
-```
-
-<br/>
-
----
-
-<br/>
-
-<!-- ============================================================ -->
 <!-- SECTION: TELEMETRY & RUNTIME STATS                           -->
 <!-- ============================================================ -->
 
-### `// 07. TELEMETRY & RUNTIME STATS`
+### `// 06. TELEMETRY & RUNTIME STATS`
 
 <div align="center">
 
@@ -228,7 +207,7 @@
 <!-- SECTION: CONNECT & TRANSMIT                                  -->
 <!-- ============================================================ -->
 
-### `// 08. CONNECT & TRANSMIT`
+### `// 07. CONNECT & TRANSMIT`
 
 <div align="center">
 
