@@ -1,15 +1,15 @@
 <!-- ============================================================ -->
-<!-- HERO: DYNAMIC CAPSULE BANNER & ANIMATED TYPING HEADER        -->
+<!-- HERO: SLEEK CYBER-FELINE VECTOR BANNER & TYPING SUBTITLE     -->
 <!-- ============================================================ -->
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,12,24&height=220&section=header&text=JERIN%20RAJAN&fontSize=56&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=AI%20Full-Stack%20Architect%20%2F%2F%20LJINFINITY&descSize=20&descAlignY=60&descAlign=50" width="100%" alt="Jerin Rajan Capsule Header" />
+<img src="assets/hero_banner.svg" width="100%" alt="Jerin Rajan // LJINFINITY Hero Banner" />
 
-<br/>
+<br/><br/>
 
 <a href="https://github.com/LJINFINITY">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&width=650&lines=%3E+AI+Full-Stack+Architect+%26+Systems+Crafter;%3E+Architecting+Autonomous+Multi-Agent+Swarms;%3E+Bespoke+Declarative+Wayland+Desktop+Rigs;%3E+Obsessed+with+Zero-Lag+Ergonomics+%26+Flow+State" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=17&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&width=700&lines=%3E+Architecting+Autonomous+Multi-Agent+Intelligence;%3E+Engineering+Low-Latency+Systems+in+Rust+%26+C%2B%2B;%3E+Crafting+Bespoke+Declarative+Wayland+Desktop+Rigs;%3E+Obsessed+with+Zero-Lag+Ergonomics+%26+Deep+Flow+State" alt="Typing Subtitle" />
 </a>
 
 <br/><br/>
@@ -27,16 +27,47 @@
 <br/>
 
 <!-- ============================================================ -->
-<!-- SECTION: ABOUT ME & PHILOSOPHY                               -->
+<!-- BENTO CONSOLE: IDENTITY & SYSTEM RICE                        -->
 <!-- ============================================================ -->
 
-### `// ABOUT ME & CORE PHILOSOPHY`
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr style="border: none;">
+    <td width="48%" valign="top" style="border: none;">
 
-> Hi there! I'm **Jerin Rajan**, widely known online as **LJINFINITY**. I am an aspiring software architect, AI developer, and relentless systems enthusiast who truly lives and breathes modern computing.
-> 
-> My path into software development started with a simple belief: **work should be an engaging, creative journey.** For me, programming isn't just typing lines of code — it's the thrill of starting from a blank buffer, enjoying every step of the engineering process, and crafting tools and systems I genuinely desire to see in the world.
+### `// IDENTITY & CORE DIRECTIVE`
+
+> *"Work should be an engaging, creative journey."*
 >
-> Whether I am architecting autonomous agent orchestrators, writing low-latency systems in Rust and C++, or hand-crafting declarative Wayland desktop shells from scratch, I obsess over zero-lag ergonomics, clean abstractions, and high aesthetic standards.
+> Hi there! I'm **Jerin Rajan**, widely known online as **LJINFINITY**. I am an aspiring software architect, AI developer, and relentless systems enthusiast who truly lives and breathes modern computing.
+>
+> For me, programming isn't just typing lines of code — it's the thrill of starting from a blank buffer, enjoying every step of the engineering process, and crafting tools and systems I genuinely desire to see in the world.
+
+**Engineering Focus**:
+- 🤖 **Autonomous Multi-Agent Swarms & Self-Correction Loops**
+- ⚡ **Low-Latency Runtimes & Distributed Microservices**
+- 🐚 **Declarative Wayland Desktops & Bespoke Unix Ricing**
+
+    </td>
+    <td width="4%" style="border: none;"></td>
+    <td width="48%" valign="top" style="border: none;">
+
+### `// SYSTEM RICE & HARDWARE RIG`
+
+```yaml
+Host: Custom Linux Workstation (64GB DDR5)
+Operating System: Fedora / Arch Linux (Zen Kernel)
+Compositor: Hyprland (Wayland)
+Shell Rig: Enoch (Quickshell + QML Declarative)
+Editor: Neovim (Treesitter + Custom Lua)
+Terminal: Kitty & Tmux Multiplexer
+Shell Prompt: Starship + RTK Token Killer
+Focus Atmosphere: Lamp / J-Pop & Modern Jazz
+Telemetry Profile: 0.08ms // Zero-Lag Flow State
+```
+
+    </td>
+  </tr>
+</table>
 
 <br/>
 
@@ -45,13 +76,13 @@
 <br/>
 
 <!-- ============================================================ -->
-<!-- SECTION: FLAGSHIP SYSTEMS & ARCHITECTURE                     -->
+<!-- SECTION: FLAGSHIP ARCHITECTURAL DOSSIERS                     -->
 <!-- ============================================================ -->
 
-### `// FLAGSHIP SYSTEMS & ARCHITECTURE`
+### `// FLAGSHIP ARCHITECTURAL DOSSIERS`
 
-#### 🐾 01. [Uriel AI Assistant](https://github.com/LJINFINITY)
-> *Custom Autonomous Multi-Agent Orchestrator with Self-Correction Loops*
+#### 🐾 01. [Uriel AI Assistant](https://github.com/LJINFINITY) `v2.4`
+> *Custom Autonomous Multi-Agent Orchestrator with Recursive Self-Correction*
 
 * **Architecture**: A distributed, autonomous AI assistant engine designed to manage complex multi-step engineering tasks, tool reasoning, and recursive self-correction.
 * **Core Capabilities**:
@@ -63,8 +94,8 @@
 
 <br/>
 
-#### 🐚 02. [Enoch Shell (MyShell)](https://github.com/LJINFINITY)
-> *Feature-Rich Custom Desktop Environment Hand-Crafted with Quickshell & QML*
+#### 🐚 02. [Enoch Shell (MyShell)](https://github.com/LJINFINITY) `v1.0`
+> *Feature-Rich Custom Desktop Suite Hand-Crafted with Quickshell & QML*
 
 * **Architecture**: A bespoke, declarative desktop suite built completely from the ground up to replace generic desktop environments with tailored ergonomics.
 * **Core Capabilities**:
@@ -76,7 +107,7 @@
 
 <br/>
 
-#### 🧭 03. [Arc Tracker](https://github.com/LJINFINITY)
+#### 🧭 03. [Arc Tracker](https://github.com/LJINFINITY) `v1.2`
 > *Personal Life Telemetry, Milestone Engine & Engineering Journal*
 
 * **Architecture**: A personal analytics and reflection engine engineered to monitor lifelong project arcs, document engineering milestones, and track knowledge acquisition over long time horizons.
@@ -86,30 +117,6 @@
   - Clean CLI and local interface for low-friction daily reflection.
 * **Primary Stack**: `Python` • `SQLite` • `Data Analytics` • `Local CLI`
 * **Lifecycle**: `💎 Stable // Persistent Telemetry`
-
-<br/>
-
----
-
-<br/>
-
-<!-- ============================================================ -->
-<!-- SECTION: HARDWARE RIG & DESKTOP ENVIRONMENT                  -->
-<!-- ============================================================ -->
-
-### `// HARDWARE RIG & DESKTOP ENVIRONMENT`
-
-```yaml
-Host: Custom Linux Workstation (64GB DDR5 / Multi-GPU Compute)
-Operating System: Fedora / Arch Linux (Zen Kernel)
-Window Manager: Hyprland (Wayland Compositor)
-Desktop Shell: Enoch (Quickshell + QML Declarative Rig)
-Primary Editor: Neovim (Custom Lua Configuration & Treesitter)
-Terminal Setup: Kitty Terminal Multiplexed with Tmux
-Prompt: Starship Shell Prompt + RTK Optimization Layer
-Cognitive State: Deep Recursive Flow
-Audio Atmosphere: Lamp / J-Pop & Modern Jazz Chill Session
-```
 
 <br/>
 
@@ -131,65 +138,19 @@ Audio Atmosphere: Lamp / J-Pop & Modern Jazz Chill Session
 
 <br/>
 
-#### `Languages & Low-Level Systems`
-<p align="left">
-  <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust" />
-  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++" />
-  <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black" alt="C" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Go" />
-  <img src="https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white" alt="Lua" />
-  <img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="Bash" />
-  <img src="https://img.shields.io/badge/Zsh-F1502F?style=for-the-badge&logo=zsh&logoColor=white" alt="Zsh" />
-</p>
+<details>
+<summary><b><code>[+] Expand Full Categorized Directory</code></b></summary>
+<br/>
 
-#### `AI, Machine Learning & Agentic Systems`
-<p align="left">
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch" />
-  <img src="https://img.shields.io/badge/CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=black" alt="CUDA" />
-  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" alt="LangChain" />
-  <img src="https://img.shields.io/badge/Hugging_Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="Hugging Face" />
-  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV" />
-  <img src="https://img.shields.io/badge/OpenAI_API-412991?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI API" />
-  <img src="https://img.shields.io/badge/Anthropic-D97757?style=for-the-badge&logo=anthropic&logoColor=white" alt="Anthropic" />
-  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow" />
-  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
-  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
-</p>
+| Domain | Technologies & Tooling |
+| :--- | :--- |
+| **Languages & Systems** | `Rust` `C++` `C` `Python` `TypeScript` `JavaScript` `Go` `Bash` `Zsh` `Lua` |
+| **AI, Agents & ML** | `PyTorch` `CUDA` `LangChain` `Hugging Face` `OpenCV` `OpenAI API` `Anthropic` `DeepSeek` `Whisper` |
+| **Linux & Desktop Rig** | `Fedora` `Arch Linux` `Hyprland (Wayland)` `Quickshell` `QML` `Neovim` `Tmux` `Kitty` `Starship` `RTK` |
+| **Web, APIs & Runtimes** | `React` `Next.js` `Tailwind CSS` `Node.js` `FastAPI` `Express` `Django` `GraphQL` `REST` |
+| **Data, Cloud & DevOps** | `PostgreSQL` `Redis` `SQLite` `Supabase` `Docker` `Kubernetes` `Git` `GitHub Actions` `AWS` `Vercel` |
 
-#### `Linux, Compositors & Development Tooling`
-<p align="left">
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
-  <img src="https://img.shields.io/badge/Fedora-51A2DA?style=for-the-badge&logo=fedora&logoColor=white" alt="Fedora" />
-  <img src="https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=archlinux&logoColor=white" alt="Arch Linux" />
-  <img src="https://img.shields.io/badge/Hyprland-00A6A6?style=for-the-badge&logo=hyprland&logoColor=white" alt="Hyprland" />
-  <img src="https://img.shields.io/badge/Quickshell-2E3440?style=for-the-badge&logo=qt&logoColor=white" alt="Quickshell" />
-  <img src="https://img.shields.io/badge/QML-41CD52?style=for-the-badge&logo=qt&logoColor=white" alt="QML" />
-  <img src="https://img.shields.io/badge/Wayland-000000?style=for-the-badge&logo=wayland&logoColor=white" alt="Wayland" />
-  <img src="https://img.shields.io/badge/Neovim-57A143?style=for-the-badge&logo=neovim&logoColor=white" alt="Neovim" />
-  <img src="https://img.shields.io/badge/Tmux-1BB91F?style=for-the-badge&logo=tmux&logoColor=white" alt="Tmux" />
-  <img src="https://img.shields.io/badge/Kitty-000000?style=for-the-badge&logo=kitty&logoColor=white" alt="Kitty" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-</p>
-
-#### `Full-Stack, Frameworks & Cloud Infrastructure`
-<p align="left">
-  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
-  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
-  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" alt="Redis" />
-  <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite" />
-  <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase" />
-  <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-webservices&logoColor=white" alt="AWS" />
-  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
-</p>
+</details>
 
 <br/>
 
@@ -226,8 +187,12 @@ Audio Atmosphere: Lamp / J-Pop & Modern Jazz Chill Session
 ### `// NOW PLAYING [FLOW STATE TAPE]`
 
 ```text
-▶  02:41 ━━━━━━━━━━━━━━━━━━━●──────── 03:52  [ VOL: 85% ]  [ REPEAT: ON ]
-♫  Track: Lamp — A Midnight Cold Session (J-Pop / Modern Jazz Coding Flow)
+┌── [ NOW PLAYING // MYSPACE RETRO TAPE ] ──────────────────────────────────┐
+│                                                                           │
+│   ▶  02:41 ━━━━━━━━━━━━━━━━━━━●──────── 03:52   [ VOL: 85% ]   [ LOOP ]   │
+│   ♫  Track: Lamp — A Midnight Cold Session (J-Pop / Modern Jazz Flow)     │
+│                                                                           │
+└───────────────────────────────────────────────────────────────────────────┘
 ```
 
 <br/>
@@ -237,7 +202,7 @@ Audio Atmosphere: Lamp / J-Pop & Modern Jazz Chill Session
 <br/>
 
 <!-- ============================================================ -->
-<!-- SECTION: TELEMETRY & RUNTIME ANALYTICS                       -->
+<!-- SECTION: TELEMETRY & RUNTIME STATS                           -->
 <!-- ============================================================ -->
 
 ### `// TELEMETRY & RUNTIME STATS`
@@ -271,6 +236,6 @@ Audio Atmosphere: Lamp / J-Pop & Modern Jazz Chill Session
 
 <br/><br/>
 
-<sub><i>Architected with passion by <b>Jerin Rajan (LJINFINITY)</b></i></sub>
+<sub><i>Architected with passion by <b>Jerin Rajan (LJINFINITY)</b> • Purring in flow state 🐾</i></sub>
 
 </div>
