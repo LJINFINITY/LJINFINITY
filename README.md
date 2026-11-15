@@ -1,18 +1,16 @@
 <!-- ============================================================ -->
-<!-- HEADER: ANIMATED BANNER, DYNAMIC TITLE & SUB-HEADLINE        -->
+<!-- HERO: DYNAMIC CAPSULE BANNER & ANIMATED TYPING HEADER        -->
 <!-- ============================================================ -->
 
 <div align="center">
 
-<img src="live_to_header_v5.gif" width="620" alt="Live to Think / Create / Explore / Build / Innovate" />
-
-<br/><br/>
-
-<img src="title_animated_v4.gif" width="680" alt="Jerin Rajan // LJ INFINITY" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,12,24&height=220&section=header&text=JERIN%20RAJAN&fontSize=56&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=AI%20Full-Stack%20Architect%20%2F%2F%20LJINFINITY&descSize=20&descAlignY=60&descAlign=50" width="100%" alt="Jerin Rajan Capsule Header" />
 
 <br/>
 
-<img src="headline.svg" width="480" alt="AI Full Stack Dev" />
+<a href="https://github.com/LJINFINITY">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&width=650&lines=%3E+AI+Full-Stack+Architect+%26+Systems+Crafter;%3E+Architecting+Autonomous+Multi-Agent+Swarms;%3E+Bespoke+Declarative+Wayland+Desktop+Rigs;%3E+Obsessed+with+Zero-Lag+Ergonomics+%26+Flow+State" alt="Typing SVG" />
+</a>
 
 <br/><br/>
 
@@ -125,6 +123,14 @@ Audio Atmosphere: Lamp / J-Pop & Modern Jazz Chill Session
 
 ### `// TECH STACK & ARSENAL`
 
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=rust,cpp,c,py,ts,js,go,bash,linux,arch,neovim,qt,react,nextjs,tailwind,fastapi,nodejs,postgres,redis,docker,git,aws&perline=11" alt="Tech Stack Icons" />
+
+</div>
+
+<br/>
+
 #### `Languages & Low-Level Systems`
 <p align="left">
   <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust" />
@@ -192,6 +198,28 @@ Audio Atmosphere: Lamp / J-Pop & Modern Jazz Chill Session
 <br/>
 
 <!-- ============================================================ -->
+<!-- SECTION: CONTRIBUTION SNAKE GAME                             -->
+<!-- ============================================================ -->
+
+### `// CONTRIBUTION ACTIVITY SNAKE`
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LJINFINITY/LJINFINITY/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/LJINFINITY/LJINFINITY/output/github-contribution-grid-snake.svg">
+  <img alt="GitHub Contribution Snake Animation" src="https://raw.githubusercontent.com/LJINFINITY/LJINFINITY/output/github-contribution-grid-snake-dark.svg" width="100%" />
+</picture>
+
+</div>
+
+<br/>
+
+---
+
+<br/>
+
+<!-- ============================================================ -->
 <!-- SECTION: NOW PLAYING / AUDIO ATMOSPHERE                      -->
 <!-- ============================================================ -->
 
@@ -217,11 +245,7 @@ Audio Atmosphere: Lamp / J-Pop & Modern Jazz Chill Session
 <div align="center">
 
 <img src="https://streak-stats.demolab.com/?user=LJINFINITY&theme=tokyo-night&hide_border=true" width="49%" alt="GitHub Streak Stats" />
-<img src="https://github-readme-stats.vercel.app/api?username=LJINFINITY&show_icons=true&theme=tokyo-night&hide_border=true" width="49%" alt="GitHub Profile Stats" />
-
-<br/><br/>
-
-<img src="https://ghchart.rshah.org/38BDF8/LJINFINITY" width="100%" alt="Contribution Graph" />
+<img src="https://ghchart.rshah.org/38BDF8/LJINFINITY" width="49%" alt="Contribution Graph" />
 
 </div>
 
